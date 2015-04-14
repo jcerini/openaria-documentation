@@ -8,3 +8,4 @@ Manuel de l'utilisateur
     :numbered:
     :maxdepth: 3
 
+    administration_parametrage.rst
