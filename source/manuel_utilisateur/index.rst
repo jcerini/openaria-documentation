@@ -8,6 +8,7 @@ Manuel de l'utilisateur
     :numbered:
     :maxdepth: 3
 
+    ergonomie/index.rst
     etablissements/index.rst
     dossiers/index.rst
     suivi/index.rst
