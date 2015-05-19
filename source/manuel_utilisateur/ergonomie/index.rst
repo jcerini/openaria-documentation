@@ -77,11 +77,15 @@ L'objet de ce widget est de permettre de lister les établissements dont l'adres
 Widget "Mes documents entrants non lus"
 ---------------------------------------
 
+.. image:: widget_mes_documents_entrants_non_lus.png
+
 Ce widget liste les documents entrants associés à un dossier dont l'utilisateur est identifié comme instructeur et qui est noté comme « non lu » avec un lien vers le dossier en question ainsi qu'un lien qui permet d'accéder au listing de tous les documents entrants non lus de l'utilisateur.
 
 
 Widget "Mes dossiers en réunion"
 --------------------------------
+
+.. image:: widget_mes_di_en_reunions.png
 
 Ce widget liste tous les dossiers dont l'utilisateur connecté est l'instructeur et qui passe en réunion dans les 30 jours suivant la date du jour avec un lien vers le dossier en question.
 
@@ -89,11 +93,15 @@ Ce widget liste tous les dossiers dont l'utilisateur connecté est l'instructeur
 Widget "Mes dossiers plans"
 ---------------------------
 
+.. image:: widget_dossier_instruction_mes_plans.png
+
 Ce widget liste les 5 plus anciens dossiers plans dont l'utilisateur connecté est identifié comme instructeur avec un lien vers le dossier en question ainsi qu'un lien qui permet d'accéder au listing de tous les dossiers plans de l'utilisateur.
 
 
 Widget "Mes dossiers visites"
 -----------------------------
+
+.. image:: widget_dossier_instruction_mes_visites.png
 
 Ce widget liste les 5 plus anciens dossiers visites dont l'utilisateur connecté est identifié comme instructeur avec un lien vers le dossier en question ainsi qu'un lien qui permet d'accéder au listing de tous les dossiers visites de l'utilisateur.
 
@@ -101,17 +109,23 @@ Ce widget liste les 5 plus anciens dossiers visites dont l'utilisateur connecté
 Widget "Mes infos"
 ------------------
 
+.. image:: widget_mes_infos.png
+
 Ce widget a été créé spécifiquement pour des besoins de test de l'application. Il permet d'afficher les informations de l'utilisateur actuellement connecté. En effet, pour faciliter les tests avec différents utilisateurs, différents profils et différents services, il est plus facile d'avoir un widget qui rassemble ces informations sur le tableau de bord.
 
 
 Widget "Mes visites à réaliser"
 -------------------------------
 
+.. image:: widget_mes_visites_a_realiser.png
+
 Ce widget liste les 5 prochaines visites à réaliser par l'utilisateur avec un lien vers le dossier en question ainsi qu'un lien qui permet d'accéder au listing de toutes les prochaines visites de l'utilisateur. L'état de la visite permet au technicien de savoir qu'une visite qui lui avait été programmée a été annulée.
 
 
 Widget "Mon activité"
 ---------------------
+
+.. image:: widget_mon_activite.png
 
 Ce widget représente les chiffres statistiques définis dans la section Pilotage concernant l'utilisateur connecté.
 
