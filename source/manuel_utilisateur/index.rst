@@ -8,4 +8,7 @@ Manuel de l'utilisateur
     :numbered:
     :maxdepth: 3
 
-    administration_parametrage.rst
+    etablissements/index.rst
+    dossiers/index.rst
+    suivi/index.rst
+    administration_parametrage/index.rst
