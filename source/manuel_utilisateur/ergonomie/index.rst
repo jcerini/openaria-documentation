@@ -25,11 +25,15 @@ L'objet de ce widget est de présenter les statistiques du service de l'utilisat
 Widget "Analyses à acter"
 -------------------------
 
-L'objet de ce widget est de permettre au cadre de visualiser les analyses terminées et donc à valider.
+.. image:: widget_analyse_a_acter.png
+
+L'objet de ce widget est de permettre au cadre de visualiser les analyses terminées et donc à valider. Le widget n'apparaît pas si aucune analyse n'est dans ce cas.
 
 
 Widget "Analyses à valider"
 ---------------------------
+
+.. image:: widget_analyse_a_valider.png
 
 L'objet de ce widget est de permettre au cadre de visualiser les  analyses terminées et donc à valider.
 
@@ -37,11 +41,13 @@ L'objet de ce widget est de permettre au cadre de visualiser les  analyses termi
 Widget "Autorités de police qui n'ont pas été notifiées ou exécutées"
 ---------------------------------------------------------------------
 
-L'objet de ce widget est de permettre de visualiser les autorités de police non notifiées ou exécutées.
+L'objet de ce widget est de permettre de visualiser les autorités de police non notifiées ou exécutées. Le widget n'apparaît pas si aucune analyse n'est dans ce cas.
 
 
 Widget "Convocations exploitants à envoyer"
 -------------------------------------------
+
+.. image:: widget_convocations_exploitants_a_envoyer.png
 
 Ce widget liste les programmations pour lesquelles les envois de convocations aux exploitants sont à effectuer. Le widget n'apparaît pas si aucune programmation n'est dans ce cas.
 
@@ -49,7 +55,9 @@ Ce widget liste les programmations pour lesquelles les envois de convocations au
 Widget "Convocations membres à envoyer"
 ---------------------------------------
 
-Ce widget liste les programmations pour lesquelles les envois de convocations aux membres sont à effectuer. Le widget n'apparaît pas si aucune programmation n'est dans ce cas.
+.. image:: widget_convocations_membres_a_envoyer.png
+
+Ce widget liste les programmations arrivant dans moins de 2 semaines et pour lesquelles les envois de convocations aux membres sont à effectuer. Le widget n'apparaît pas si aucune programmation n'est dans ce cas.
 
 
 Widget "Documents entrants à valider"
@@ -79,7 +87,9 @@ Ce widget affiche les 5 plus anciens dossiers à qualifier, avec un lien permett
 Widget "Établissements NPAI"
 ----------------------------
 
-L'objet de ce widget est de permettre de lister les établissements dont l'adresse de contact est incorrecte afin d'effectuer des recherches hors logiciel.
+.. image:: widget_etablissements_npai.png
+
+L'objet de ce widget est de permettre de lister les établissements dont l'adresse de contact est incorrecte afin d'effectuer des recherches hors logiciel. Le widget n'apparaît pas si aucun établissement n'est dans ce cas.
 
 
 Widget "Mes documents entrants non lus"
@@ -141,17 +151,23 @@ Ce widget représente les chiffres statistiques définis dans la section Pilotag
 Widget "Profil non configuré"
 -----------------------------
 
+.. image :: widget_profil_non_configure.png
+
 Ce widget permet d'informer l'utilisateur que son profil n'est pas encore configuré correctement et qu'il doit prévenir son administrateur pour que ce soit le cas.
 
 
 Widget "Programmations à valider"
 ---------------------------------
 
+.. image:: widget_programmation_a_valider.png
+
 Principalement destiné au cadre, ce widget permet d'afficher toutes les programmations qui ont été finalisées et qui sont donc à valider. Le widget n'apparaît pas si aucune programmation n'est dans ce cas.
 
 
 Widget "Programmations urgentes"
 --------------------------------
+
+.. image:: widget_programmation_urgentes.png
 
 Ce widget liste les programmations arrivant dans moins de 3 semaines pour lesquelles les envois de convocations ne sont pas terminés. Le widget n'apparaît pas si aucune programmation n'est dans ce cas.
 
