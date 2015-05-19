@@ -17,6 +17,8 @@ Pour conserver une cohérence dans la navigation et un comportement identique da
 Widget "Activité du service"
 ----------------------------
 
+.. image:: widget_activite_service.png
+
 L'objet de ce widget est de présenter les statistiques du service de l'utilisateur.
 
 
@@ -53,17 +55,23 @@ Ce widget liste les programmations pour lesquelles les envois de convocations au
 Widget "Documents entrants à valider"
 -------------------------------------
 
+.. image:: widget_documents_entrants_a_valider.png
+
 Ce widget permet au cadre de savoir combien il a de documents entrants à vérifier et de visualiser la liste des cinq derniers. Un lien permet d'accéder à la liste complète.
 
 
 Widget "Documents entrants suivis"
 ----------------------------------
 
+.. image:: widget_documents_entrants_suivis.png
+
 Ce widget permet de lister tous les documents entrants pour lesquels le suivi est activé. Les documents entrants sont triés par date butoir.
 
 
 Widget "Dossiers de coordination à qualifier"
 ---------------------------------------------
+
+.. image:: widget_dossier_coordination_a_qualifier.png
 
 Ce widget affiche les 5 plus anciens dossiers à qualifier, avec un lien permettant d'afficher tous les dossiers à qualifier.
 
