@@ -105,7 +105,7 @@ Widget "Mes dossiers en réunion"
 
 .. image:: widget_mes_di_en_reunions.png
 
-Ce widget liste tous les dossiers dont l'utilisateur connecté est l'instructeur et qui passe en réunion dans les 30 jours suivant la date du jour avec un lien vers le dossier en question.
+Ce widget liste tous les dossiers dont l'utilisateur connecté est l'instructeur et qui passent en réunion dans les 30 jours suivant la date du jour avec un lien vers le dossier en question.
 
 
 Widget "Mes dossiers plans"
