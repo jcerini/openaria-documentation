@@ -54,7 +54,7 @@ Onglet Documents entrants
 #########################
 
 
-Onglet Documents Générés
+Onglet Documents générés
 ########################
 
 
@@ -134,7 +134,7 @@ Onglet Documents entrants
 #########################
 
 
-Onglet Documents Générés
+Onglet Documents générés
 ########################
 
 
