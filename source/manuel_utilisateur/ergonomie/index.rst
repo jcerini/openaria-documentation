@@ -13,9 +13,11 @@ La disposition des widgets est propre à chaque profil et peut être modifiée t
 
 Pour conserver une cohérence dans la navigation et un comportement identique dans tous les cas de figure, tous les liens du tableau de bord qui pointent vers un élément pointent vers la fiche de visualisation du dossier d'instruction qui est le cœur de travail du technicien. Les liens qui pointent vers un listing pointent vers un listing accessible également depuis le menu.
 
+Widgets
+-------
 
 Widget "Activité du service"
-----------------------------
+############################
 
 .. image:: widget_activite_service.png
 
@@ -23,7 +25,7 @@ L'objet de ce widget est de présenter les statistiques du service de l'utilisat
 
 
 Widget "Analyses à acter"
--------------------------
+#########################
 
 .. image:: widget_analyse_a_acter.png
 
@@ -31,7 +33,7 @@ L'objet de ce widget est de permettre au cadre de visualiser les analyses termin
 
 
 Widget "Analyses à valider"
----------------------------
+###########################
 
 .. image:: widget_analyse_a_valider.png
 
@@ -39,13 +41,13 @@ L'objet de ce widget est de permettre au cadre de visualiser les  analyses termi
 
 
 Widget "Autorités de police qui n'ont pas été notifiées ou exécutées"
----------------------------------------------------------------------
+#####################################################################
 
 L'objet de ce widget est de permettre de visualiser les autorités de police non notifiées ou exécutées. Le widget n'apparaît pas si aucune analyse n'est dans ce cas.
 
 
 Widget "Convocations exploitants à envoyer"
--------------------------------------------
+###########################################
 
 .. image:: widget_convocations_exploitants_a_envoyer.png
 
@@ -53,7 +55,7 @@ Ce widget liste les programmations pour lesquelles les envois de convocations au
 
 
 Widget "Convocations membres à envoyer"
----------------------------------------
+#######################################
 
 .. image:: widget_convocations_membres_a_envoyer.png
 
@@ -61,7 +63,7 @@ Ce widget liste les programmations arrivant dans moins de 2 semaines et pour les
 
 
 Widget "Documents entrants à valider"
--------------------------------------
+#####################################
 
 .. image:: widget_documents_entrants_a_valider.png
 
@@ -69,7 +71,7 @@ Ce widget permet au cadre de savoir combien il a de documents entrants à vérif
 
 
 Widget "Documents entrants suivis"
-----------------------------------
+##################################
 
 .. image:: widget_documents_entrants_suivis.png
 
@@ -77,7 +79,7 @@ Ce widget permet de lister tous les documents entrants pour lesquels le suivi es
 
 
 Widget "Dossiers de coordination à qualifier"
----------------------------------------------
+#############################################
 
 .. image:: widget_dossier_coordination_a_qualifier.png
 
@@ -85,7 +87,7 @@ Ce widget affiche les 5 plus anciens dossiers à qualifier, avec un lien permett
 
 
 Widget "Établissements NPAI"
-----------------------------
+############################
 
 .. image:: widget_etablissements_npai.png
 
@@ -93,7 +95,7 @@ L'objet de ce widget est de permettre de lister les établissements dont l'adres
 
 
 Widget "Mes documents entrants non lus"
----------------------------------------
+#######################################
 
 .. image:: widget_mes_documents_entrants_non_lus.png
 
@@ -101,7 +103,7 @@ Ce widget liste les documents entrants associés à un dossier dont l'utilisateu
 
 
 Widget "Mes dossiers en réunion"
---------------------------------
+################################
 
 .. image:: widget_mes_di_en_reunions.png
 
@@ -109,7 +111,7 @@ Ce widget liste tous les dossiers dont l'utilisateur connecté est l'instructeur
 
 
 Widget "Mes dossiers plans"
----------------------------
+###########################
 
 .. image:: widget_dossier_instruction_mes_plans.png
 
@@ -117,7 +119,7 @@ Ce widget liste les 5 plus anciens dossiers plans dont l'utilisateur connecté e
 
 
 Widget "Mes dossiers visites"
------------------------------
+#############################
 
 .. image:: widget_dossier_instruction_mes_visites.png
 
@@ -125,7 +127,7 @@ Ce widget liste les 5 plus anciens dossiers visites dont l'utilisateur connecté
 
 
 Widget "Mes infos"
-------------------
+##################
 
 .. image:: widget_mes_infos.png
 
@@ -133,7 +135,7 @@ Ce widget a été créé spécifiquement pour des besoins de test de l'applicati
 
 
 Widget "Mes visites à réaliser"
--------------------------------
+###############################
 
 .. image:: widget_mes_visites_a_realiser.png
 
@@ -141,7 +143,7 @@ Ce widget liste les 5 prochaines visites à réaliser par l'utilisateur avec un 
 
 
 Widget "Mon activité"
----------------------
+#####################
 
 .. image:: widget_mon_activite.png
 
@@ -149,7 +151,7 @@ Ce widget représente les chiffres statistiques définis dans la section Pilotag
 
 
 Widget "Profil non configuré"
------------------------------
+#############################
 
 .. image :: widget_profil_non_configure.png
 
@@ -157,7 +159,7 @@ Ce widget permet d'informer l'utilisateur que son profil n'est pas encore config
 
 
 Widget "Programmations à valider"
----------------------------------
+#################################
 
 .. image:: widget_programmation_a_valider.png
 
@@ -165,7 +167,7 @@ Principalement destiné au cadre, ce widget permet d'afficher toutes les program
 
 
 Widget "Programmations urgentes"
---------------------------------
+################################
 
 .. image:: widget_programmation_urgentes.png
 
