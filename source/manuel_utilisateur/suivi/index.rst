@@ -17,6 +17,242 @@ La rubrique "Suivi" est divisée en catégories :
 - Pilotage
 
 
+Programmations
+==============
+
+(:menuselection:`Suivi --> Programmations --> Gestion`)
+
+La programmation des visites est gérée par semaine, elle est identifiée par l'année et le numéro de semaine (Ex : 2015/39). Les numéros de semaines sont calculées selon la norme ISO (chaque semaine fait 7 jours et peut être à cheval sur deux années selon l'année il peut y en avoir 52 ou 53).
+
+
+Le listing des programmations
+-----------------------------
+
+Ce listing présente les programmations spécifiques au service de l'utilisateur connecté. 
+
+.. image:: programmations-listing.png
+
+Ajouter une programmation
+-------------------------
+
+Le listing des programmations présente un bouton "Ajouter" qui permet d'accéder au formulaire d'ajout d'une nouvelle semaine de programmation.
+
+.. image:: programmations-form-ajouter.png
+
+Par défaut, le formulaire d'ajout d'une semaine de programmation est pré-rempli avec le numéro de semaine supérieur à celui de la dernière semaine de programmation existante. Par exemple si la dernière semaine créée est 2015/23 alors la prochaine sera 2015/24.
+
+La fiche de la programmation
+----------------------------
+
+.. image:: programmations-fiche.png
+
+Onglet "Visites"
+################
+
+Cet onglet présente la liste de toutes les visites liées à la programmation en cours. Les informations présentées sont :
+
+- la date et l'heure de la visite,
+- l'état de la visite,
+- le technicien,
+- l'état d'envoi des convocations aux exploitants,
+- la date d'annulation s'il y en a une,
+- les versions de programmation pendant la vie de la visite. 
+
+En cliquant sur la ligne on accédera à la visite avec son détail et tous les envois liés. On aura aussi accès aux fonctions d'envoi de convocation ou courrier d'annulation.
+
+La vie de la programmation
+--------------------------
+
+Le numéro de version à la création de la programmation est 1. Il est incrémenté chaque fois qu'une nouvelle version de la programmation est créée.
+
+L'état de la programmation est "En préparation" par défaut. Les états sont successivement :
+
+- "En préparation" : c'est uniquement quand la programmation est dans cet été que l'on peut ajouter,  modifier et annuler les visites. Depuis cet état l'action finaliser la programmation est disponible et permet de passer dans l'état "Finalisée".
+- "Finalisée" : il est possible de la réouvrir, ce qui la repasse à l'état "En préparation" ou de la valider ce qui la passe à l'état "Validée".
+- "Validée" : il est possible de générer les convocations et/ou de créer une nouvelle version de la programmation, ce qui la répasse à l'état "En préparation" en incrémentant le numéro de version. 
+
+Les convocations
+################
+
+Liste des statuts des convocations :
+
+- Vide : la programmation est "En préparation" ou "Finalisée" sur une version 1 ou sur une version > 1 dont le statut de la convocation était vide ou "À envoyer".
+- "À envoyer" : la programmation est "Validée" sur une version 1.
+- "À compléter" ou "À renvoyer" : si sur une version > à 1 et le statut de la convocation était "Envoyée".
+- "Envoyée" : si les convocations sont envoyées.
+
+La convocation des exploitants
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Les convocatiosn sont des documents générés et apparaissent dans l'onglet "Documents Générés" dans le contexte du dossier d'instruction.
+
+Les convocations des exploitants sont dans l'ordre :
+
+- Non effectuées pour la version courante (tant que la version n'est pas validée on laisse le champ vide)
+- A envoyer (la programmation a été validée et aucune convocation n'a été envoyée)
+- Envoyées (toutes les convocations ont été envoyées)
+- A compléter (si les convocations étaient Envoyées dans une version précédente, il faut compléter les envois)
+
+.. image:: programmations-action-envoyer_convoc_exploit-link.png
+
+
+L'action "Générer les convocations exploitant" génère pour chaque visite dont le statut d'envoi de convocation est "à envoyer" un document généré à chaque contact de l'établissement marqué comme destinataire des courriers (que ce soit pour les courriers de convocation ou pour les courriers d'annulation).
+
+
+La convocation des membres
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Les convocations des membres sont dans l'ordre :
+
+- Non envoyées pour la version courante (tant que la version n'est pas validée on laisse le champ vide)
+- "A envoyer" (la programmation a été validée. Si c'est une nouvelle version de la programmation, celle-ci est tout de même A envoyer.)
+- "Envoyée" (la programmation a été envoyée)
+
+.. image:: programmations-action-envoyer_part-link.png
+
+Une action permet d'envoyer par mail la convocation des membres au format PDF à tous les contacts institutionnels du service de la programmation dont la case "réception de la programmation" est cochée ainsi qu'à tous les techniciens présents dans les visites de la programmation.
+
+Le document comporte les informations suivantes :
+
+- planning de la programmation de la semaine
+- historique, comportant pour chaque version de la programmation :
+
+* numéro de version de la programmation
+* liste des visites ajoutées
+* liste des visites annulées
+* date de la finalisation de la version de la programmation
+
+.. image:: programmations-action-view_convoc_membres-link.png
+
+Une action permet de télécharger la convocation une fois que la programmation est validée.
+
+
+Exemple
+#######
+
+Voici donc un scénario pour une semaine "2014/07" :
+
+- Version 1: préparation, finalisation, réouverture pour correction, finalisation, validation, envoi des convocations exploitant seulement.
+- Version 2: suite aux retours des exploitants, préparation v2, finalisation, validation, envoi des convocations exploitant seulement.
+- Version 3: suite aux retours des exploitants, préparation v3, finalisation, validation, envoi des convocations exploitant et membres.
+- Version 4: suite aux retours des exploitants, préparation v4, finalisation, validation, envoi des convocations exploitant et membres.
+
+
+
+La planification des visites
+----------------------------
+
+.. image:: programmations-action-programmer-link.png
+
+L'écran de planification des visites est composé de deux blocs principaux : la liste des dossiers d'instruction de type VISIT qui sont en attente de programmation et l'agenda des visites de la semaine.
+
+.. image:: programmations-action-programmer-view.png
+
+
+Bloc de propositions
+####################
+
+Les propositions sont classées par défaut selon l'ordre suivant :
+
+- 1 - A poursuive, par code de technicien, croissant,
+- 2 - Visites périodiques avec locaux à sommeil,
+- 3 - Visites de contrôle avec locaux à sommeil,
+- 4 - Visites de réception,
+- 5 - Visites périodiques sans locaux à sommeil,
+- 6 - Visites de contrôle sans locaux à sommeil,
+- les visites sont classées par date de visite croissante.
+
+En plus du tri par défaut, il est possible de filtrer les dossiers selon :
+
+- leur type de visite : une liste à choix propose soit tous les types, soit les périodiques, soit les contrôles, soit les réceptions,
+- si la visite est à poursuivre (la visite doit avoir lieu en plusieurs fois),
+- si la visite porte sur un établissement avec locaux à sommeil,
+- si la visite est en retard (c'est-à-dire si la date butoir du dossier de coordination est dans le passé),
+- si la visite porte sur un dossier d'instruction prioritaire.
+
+De plus chaque colonne peut être filtrée grâce à un champ de recherche ainsi que triée grâce à un clic sur l'entête de colonne.
+
+
+Bloc agenda
+###########
+
+Le calendrier comporte les 7 jours de la semaine, du lundi au dimanche.
+
+Par défaut, l'agenda présenté est celui de tous les techniciens confondus ("Tous"), il n'est alors pas possible de planifier les visites, les dates de congés ne sont pas affichés et les périodes préférentielles des agents non plus. 
+
+Le calendrier affiche alors toutes les visites planifiées. L'affichage comporte le N° d'établissement et l'acronyme du technicien. 
+
+Un clic sur l'affichage permet d'afficher un bloc comportant les informations clés de la visite :
+- données du tableau de présentation,
+- ainsi qu'un hyperlien permettant d'ouvrir l'établissement et/ou le dossier de visite,
+- N° établissement,
+- acronyme du technicien,
+- type, cat, sommeil,
+- type de visite,
+- commission compétente.
+
+Lorsqu'un technicien est sélectionné, seules ses visites sont affichées. Les fonds du calendrier sont coloriés en rouge pour les périodes de congés du technicien (par jours et heures) et en vert pour les périodes privilégiées (par demi-journée). Il est alors possible de lui affecter des visites en effectuant un tirer-lacher de la liste de propositions vers le calendrier de planification.
+
+
+Planifier une nouvelle visite
+#############################
+
+Il faut préalablement sélectionner un technicien. Son agenda est alors affiché. Il est dès lors possible de tirer une proposition de visite du cadre supérieur vers une zone de l'agenda du technicien. Cette action provoque l'ouverture d'un formulaire d'ajout d'une visite : celui-ci contient des informations d'aide à la planification et des champs à renseigner.
+
+Informations d'aide à la programmation :
+
+- Code établissement,
+- libellé établissement,
+- date de prochaine visite périodique prévue,
+- type, catégorie, locaux à sommeil,
+- type de la visite,
+- objet de la visite (par défaut = type de visite),
+- durée prévue de visite,
+- liste des autres visites liées à ce dossier de visite (cette liste est disponible depuis l'onglet "Visites" du dossier d'instruction concerné dont le lien est présent au-dessus).
+
+Liste des champs à renseigner :
+
+- date de la visite,
+- heure de début de visite,
+- heure de fin de visite,
+- « à poursuivre »,
+- observations (texte libre).
+
+Il est à noter que le technicien peut aussi passer le dossier de visite en planification « à poursuivre » lors de la rédaction de son PV de visite.
+
+
+La vie de la visite
+###################
+
+- Visualiser la visite programmée : ceci ouvre la fiche de visite programmée dans une fenêtre superposée à la vue courante. Cette fenêtre contient les informations présentées et saisies lors de la planification de la visite, ainsi que le statut de la visite. Elle comporte notamment un lien direct vers la fiche de l'établissement et un autre lien vers le dossier de visite.
+
+- Modifier la visite : la modification de la date et/ou de l'heure et/ou du technicien de la visite peut se faire jusqu'à ce que la convocation exploitant soit envoyée. Après ce moment il faudra annuler la visite puis la reprogrammer.
+
+- Annuler la visite programmée : il faut alors saisir la date d'annulation (par défaut la date du jour) ainsi que le motif d'annulation. Le motif est choisi au sein de la liste suivante :
+
+ * Annulation exceptionnelle
+ * SPGR
+ * Indisponibilité d'un membre
+ * SCDS
+ * Exploitant indisponible
+ * Exploitant défaillant
+ * NPAI
+
+Lorsqu'une visite est annulée pour tout motif autre que NPAI, le dossier de visite repasse
+en dossier à programmer si c'était la seule date de visite, en dossier à poursuivre s'il y a
+d'autres visites programmées.
+
+Lorsqu'une visite est annulée pour motif NPAI le dossier de visite est annulé et l'établissement est affiché dans le widget "Établissement NPAI". Il est alors nécessaire de le traiter hors logiciel afin de mettre à jour les informations de l'établissement et prendre les mesures nécessaires.
+
+Un document généré d'annulation est géré selon le même modèle que le document généré de convocation et le statut de convocation est donc noter comme "à compléter" jusqu'à la génération des convocations exploitants par lot à la validation de la version de la programmation.
+
+
+Suppression d'une programmation
+-------------------------------
+
+Il est possible de supprimer une semaine de programmation uniquement si aucune visite n'y a jamais été planifiée.
+
+
 Réunions
 ========
 
