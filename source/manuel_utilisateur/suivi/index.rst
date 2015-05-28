@@ -148,8 +148,6 @@ Ajouter un document entrant depuis la bannette permet de ne pas le lié à un é
 Si dans le cas inverse, un établissement, un dossier de coordination ou un dossier d'instruction est renseigné alors celui-ci est "Qualifié".
 Une permission special permet de qualifier et valider directement le document entrant.
 
-.. image:: piece_a_valider-listing.png
-
 Depuis un établissement/dossier de coordination/dossier d'instruction
 #####################################################################
 
@@ -159,6 +157,8 @@ La fiche d'un document entrant
 ------------------------------
 
 .. image:: piece-fiche.png
+
+Les documents présents au format PDF, PNG et JPG peuvent être visualisés directement dans le navigateur à condition que celui ci dispose des composants nécessaire (lecteur PDF Acrobat avec plugin navigateur par exemple). Les autres types de document devront être téléchargés pour être visualisés au moyen du logiciel adapté.
 
 Marquer comme lu un document entrant
 ------------------------------------
@@ -187,9 +187,15 @@ Le suivi peut être désactiver et ainsi le document n'apparaitra plus dans la l
 Valider un document entrant
 ---------------------------
 
-.. image:: piece-action-valider-link.png
+.. image:: piece-action-valide-link.png
 
 Les documents entrants lié à un établissement/dossier de coordination/dossier d'instruction sans permission special doivent être validés.
+
+La dématérialisation
+--------------------
+
+A intervalle régulier (toutes les 15 minutes), openARIA récupère les fichiers numérisés et stockés sur un espace disque (distinct pour chaque service) et les intègre à l'applicatif (etéventuellement en GED).
+Les fichiers traités sont ensuite déplacés dans un autre répertoire sur le système de fichier. Ce répertoire fait également l'objet d'un traitement quotidien, qui purge définitivement les documents antérieurs à : ([Date du jour du traitement] – 60 jours).
 
 
 Programmations
