@@ -17,6 +17,181 @@ La rubrique "Suivi" est divisée en catégories :
 - Pilotage
 
 
+Documents entrants
+==================
+
+(:menuselection:`Suivi --> documents entrants`)
+
+Les listings des documents entrants
+-----------------------------------
+
+Il existe plusieurs listings des documents entrants.
+
+Depuis le menu "Bannette"
+#########################
+
+La bannette affiche tous les documents entrants qui ne sont pas encore liés à un établissement et/ou dossier de coordination et/ou dossier d'instruction. Les informations présentées sont :
+
+- le nom du document,
+- le type du document (acte, courrier de l'explotant, ...),
+- la date de création du document,
+- la date de réception du document,
+- la date d'émission du document,
+- la date butoir du document,
+- le statut du document (en cours, qualifié, ...).
+
+.. image:: piece_bannette-listing.png
+
+Depuis l'onglet "Documents Entrants" d'un établissement
+#######################################################
+
+L'onglet "Document Entrants" sur la fiche d'un établissement affiche tous ses courriers entrants liés. Les informations présentées sont :
+
+- le nom du document,
+- le type du document (acte, courrier de l'explotant, ...),
+- la date de création du document,
+- la date de réception du document,
+- la date d'émission du document,
+- la date butoir du document,
+- le statut du document (en cours, qualifié, ...).
+
+.. image:: piece_etablissement-listing.png
+
+Depuis l'onglet "Documents Entrants" d'un dossier de coordination
+#################################################################
+
+L'onglet "Document Entrants" sur la fiche d'un dossier de coordination affiche tous ses courriers entrants liés. Les informations présentées sont :
+
+- le nom du document,
+- le type du document (acte, courrier de l'explotant, ...),
+- la date de création du document,
+- la date de réception du document,
+- la date d'émission du document,
+- la date butoir du document,
+- le statut du document (en cours, qualifié, ...).
+
+.. image:: piece_dc-listing.png
+
+Depuis l'onglet "Documents Entrants" d'un dossier d'instruction
+###############################################################
+
+L'onglet "Document Entrants" sur la fiche d'un dossier d'instruction affiche tous ses courriers entrants liés. Les informations présentées sont :
+
+- le nom du document,
+- l'établissement,
+- le dossier de coordination,
+- le dossier d'instruction,
+- la date butoir du document,
+- le statut du document (en cours, qualifié, ...).
+
+.. image:: piece_di-listing.png
+
+Depuis le menu "Suivi"
+######################
+
+Ce menu affiche les documents entrants suivis qui n'ont pas de date butoir ou dont leur date butoir <= à la date du jour. Les informations présentées sont :
+
+- le nom du document,
+- le type du document (acte, courrier de l'explotant, ...),
+- la date de création du document,
+- la date de réception du document,
+- la date d'émission du document,
+- la date butoir du document,
+- le statut du document (en cours, qualifié, ...)
+
+.. image:: piece_suivi-listing.png
+
+Depuis le menu "À Valider"
+##########################
+
+Les documents entrants qui demande une validation sont affichés dans ce listing. Les informations présentées sont :
+
+- le nom du document,
+- le type du document (acte, courrier de l'explotant, ...),
+- la date de création du document,
+- la date de réception du document,
+- la date d'émission du document,
+- la date butoir du document.
+
+.. image:: piece_a_valider-listing.png
+
+Depuis le menu "Mes Non Lus"
+############################
+
+(:menuselection:`Dossiers --> documents entrants --> mes non lus`)
+
+Liste les documents entrants non lu d'un dossier d'instruction pour son technicien. Les informations présentées sont :
+
+- le dossier d'instruction,
+- l'établissement,
+- l'adresse de l'établissement,
+- le nom du document,
+- la date de création du document,
+- la date butoir du document.
+
+.. image:: piece_non_lu-listing.png
+
+Ajouter un document entrant
+---------------------------
+
+Un document entrant peut être ajouté depuis plusieurs endroit de l'application, depuis la bannette, depuis un établissement, depuis un dossier de coordination ou depuis un dossier d'instruction.
+
+Si la liaison est faite depuis un dossier d'instruction alors le document sera lié automatiquement au dossier de coordination et à l'établissement. Même traitement depuis le dossier de coordination, le document sera lié automatiquement à l'établissement.
+
+.. image:: piece-form-ajouter.png
+
+Depuis la banette
+#################
+
+Ajouter un document entrant depuis la bannette permet de ne pas le lié à un établissement, un dossier de coordination ou un dossier d'instruction, dans ce cas il sera "En cours".
+
+Si dans le cas inverse, un établissement, un dossier de coordination ou un dossier d'instruction est renseigné alors celui-ci est "Qualifié".
+Une permission special permet de qualifier et valider directement le document entrant.
+
+.. image:: piece_a_valider-listing.png
+
+Depuis un établissement/dossier de coordination/dossier d'instruction
+#####################################################################
+
+Ajouter un document entrant depuis un établissement, un dossier de coordination ou un dossier d'instruction est identique à l'ajout depuis la bannette mais le lien sera automatiquement fait avec l'enregistrement en question.
+
+La fiche d'un document entrant
+------------------------------
+
+.. image:: piece-fiche.png
+
+Marquer comme lu un document entrant
+------------------------------------
+
+Lorsqu'un document entrant est lié à un dossier d'instruction, le technicien responsable est notifié de son existence depuis le widget "Mes documents entrants non lus" sur son tableau de bord.
+
+.. image:: piece-action-lu-link.png
+
+Une fois qu'il a pris connaissance des consignes du document, il peut le marquer comme lu.
+
+.. image:: piece-action-non_lu-link.png
+
+Un document entrant lu peut être marqué comme non lu.
+
+Suivre un document entrant
+--------------------------
+
+.. image:: piece-action-suivi-link.png
+
+Un document entrant peut être suivi et apparaitre dans le widget "Documents entrants suivis" du tableau de bord.
+
+.. image:: piece-action-non_suivi-link.png
+
+Le suivi peut être désactiver et ainsi le document n'apparaitra plus dans la liste.
+
+Valider un document entrant
+---------------------------
+
+.. image:: piece-action-valider-link.png
+
+Les documents entrants lié à un établissement/dossier de coordination/dossier d'instruction sans permission special doivent être validés.
+
+
 Programmations
 ==============
 
