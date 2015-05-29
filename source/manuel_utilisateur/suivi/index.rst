@@ -198,6 +198,115 @@ A intervalle régulier (toutes les 15 minutes), openARIA récupère les fichiers
 Les fichiers traités sont ensuite déplacés dans un autre répertoire sur le système de fichier. Ce répertoire fait également l'objet d'un traitement quotidien, qui purge définitivement les documents antérieurs à : ([Date du jour du traitement] – 60 jours).
 
 
+Documents générés
+=================
+
+(:menuselection:`Suivi --> documents générés`)
+
+Les listings des documents générés
+----------------------------------
+
+Il existe plusieurs listings des documents générés.
+
+Depuis le menu "Gestion"
+########################
+
+Le menu "Gestion" permet d'afficher tous les documents générés.
+
+.. image:: courrier-listing.png
+
+Depuis l'onglet "Documents Générés" d'un établissement
+######################################################
+
+L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses courriers générés liés.
+
+.. image:: courrier_etablissement-listing.png
+
+Depuis l'onglet "Documents Générés" d'un dossier de coordination
+################################################################
+
+L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses documents générés liés.
+
+.. image:: courrier_dossier_coordination-listing.png
+
+Depuis l'onglet "Documents Générés" d'un dossier d'instruction
+##############################################################
+
+L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses courriers générés liés.
+
+.. image:: courrier_dossier_instruction-listing.png
+
+Ajouter un document généré
+--------------------------
+
+Les documents générés s'ajoute manuellement depuis les onglets d'un établissement/dossier de coordination/dossier d'instruction, ou automatiquement lors de d'action spécifique dans l'application comme par exemple la génération d'un PV.
+
+.. image:: courrier-form-ajouter.png
+
+Le choix du ou des destinataires se fait grâce au champ de sélection multiple "Contact liés", la liste est composée des contacts de l'établissement, des pétitionnaires du dossier de coordination et des contacts institutionnels.
+
+Il est possible d'utiliser des textes types à insérer dans les champs de complément.
+
+.. image:: piece_texte_type-listing.png
+
+La fiche d'un document généré
+-----------------------------
+
+.. image:: courrier-fiche.png
+
+Prévisualiser le document PDF
+-----------------------------
+
+.. image:: courrier-action-preview-link.png
+
+Le redacteur du document généré peut, tant que le document n'est pas finalisé, contrôler le rendu final du PDF.
+
+Finaliser un document généré
+----------------------------
+
+Une fois la rédaction du document généré, il peut être finalisé.
+
+.. image:: courrier-action-finalise-link.png
+
+Lors de la finalisation du document généré, si celui-ci à plusieurs destinataires alors un document unique est créée pour chacun d'eux et reste lié au document "mailing". Dans l'autre situation, si le document généré à un destinataire alors aucun autre enregistrement n'est ajouté.
+Sur chaque courrier il est possible de sélectionner un autre courrier du même dossier pour l'envoyer en pièce jointe.
+
+.. image:: courrier-action-definalise-link.png
+
+Un document généré peut être 
+
+Le formulaire de suivi d'un document généré
+-------------------------------------------
+
+(:menuselection:`Suivi --> documents générés --> suivi par code barres`)
+
+Lorsque le document généré est finalisé, il fait l'objet d'un circuit de signature avant son envoi. Il est donc nécessaire d'avoir la possibilité de mettre à jour les dates de suivi.
+
+.. image:: courrier_suivi-fiche.png
+
+Depuis ce formulaire, il suffit de scanner le code imprimé sur le document généré pour accéder au contexte du document généré et de cliquer sur l'action "Modifier" pour renseigner les dates de suivi.
+
+Le formulaire d'impression des étiquettes RAR
+---------------------------------------------
+
+(:menuselection:`Suivi --> documents générés --> édition rar`)
+
+Les pré-imprimés de la Poste des lettres recommandées avec accusé de réception (lettres RAR) sont fournis vierges. Le code-barres du document généré doit être imprimé sur le troisième feuillet qui lui revient pour pouvoir saisir dans l'application les dates de suivi.
+
+.. image:: courrier_rar-fiche.png
+
+Le formulaire permet de renseigner une date d'envoi, par défaut la date du jour, et de scanner à la douchette les documents générés concernés. Le bouton de validation génère un fichier PDF contenant l'édition de tous les bordereaux RAR dans l'ordre de scanne. Lors de la génération du fichier des RAR, la date d'envoi RAR est mise à jour sur le suivi des documents générés.
+
+Les contacts institutionnels
+----------------------------
+
+(:menuselection:`Suivi --> documents générés --> contact institutionnel`)
+
+.. image:: courrier_rar-fiche.png
+
+Les cases à cocher "Réception de la programmation" et "Réception des éditions liées aux commissions" permettent de recevoir, respectivement, les convocations de membre des programmations de visite et les convocations et comptes rendus de réunion du service du contact. Si le contact institutionnel n'a pas de service alors il reçois les documents de tous les services.
+
+
 Programmations
 ==============
 
