@@ -104,7 +104,7 @@ Ce menu affiche les documents entrants suivis qui n'ont pas de date butoir ou do
 Depuis le menu "À Valider"
 ##########################
 
-Les documents entrants qui demande une validation sont affichés dans ce listing. Les informations présentées sont :
+Les documents entrants qui demandent une validation sont affichés dans ce listing. Les informations présentées sont :
 
 - le nom du document,
 - le type du document (acte, courrier de l'explotant, ...),
@@ -134,7 +134,7 @@ Liste les documents entrants non lu d'un dossier d'instruction pour son technici
 Ajouter un document entrant
 ---------------------------
 
-Un document entrant peut être ajouté depuis plusieurs endroit de l'application, depuis la bannette, depuis un établissement, depuis un dossier de coordination ou depuis un dossier d'instruction.
+Un document entrant peut être ajouté depuis plusieurs endroits de l'application, depuis la bannette, depuis un établissement, depuis un dossier de coordination ou depuis un dossier d'instruction.
 
 Si la liaison est faite depuis un dossier d'instruction alors le document sera lié automatiquement au dossier de coordination et à l'établissement. Même traitement depuis le dossier de coordination, le document sera lié automatiquement à l'établissement.
 
@@ -143,10 +143,10 @@ Si la liaison est faite depuis un dossier d'instruction alors le document sera l
 Depuis la banette
 #################
 
-Ajouter un document entrant depuis la bannette permet de ne pas le lié à un établissement, un dossier de coordination ou un dossier d'instruction, dans ce cas il sera "En cours".
+Ajouter un document entrant depuis la bannette permet de ne pas le lier à un établissement, un dossier de coordination ou un dossier d'instruction, dans ce cas il sera "En cours".
 
 Si dans le cas inverse, un établissement, un dossier de coordination ou un dossier d'instruction est renseigné alors celui-ci est "Qualifié".
-Une permission special permet de qualifier et valider directement le document entrant.
+Une permission speciale permet de qualifier et valider directement le document entrant.
 
 Depuis un établissement/dossier de coordination/dossier d'instruction
 #####################################################################
@@ -158,7 +158,7 @@ La fiche d'un document entrant
 
 .. image:: piece-fiche.png
 
-Les documents présents au format PDF, PNG et JPG peuvent être visualisés directement dans le navigateur à condition que celui ci dispose des composants nécessaire (lecteur PDF Acrobat avec plugin navigateur par exemple). Les autres types de document devront être téléchargés pour être visualisés au moyen du logiciel adapté.
+Les documents présents au format PDF, PNG et JPG peuvent être visualisés directement dans le navigateur à condition qu'il dispose des composants nécessaires (lecteur PDF Acrobat avec plugin navigateur par exemple). Les autres types de document devront être téléchargés pour être visualisés au moyen du logiciel adapté.
 
 Marquer comme lu un document entrant
 ------------------------------------
@@ -182,20 +182,19 @@ Un document entrant peut être suivi et apparaitre dans le widget "Documents ent
 
 .. image:: piece-action-non_suivi-link.png
 
-Le suivi peut être désactiver et ainsi le document n'apparaitra plus dans la liste.
+Le suivi peut être désactiv& et ainsi le document n'apparaitra plus dans la liste.
 
 Valider un document entrant
 ---------------------------
 
 .. image:: piece-action-valide-link.png
 
-Les documents entrants lié à un établissement/dossier de coordination/dossier d'instruction sans permission special doivent être validés.
+Les documents entrants liés à un établissement/dossier de coordination/dossier d'instruction sans permission speciale doivent être validés.
 
 La dématérialisation
 --------------------
 
-A intervalle régulier (toutes les 15 minutes), openARIA récupère les fichiers numérisés et stockés sur un espace disque (distinct pour chaque service) et les intègre à l'applicatif (etéventuellement en GED).
-Les fichiers traités sont ensuite déplacés dans un autre répertoire sur le système de fichier. Ce répertoire fait également l'objet d'un traitement quotidien, qui purge définitivement les documents antérieurs à : ([Date du jour du traitement] – 60 jours).
+Les documents numérisés et placés dans un dossier spécifique seront récupérés toutes les 15 minutes par openARIA. Tous ces documents seront disponibles depuis la bannette et pourront être traités depuis le menu du même nom.
 
 
 Documents générés
