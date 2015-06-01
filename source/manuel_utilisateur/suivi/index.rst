@@ -515,7 +515,7 @@ La vie de la visite
 
 - Visualiser la visite programmée : ceci ouvre la fiche de visite programmée dans une fenêtre superposée à la vue courante. Cette fenêtre contient les informations présentées et saisies lors de la planification de la visite, ainsi que le statut de la visite. Elle comporte notamment un lien direct vers la fiche de l'établissement et un autre lien vers le dossier de visite.
 
-- Modifier la visite : la modification de la date et/ou de l'heure et/ou du technicien de la visite peut se faire jusqu'à ce que la convocation exploitant soit envoyée. Après ce moment il faudra annuler la visite puis la reprogrammer.
+- Modifier la visite : la modification de la date (dans les dates de la semaine de rpogrammation) et/ou de l'heure et/ou du technicien de la visite peut se faire jusqu'à ce que la version de la programmation soit validée. Après ce moment il faudra annuler la visite puis la reprogrammer.
 
 - Annuler la visite programmée : il faut alors saisir la date d'annulation (par défaut la date du jour) ainsi que le motif d'annulation. Le motif est choisi au sein de la liste suivante :
 
