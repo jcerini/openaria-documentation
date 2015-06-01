@@ -29,7 +29,7 @@ Widget "Analyses à acter"
 
 .. image:: widget_analyse_a_acter.png
 
-L'objet de ce widget est de permettre au cadre de visualiser les analyses terminées et donc à valider. Le widget n'apparaît pas si aucune analyse n'est dans ce cas.
+L'objet de ce widget est de permettre au rôle "secrétaire" de visualiser les analyses validées et donc à acter (pour lesquelles il faut générer le Procès Verbal). Le widget n'apparaît pas si aucune analyse n'est dans ce cas.
 
 
 Widget "Analyses à valider"
@@ -37,7 +37,7 @@ Widget "Analyses à valider"
 
 .. image:: widget_analyse_a_valider.png
 
-L'objet de ce widget est de permettre au cadre de visualiser les  analyses terminées et donc à valider.
+L'objet de ce widget est de permettre au rôle "cadre" de visualiser les  analyses terminées et donc à valider.
 
 
 Widget "Autorités de police qui n'ont pas été notifiées ou exécutées"
