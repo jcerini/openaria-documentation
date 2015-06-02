@@ -217,28 +217,28 @@ Le menu "Gestion" permet d'afficher tous les documents générés.
 Depuis l'onglet "Documents Générés" d'un établissement
 ######################################################
 
-L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses courriers générés liés.
+L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses documents générés liés, les documents générés liés à ses dossiers de coordinations ainsi que les documents générés liés à ses dossiers d'instruction.
 
 .. image:: courrier_etablissement-listing.png
 
 Depuis l'onglet "Documents Générés" d'un dossier de coordination
 ################################################################
 
-L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses documents générés liés.
+L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses documents générés liés ainsi que les documents générés liés à ses dossiers d'instructions.
 
 .. image:: courrier_dossier_coordination-listing.png
 
 Depuis l'onglet "Documents Générés" d'un dossier d'instruction
 ##############################################################
 
-L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses courriers générés liés.
+L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses documents générés liés.
 
 .. image:: courrier_dossier_instruction-listing.png
 
 Ajouter un document généré
 --------------------------
 
-Les documents générés s'ajoute manuellement depuis les onglets d'un établissement/dossier de coordination/dossier d'instruction, ou automatiquement lors de d'action spécifique dans l'application comme par exemple la génération d'un PV.
+Les documents générés s'ajoute manuellement depuis les onglets d'un établissement/dossier de coordination/dossier d'instruction, ou automatiquement lors d'actions spécifiques dans l'application comme par exemple la génération d'un PV.
 
 .. image:: courrier-form-ajouter.png
 
@@ -248,15 +248,36 @@ Il est possible d'utiliser des textes types à insérer dans les champs de compl
 
 .. image:: piece_texte_type-listing.png
 
-La fiche d'un document généré
------------------------------
+Les fiches d'un document généré
+-------------------------------
+
+La fiche d'un document généré "mailing" ou s'il y a un destinataire.
 
 .. image:: courrier-fiche.png
+
+La fiche d'un document généré "enfant", c'est-à-dire créée automatiquement en cas de "mailing" lorsqu'il y a plusieurs destinataire.
+
+.. image:: courrier_enfant-fiche.png
+
+Les actions n'apparaissent pas dans ce cas.
+
+Modifier un document généré
+---------------------------
+
+Le formulaire de modification d'un document généré qui n'est pas encore validé.
+
+.. image:: courrier_devalide-form-modifier.png
+
+Le formulaire de modification d'un document généré validé, seulement les dates de suivi et le fichier signé sont modifiable.
+
+.. image:: courrier_valide-form-modifier.png
+
+Dans le cas d'un document généré "mailing" parent, ses données ne peuvent pas être modifiés tant que celui est validé.
 
 Prévisualiser le document PDF
 -----------------------------
 
-.. image:: courrier-action-preview-link.png
+.. image:: courrier-action-previsualiser-link.png
 
 Le redacteur du document généré peut, tant que le document n'est pas finalisé, contrôler le rendu final du PDF.
 
@@ -272,7 +293,7 @@ Sur chaque courrier il est possible de sélectionner un autre courrier du même 
 
 .. image:: courrier-action-definalise-link.png
 
-Un document généré peut être 
+Un document généré peut être réouvert en cas de modification. Si c'est un courrier "mailing", alors tous ses "enfants" seront supprimés.
 
 Le formulaire de suivi d'un document généré
 -------------------------------------------
@@ -281,7 +302,7 @@ Le formulaire de suivi d'un document généré
 
 Lorsque le document généré est finalisé, il fait l'objet d'un circuit de signature avant son envoi. Il est donc nécessaire d'avoir la possibilité de mettre à jour les dates de suivi.
 
-.. image:: courrier_suivi-fiche.png
+.. image:: courrier_suivi-form.png
 
 Depuis ce formulaire, il suffit de scanner le code imprimé sur le document généré pour accéder au contexte du document généré et de cliquer sur l'action "Modifier" pour renseigner les dates de suivi.
 
@@ -292,7 +313,7 @@ Le formulaire d'impression des étiquettes RAR
 
 Les pré-imprimés de la Poste des lettres recommandées avec accusé de réception (lettres RAR) sont fournis vierges. Le code-barres du document généré doit être imprimé sur le troisième feuillet qui lui revient pour pouvoir saisir dans l'application les dates de suivi.
 
-.. image:: courrier_rar-fiche.png
+.. image:: courrier_rar-form.png
 
 Le formulaire permet de renseigner une date d'envoi, par défaut la date du jour, et de scanner à la douchette les documents générés concernés. Le bouton de validation génère un fichier PDF contenant l'édition de tous les bordereaux RAR dans l'ordre de scanne. Lors de la génération du fichier des RAR, la date d'envoi RAR est mise à jour sur le suivi des documents générés.
 
@@ -301,9 +322,24 @@ Les contacts institutionnels
 
 (:menuselection:`Suivi --> documents générés --> contact institutionnel`)
 
-.. image:: courrier_rar-fiche.png
+Le listing des contacts institutionnels
+#######################################
+
+Le menu "Contact Institutionnel" permet d'afficher tous les contacts institutionnels.
+
+.. image:: contact_institutionnel-listing.png
+
+Ajouter un contact institutionnel
+#################################
+
+.. image:: contact_institutionnel-form-ajouter.png
 
 Les cases à cocher "Réception de la programmation" et "Réception des éditions liées aux commissions" permettent de recevoir, respectivement, les convocations de membre des programmations de visite et les convocations et comptes rendus de réunion du service du contact. Si le contact institutionnel n'a pas de service alors il reçois les documents de tous les services.
+
+La fiche d'un contact institutionnel
+####################################
+
+.. image:: contact_institutionnel-fiche.png
 
 
 Programmations
