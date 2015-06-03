@@ -214,8 +214,8 @@ Le menu "Gestion" permet d'afficher tous les documents générés.
 
 .. image:: courrier-listing.png
 
-Depuis l'onglet "Documents Générés" d'un établissement
-######################################################
+Depuis l'onglet "Documents Générés" d'un dossier d'instruction
+##############################################################
 
 L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses documents générés liés, les documents générés liés à ses dossiers de coordinations ainsi que les documents générés liés à ses dossiers d'instruction.
 
@@ -228,8 +228,8 @@ L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses
 
 .. image:: courrier_dossier_coordination-listing.png
 
-Depuis l'onglet "Documents Générés" d'un dossier d'instruction
-##############################################################
+Depuis l'onglet "Documents Générés" d'un établissement
+######################################################
 
 L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses documents générés liés.
 
@@ -238,13 +238,13 @@ L'onglet "Document Générés" sur la fiche d'un établissement affiche tous ses
 Ajouter un document généré
 --------------------------
 
-Les documents générés s'ajoute manuellement depuis les onglets d'un établissement/dossier de coordination/dossier d'instruction, ou automatiquement lors d'actions spécifiques dans l'application comme par exemple la génération d'un PV.
+Les documents générés s'ajoutent manuellement depuis les onglets d'un établissement/dossier de coordination/dossier d'instruction, ou automatiquement lors d'actions spécifiques dans l'application comme par exemple la génération d'un PV.
 
 .. image:: courrier-form-ajouter.png
 
 Le choix du ou des destinataires se fait grâce au champ de sélection multiple "Contact liés", la liste est composée des contacts de l'établissement, des pétitionnaires du dossier de coordination et des contacts institutionnels.
 
-Il est possible d'utiliser des textes types à insérer dans les champs de complément.
+Il est possible d'insérer des textes types dans les champs de complément. Ces textes types sont filtrés par le type du courrier.
 
 .. image:: piece_texte_type-listing.png
 
@@ -255,11 +255,11 @@ La fiche d'un document généré "mailing" ou s'il y a un destinataire.
 
 .. image:: courrier-fiche.png
 
-La fiche d'un document généré "enfant", c'est-à-dire créée automatiquement en cas de "mailing" lorsqu'il y a plusieurs destinataire.
+La fiche d'un document généré "enfant", c'est-à-dire créé automatiquement en cas de "mailing" lorsqu'il y a plusieurs destinataires.
 
 .. image:: courrier_enfant-fiche.png
 
-Les actions n'apparaissent pas dans ce cas.
+Les actions n'apparaissent pas sur cette fiche.
 
 Modifier un document généré
 ---------------------------
@@ -268,18 +268,18 @@ Le formulaire de modification d'un document généré qui n'est pas encore valid
 
 .. image:: courrier_devalide-form-modifier.png
 
-Le formulaire de modification d'un document généré validé, seulement les dates de suivi et le fichier signé sont modifiable.
+Le formulaire de modification d'un document généré validé, seules les dates de suivi et le fichier signé sont modifiables.
 
 .. image:: courrier_valide-form-modifier.png
 
-Dans le cas d'un document généré "mailing" parent, ses données ne peuvent pas être modifiés tant que celui est validé.
+Dans le cas d'un document généré "mailing" parent, ses données ne peuvent pas être modifiés tant que celui-ci est validé.
 
 Prévisualiser le document PDF
 -----------------------------
 
 .. image:: courrier-action-previsualiser-link.png
 
-Le redacteur du document généré peut, tant que le document n'est pas finalisé, contrôler le rendu final du PDF.
+Le rédacteur du document généré peut, tant que le document n'est pas finalisé, contrôler le rendu final du PDF.
 
 Finaliser un document généré
 ----------------------------
@@ -288,12 +288,12 @@ Une fois la rédaction du document généré, il peut être finalisé.
 
 .. image:: courrier-action-finalise-link.png
 
-Lors de la finalisation du document généré, si celui-ci à plusieurs destinataires alors un document unique est créée pour chacun d'eux et reste lié au document "mailing". Dans l'autre situation, si le document généré à un destinataire alors aucun autre enregistrement n'est ajouté.
+Lors de la finalisation du document généré, si celui-ci à plusieurs destinataires alors un document unique est créé pour chacun d'eux et reste lié au document "mailing". Dans l'autre situation, si le document généré à un destinataire alors aucun autre enregistrement n'est ajouté.
 Sur chaque courrier il est possible de sélectionner un autre courrier du même dossier pour l'envoyer en pièce jointe.
 
 .. image:: courrier-action-definalise-link.png
 
-Un document généré peut être réouvert en cas de modification. Si c'est un courrier "mailing", alors tous ses "enfants" seront supprimés.
+Un document généré peut être rouvert en cas de modification. Si c'est un courrier "mailing", alors tous ses "enfants" seront supprimés.
 
 Le formulaire de suivi d'un document généré
 -------------------------------------------
@@ -311,7 +311,7 @@ Le formulaire d'impression des étiquettes RAR
 
 (:menuselection:`Suivi --> documents générés --> édition rar`)
 
-Les pré-imprimés de la Poste des lettres recommandées avec accusé de réception (lettres RAR) sont fournis vierges. Le code-barres du document généré doit être imprimé sur le troisième feuillet qui lui revient pour pouvoir saisir dans l'application les dates de suivi.
+Les prés-imprimés de la Poste des lettres recommandées avec accusé de réception (lettres RAR) sont fournis vierges. Le code-barres du document généré doit être imprimé sur le troisième feuillet qui lui revient pour pouvoir saisir dans l'application les dates de suivi.
 
 .. image:: courrier_rar-form.png
 
@@ -334,7 +334,7 @@ Ajouter un contact institutionnel
 
 .. image:: contact_institutionnel-form-ajouter.png
 
-Les cases à cocher "Réception de la programmation" et "Réception des éditions liées aux commissions" permettent de recevoir, respectivement, les convocations de membre des programmations de visite et les convocations et comptes rendus de réunion du service du contact. Si le contact institutionnel n'a pas de service alors il reçois les documents de tous les services.
+Les cases à cocher "Réception de la programmation" et "Réception des éditions liées aux commissions" permettent de recevoir, respectivement, les convocations de membres des programmations de visite et les convocations et comptes rendus de réunion du service du contact. Si le contact institutionnel n'a pas de service alors il reçoit les documents de tous les services.
 
 La fiche d'un contact institutionnel
 ####################################
