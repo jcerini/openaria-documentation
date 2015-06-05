@@ -392,7 +392,7 @@ Le numéro de version à la création de la programmation est 1. Il est incréme
 
 L'état de la programmation est "En préparation" par défaut. Les états sont successivement :
 
-- "En préparation" : c'est uniquement quand la programmation est dans cet été que l'on peut ajouter,  modifier et annuler les visites. Depuis cet état l'action finaliser la programmation est disponible et permet de passer dans l'état "Finalisée".
+- "En préparation" : c'est uniquement quand la programmation est dans cet état que l'on peut ajouter,  modifier et annuler les visites. Depuis cet état l'action finaliser la programmation est disponible et permet  de passer dans l'état "Finalisée".
 - "Finalisée" : il est possible de la réouvrir, ce qui la repasse à l'état "En préparation" ou de la valider ce qui la passe à l'état "Validée".
 - "Validée" : il est possible de générer les convocations et/ou de créer une nouvelle version de la programmation, ce qui la répasse à l'état "En préparation" en incrémentant le numéro de version. 
 
