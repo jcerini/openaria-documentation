@@ -37,13 +37,13 @@ Widget "Analyses à valider"
 
 .. image:: widget_analyse_a_valider.png
 
-L'objet de ce widget est de permettre au rôle "cadre" de visualiser les  analyses terminées et donc à valider.
+L'objet de ce widget est de permettre au rôle "cadre" de visualiser les  analyses terminées et donc à valider. Le widget n'apparaît pas si aucune analyse n'est dans ce cas.
 
 
 Widget "Autorités de police qui n'ont pas été notifiées ou exécutées"
 #####################################################################
 
-L'objet de ce widget est de permettre de visualiser les autorités de police non notifiées ou exécutées. Le widget n'apparaît pas si aucune analyse n'est dans ce cas.
+L'objet de ce widget est de permettre de visualiser les autorités de police non notifiées ou exécutées. Le widget n'apparaît pas si aucune autorité de police n'est dans ce cas.
 
 
 Widget "Convocations exploitants à envoyer"
