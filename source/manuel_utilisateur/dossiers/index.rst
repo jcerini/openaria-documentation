@@ -122,6 +122,36 @@ Tous les dossiers
 La fiche du dossier d'instruction (DI)
 --------------------------------------
 
+
+Actions
+#######
+
+
++ Modifier
+    - Disponible si le DI n'est pas clôturé.
+    - Ouvre le formulaire de modification du dossier d'instruction.
+
++ Clôturer
+    - Disponible si le DI n'est pas clôturé, n'est pas à qualifier et, dans le cas d'un dossier de coordination périodique, s'il possède une visite.
+    - Clôture le dossier d'instruction.
+
++ Rouvrir
+    - Disponible si le DI est clôturé, n'est pas à qualifier et, dans le cas d'un dossier de coordination périodique, si ce dernier n'est pas clôturé.
+    - Rouvre le dossier d'instruction.
+
++ À poursuivre
+    - Disponible si le DI n'est pas clôturé, si son statut est "à programmer" ou "programmé" et s'il y a au moins une visite planifiée.
+    - Change le statut du dossier d'instruction en "à poursuivre".
+
++ À programmer
+    - Disponible si le DI n'est pas clôturé, si son statut est "programmé" et s'il n'y a aucune visite ou qu'elles sont toutes annulées.
+    - Change le statut du dossier d'instruction en "à programmer".
+
++ Programmer
+    - Disponible si le DI n'est pas clôturé, si son statut est "à programmer" ou "à poursuivre" et s'il y a au moins une visite planifiée.
+    - Change le statut du dossier d'instruction en "programmé".
+
+
 Onglet Analyse
 ##############
 

@@ -553,6 +553,8 @@ La vie de la visite
 
 - Modifier la visite : la modification de la date (dans les dates de la semaine de rpogrammation) et/ou de l'heure et/ou du technicien de la visite peut se faire jusqu'à ce que la version de la programmation soit validée. Après ce moment il faudra annuler la visite puis la reprogrammer.
 
+- À poursuivre : disponible si le dossier d'instruction n'est pas clôturé, si son statut est "à programmer" ou "programmé" et s'il y a au moins une visite planifiée. Change le statut du dossier d'instruction en "à poursuivre".
+
 - Annuler la visite programmée : il faut alors saisir la date d'annulation (par défaut la date du jour) ainsi que le motif d'annulation. Le motif est choisi au sein de la liste suivante :
 
  * Annulation exceptionnelle
