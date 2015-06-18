@@ -818,3 +818,86 @@ Cet écran permet de supprimer la réunion. Cette action est disponible seulemen
 
 Lors de la suppression, toutes les demandes de passages qui lui étaient affectées seront désaffectées et réapparaîtront dans le pool des demandes de passage pour être planifié à une autre réunion. 
 
+Pilotage
+========
+
+
+Statistiques
+------------
+
+(:menuselection:`Suivi --> Pilotage --> Statistiques`)
+
+Cette vue fournit sous forme de tableaux un état des lieux des éléments :
+
+- réalisés sur l'année courante
+
+ * visites (programmées, réalisées)
+
+|etat_des_lieux_visites|
+
+ * plans étudiés
+
+|etat_des_lieux_plans|
+
+ * avis favorables et défavorables par type de dossier
+
+- en cours
+
+ * visites en retard (par type et catégorie d'établissement)
+ * dossiers en cours (dont ceux avec une autorité de police en cours)
+
+|etat_des_lieux_dossiers|
+
+ * délais moyens (d'instruction, de suivi d'une autorité de police, d'une notification par courrier)
+
+|etat_des_lieux_delais|
+
+ * dossiers par type et statut
+
+Il est possible de générer une édition de ces données pour une année particulière (actuelle par défaut).
+
+|etat_des_lieux_editions|
+
+Cela crée un fichier PDF comportant les tableaux suivants :
+
+- visites réalisées
+
+ * par type et catégorie d'établissement
+ * par type de dossier et catégorie d'établissement
+
+- avis rendus
+
+ * par avis et type d'établissement
+ * par avis et catégorie d'établissement
+
+- décisions d'autorité de police
+
+ * par décision et catégorie d'établissement
+
+- études de plan
+
+ * par type et catégorie d'établissement
+ * par type de réunion et type d'établissement
+
+.. |etat_des_lieux_visites| image:: etat_des_lieux_visites.png
+.. |etat_des_lieux_plans| image:: etat_des_lieux_plans.png
+.. |etat_des_lieux_dossiers| image:: etat_des_lieux_dossiers.png
+.. |etat_des_lieux_delais| image:: etat_des_lieux_delais.png
+.. |etat_des_lieux_editions| image:: etat_des_lieux_editions.png
+
+
+Requêtes mémorisées
+-------------------
+
+(:menuselection:`Suivi --> Pilotage --> Requêtes mémorisées`)
+
+Le module 'requêtes mémorisées' permet d'exporter des données de l'application parmi les éléments suivants :
+
+.. image:: choix_requete_memorisee.png
+
+Chaque export peut être paramétré selon les critères ci-après :
+
+- tri (choix d'un champ)
+- format de sortie (fichier CSV ou tableau à l'écran)
+- si CSV le séparateur de champs (virgule, point-virgule ou pipe)
+- si tableau le nombre maximum d'enregistrements
