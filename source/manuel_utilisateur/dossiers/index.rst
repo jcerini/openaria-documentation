@@ -155,9 +155,40 @@ Actions
 Onglet Analyse
 ##############
 
+Dans le coin haut gauche de la fiche d'analyse figure son état : en cours de rédaction, terminée, validée ou actée.
+
+
+Dans le coin haut droit sont disponibles les actions que l'on peut effectuer dessus : changer son état et éditer un document (rapport, compte-rendu et prévisualisation de procès-verbal).
+
+
+Le corps de l'analyse est composé de plusieurs blocs de données qui ont chacun un titre et éventuellement un bouton modifier (cela dépend de vos droits et de l'état de l'analyse) :
+
+
++ Type de l'analyse
++ Objet
++ Descriptif de l'établissement
++ Classification de l'établissement
++ Données techniques
++ Réglementation applicable
++ Prescriptions
++ Documents présentés lors des visites et ceux fournis après ces dernières
++ Essais réalisés
++ Compte-rendu d'analyse
++ Observation
++ Avis proposé
++ Proposition de décision autorité de police
+
 
 Onglet PV
 #########
+
+En plus de lister les procès-verbaux rattachés au dossier d'instruction, cet onglet permet d'en ajouter de deux manières :
+
++ en générant automatiquement un PV, pour ce faire l'analyse du DI doit être validée
+
++ en ajoutant directement un PV tiers.
+
+Si l'analyse est rouverte puis revalidée, et qu'au moins un PV a déjà été généré, alors il devient possible de regénérer le dernier.
 
 
 Onglet Documents entrants
