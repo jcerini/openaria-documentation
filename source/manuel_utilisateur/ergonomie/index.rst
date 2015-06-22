@@ -115,7 +115,7 @@ Widget "Mes dossiers plans"
 
 .. image:: widget_dossier_instruction_mes_plans.png
 
-Ce widget liste les 5 plus anciens dossiers plans dont l'utilisateur connecté est identifié comme instructeur avec un lien vers le dossier en question ainsi qu'un lien qui permet d'accéder au listing de tous les dossiers plans de l'utilisateur.
+Ce widget liste les 5 plus récents dossiers plans dont l'utilisateur connecté est identifié comme instructeur avec un lien vers le dossier en question ainsi qu'un lien qui permet d'accéder au listing de tous les dossiers plans de l'utilisateur.
 
 
 Widget "Mes dossiers visites"
