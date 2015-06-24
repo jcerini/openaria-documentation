@@ -821,38 +821,94 @@ Lors de la suppression, toutes les demandes de passages qui lui étaient affect�
 Pilotage
 ========
 
-
 Statistiques
 ------------
 
 (:menuselection:`Suivi --> Pilotage --> Statistiques`)
 
-Cette vue fournit sous forme de tableaux un état des lieux des éléments :
+Etat des lieux des élements
+###########################
 
-- réalisés sur l'année courante
+Réalisés sur l'année courante
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
- * visites (programmées, réalisées)
+- Visites réalisées
 
 |etat_des_lieux_visites|
 
- * plans étudiés
+Nombre de visites programmées depuis le début de l'année : c'est le nombre total
+de visites dont la date est dans l'année courante du service de l'utilisateur.
+
+- Visites réalisées
+
+Nombre de visites réalisées depuis le début de l'année : c'est le nombre total
+de visites dont la date est inférieure à la date du jour et est dans l'année
+courante moins le nombre de visites annulées dont la date est inférieure à la
+date du jour et est dans l'année courante pour le service de l'utilisateur.
+
+- Plans étudiés
 
 |etat_des_lieux_plans|
 
- * avis favorables et défavorables par type de dossier
+Nombre de dossiers de plan étudiés depuis le début de l'année : c'est le nombre
+de dossier d'instruction dont le type est PLAN et dont la date de clôture est
+dans l'année courante pour les dossiers d'instruction qui concernent le service
+de l'utilisateur.
 
-- en cours
+- Avis
 
- * visites en retard (par type et catégorie d'établissement)
- * dossiers en cours (dont ceux avec une autorité de police en cours)
+Nombre d'avis défavorables et favorables émis (avec détail par type de dossier) :
+nombre de passage en réunion de commission plénière dont l'avis est DEFAVORABLE,
+et nombre de passage en réunion de commission plénière dont l'avis est DEFAVORABLE
+dont la date de réunion de commission est dans l'année courante pour les dossiers
+d'instruction qui concernent le service de l'utilisateur.
+
+En cours
+,,,,,,,,
+
+- Visites en retard
+
+Nombre de visites en retard (avec détail par type et catégorie d'établissement) :
+nombre d'établissements dont la date de la prochaine visite est passée.
+
+- Dossiers en cours
 
 |etat_des_lieux_dossiers|
 
- * délais moyens (d'instruction, de suivi d'une autorité de police, d'une notification par courrier)
+Nombre de dossiers en cours : c'est le nombre de dossiers d'instruction qui ne
+sont ni clôturés ni à qualifier.
+
+- AP en cours
+
+Nombre de dossiers avec autorité de police en cours : c'est le nombre de dossiers
+de coordination dont le champ « autorité de police en cours » est à oui et dont
+une des décisions d'autorité de police concerne le service de l'utilisateur.
+
+- Délai moyen d'instruction
 
 |etat_des_lieux_delais|
 
- * dossiers par type et statut
+Moyenne de la date de clôture du dossier moins sa date d'ouverture pour ceux
+clôturés il y a moins de six mois.
+
+- Délai moyen de suivi d'une autorité de police
+
+Moyenne sur les six derniers mois glissants de la date de clôture du dossier
+moins la date du premier passage en commission pour les dossiers comportant au
+moins une autorité de police sur les six derniers mois.
+
+- Délai moyen de notification par courrier
+
+Moyenne de la date de première présentation d'un courrier moins la date d'envoi
+du courrier.
+
+- Dossiers par type et par statut
+
+Nombre de dossiers d'instruction : par type (plan, visite) et statut (à
+qualifier, ...).
+
+Editions
+########
 
 Il est possible de générer une édition de ces données pour une année particulière (actuelle par défaut).
 
@@ -860,31 +916,34 @@ Il est possible de générer une édition de ces données pour une année partic
 
 Cela crée un fichier PDF comportant les tableaux suivants :
 
-- visites réalisées
+Visites réalisées
+,,,,,,,,,,,,,,,,,
 
- * par type et catégorie d'établissement
- * par type de dossier et catégorie d'établissement
+- par type et catégorie d'établissement
+- par type de dossier et catégorie d'établissement
 
-- avis rendus
+Avis rendus
+,,,,,,,,,,,
 
- * par avis et type d'établissement
- * par avis et catégorie d'établissement
+- par avis et type d'établissement
+- par avis et catégorie d'établissement
 
-- décisions d'autorité de police
+Décisions d'autorité de police
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
- * par décision et catégorie d'établissement
+- par décision et catégorie d'établissement
 
-- études de plan
+Etudes de plan
+,,,,,,,,,,,,,,
 
- * par type et catégorie d'établissement
- * par type de réunion et type d'établissement
+- par type et catégorie d'établissement
+- par type de réunion et type d'établissement
 
 .. |etat_des_lieux_visites| image:: etat_des_lieux_visites.png
 .. |etat_des_lieux_plans| image:: etat_des_lieux_plans.png
 .. |etat_des_lieux_dossiers| image:: etat_des_lieux_dossiers.png
 .. |etat_des_lieux_delais| image:: etat_des_lieux_delais.png
 .. |etat_des_lieux_editions| image:: etat_des_lieux_editions.png
-
 
 Requêtes mémorisées
 -------------------
