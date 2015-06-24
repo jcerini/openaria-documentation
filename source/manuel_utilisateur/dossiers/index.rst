@@ -155,13 +155,18 @@ Actions
 Onglet Analyse
 ##############
 
-Dans le coin haut gauche de la fiche d'analyse figure son état : en cours de rédaction, terminée, validée ou actée.
+Dans le coin haut gauche de la fiche d'analyse figure son état : en cours de
+rédaction, terminée, validée ou actée.
 
 
-Dans le coin haut droit sont disponibles les actions que l'on peut effectuer dessus : changer son état et éditer un document (rapport, compte-rendu et prévisualisation de procès-verbal).
+Dans le coin haut droit sont disponibles les actions que l'on peut effectuer
+dessus : changer son état et éditer un document (rapport, compte-rendu et
+prévisualisation de procès-verbal).
 
 
-Le corps de l'analyse est composé de plusieurs blocs de données qui ont chacun un titre et éventuellement un bouton modifier (cela dépend de vos droits et de l'état de l'analyse) :
+Le corps de l'analyse est composé de plusieurs blocs de données qui ont chacun
+un titre et éventuellement un bouton modifier (cela dépend de vos droits et de
+l'état de l'analyse) :
 
 
 + Type de l'analyse
@@ -182,13 +187,33 @@ Le corps de l'analyse est composé de plusieurs blocs de données qui ont chacun
 Onglet PV
 #########
 
-En plus de lister les procès-verbaux rattachés au dossier d'instruction, cet onglet permet d'en ajouter de deux manières :
+En plus de lister et de permettre d'accéder aux procès-verbaux rattachés au
+dossier d'instruction, cet onglet permet d'en ajouter de trois manières :
 
-+ en générant automatiquement un PV, pour ce faire l'analyse du DI doit être validée
++ en générant un PV, pour ce faire l'analyse du DI doit être validée
+
+Le numéro est défini automatiquement selon l'année de la date de rédaction.
+L'état de l'analyse devient "actée". On peut par la suite ajouter au PV généré
+sa version signée.
+
++ en regénérant le dernier PV
+
+Si l'analyse est rouverte puis revalidée, et qu'au moins un PV a déjà été généré,
+alors il devient possible de regénérer le dernier. Pour le reste le comportement
+est semblable à un PV généré.
 
 + en ajoutant directement un PV tiers.
 
-Si l'analyse est rouverte puis revalidée, et qu'au moins un PV a déjà été généré, alors il devient possible de regénérer le dernier.
+Aucun numéro n'est défini. On peut modifier ce procès-verbal par la suite.
+
+Dans tous les cas s'il s'agit d'un dossier d'instruction du service Sécurité
+Incendie et que l'on ajoute un PV signé, tiers ou relatif au PV (re)généré, cela
+met à jour les données techniques de l'établissement selon celles définies dans
+l'analyse. De plus et ce quelque soit le service, toute action sur un PV
+(création, modification) met à jour le couple de champs « proposition d'avis »
+et « proposition de complément d'avis » de la demande de passage liée grâce au
+couple de champs « proposition d'avis » et « proposition de complément d'avis »
+de l'analyse du dossier d'instruction sur lequel on se trouve.
 
 
 Onglet Documents entrants
