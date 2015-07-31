@@ -28,6 +28,8 @@ Dossiers à qualifier
 
 (:menuselection:`Dossiers --> DC (Coordination) --> Dossiers à qualifier`)
 
+Ce listing présente les dossiers de coordination à qualifier.
+
 
 Tous les dossiers
 #################
@@ -41,6 +43,18 @@ Ajouter un nouveau DC
 ---------------------
 
 (:menuselection:`Dossiers --> DC (Coordination) --> Nouveau dossier`)
+
+Cette entrée de menu permet d'accéder directement au formulaire d'ajout d'un dossier de coordination.
+
+.. image:: dossier_coordination-form-ajouter.png
+
+Les types de dossier de coordination ont un paramétrage qui permet de remplir automatiquement certains champs du formulaire :
+
+- la case à cocher de la qualification,
+- la case à cocher du dossier d'instruction sécurité,
+- la case à cocher du dossier d'instruction accessibilité.
+
+La case à cocher "À qualifier" définit si un dossier doit être qualifié ou non.
 
 
 La fiche du dossier de coordination (DC)
