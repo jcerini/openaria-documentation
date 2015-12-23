@@ -113,3 +113,126 @@ Le fonctionnement est le suivant :
 
 .. image:: etablissement-form-patrimoine.png
 
+Onglet UA depuis le contexte de l'établissement
+-----------------------------------------------
+
+Cet onglet présente un écran permettant d'accéder à trois listings :
+
+• un listing des UA validées
+• un listing des UA en projet
+• un listing des UA archivées
+
+Au clic sur l'onglet UA, on accède par défaut au listing des UA validées.
+
+.. image:: etablissement_onglet-ua.png
+
+Listing des UA validées
+#######################
+
+Une action d'ajout d'une UA est disponible depuis ce listing. Un lien représenté par un plus vert permet d'accéder au formulaire d'ajout d'une UA.
+
+Un clic sur chaque ligne du listing permet d'accéder à la fiche de visualisation d'une UA.
+
+Le tableau comporte les colonnes suivantes :
+
+- « libellé » : c'est le libellé de l'UA qui permet de l'identifier parmi les autres UA de l'établissement.
+- « acc. auditif » : information sur l'accessibilité au handicap auditif de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « acc. mental » : information sur l'accessibilité au handicap mental de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « acc. physique » : information sur l'accessibilité au handicap physique de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « acc. visuel » : information sur l'accessibilité au handicap visuel de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « dérogation » : information indiquant si l'UA possède une dérogation ou non. Les deux valeurs possibles sont : « Oui » et « » (vide).
+
+.. image:: etablissement-onglet-ua-listing-ua-validees.png
+
+
+Listing des UA en projet
+########################
+
+Aucune action d'ajout d'une UA n'est possible depuis ce listing.
+
+Un clic sur chaque ligne du listing permet d'accéder à la fiche de visualisation d'une UA.
+
+Le tableau comporte les colonnes suivantes :
+
+- « libellé » : c'est le libellé de l'UA qui permet de l'identifier parmi les autres UA de l'établissement.
+- « acc. auditif » : information sur l'accessibilité au handicap auditif de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « acc. mental » : information sur l'accessibilité au handicap mental de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « acc. physique » : information sur l'accessibilité au handicap physique de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « acc. visuel » : information sur l'accessibilité au handicap visuel de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « dérogation » : information indiquant si l'UA possède une dérogation ou non. Les deux valeurs possibles sont : « Oui » et « » (vide).
+
+.. image:: etablissement-onglet-ua-listing-ua-en-projet.png
+
+
+Listing des UA archivés
+#######################
+
+Aucune action d'ajout d'une UA n'est possible depuis ce listing.
+
+Un clic sur chaque ligne du listing permet d'accéder à la fiche de visualisation d'une UA.
+
+Le tableau comporte les colonnes suivantes :
+
+- « libellé » : c'est le libellé de l'UA qui permet de l'identifier parmi les autres UA de l'établissement.
+- « acc. auditif » : information sur l'accessibilité au handicap auditif de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « acc. mental » : information sur l'accessibilité au handicap mental de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « acc. physique » : information sur l'accessibilité au handicap physique de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « acc. visuel » : information sur l'accessibilité au handicap visuel de l'UA. Les valeurs possibles sont : « Oui » / « Non » / « » (vide).
+- « dérogation » : information indiquant si l'UA possède une dérogation ou non. Les deux valeurs possibles sont : « Oui » et « » (vide).
+- « état » : c'est l'état de l'UA. Les deux valeurs possibles sont : « en projet » et « validé ».
+
+.. image:: etablissement-onglet-ua-listing-ua-archives.png
+
+
+Les unités d'accessibilité (UA)
+===============================
+
+Les unités d'accessibilité (UA) permettent de découper les établissements en plus petites unités au sens de l'accessibilité. Ces unités ont vocation à stocker les données techniques particulières à cette unité au sein de l'établissement.
+
+
+Le listing des UA
+-----------------
+
+.. image:: etablissement-ua-listing.png
+
+Ce listing est un tableau qui fait apparaître toutes les UA qui ne sont pas archivées. Une recherche avancée permet de filtrer les UA qui apparaissent dans le listing. 
+
+Aucune action d'ajout d'une UA n'est possible depuis ce listing.
+
+Un clic sur chaque ligne du listing permet d'accéder à la fiche de visualisation d'une UA.
+
+Le tableau comporte les colonnes suivantes :
+
+- « libellé » : c'est le libellé de l'UA qui permet de l'identifier parmi les autres UA de l'établissement
+- « établissement » : même chose que pour le reste des listings
+- « adresse » : même chose que pour le reste des listings
+- « accessible » : les quatre informations sur l'accessibilité de l'UA sont concaténées dans la même cellule du tableau (auditif : « Oui » / « Non » / « » (vide), mental : « Oui » / « Non » / « » (vide), physique : « Oui » / « Non » / « » (vide), visuel : « Oui » / « Non » / « » (vide))
+- « état » : c'est l'état de l'UA. Les deux valeurs possibles sont : « en projet » et « validé »
+
+
+La recherche avancée des UA
+---------------------------
+
+.. image:: etablissement-ua-search.png
+
+La recherche avancée permet de filtrer les UA qui apparaissent dans le listing sur les critères suivants :
+
+- « Libellé » : texte libre sur le libellé de l'UA.
+- « Établissement » : texte libre sur le code et le libellé de l'établissement. Identique au critère de recherche du même nom dans les recherches avancées des écrans de listing de dossiers.
+- « Numéro » : texte libre. Identique au critère de recherche du même nom dans les recherches avancées des écrans de listing de dossiers.
+- « Voie » : texte libre. Identique au critère de recherche du même nom dans les recherches avancées des écrans de listing de dossiers.
+- « Arrondissement » : liste à choix sur l'arrondissement de l'établissement (valeurs : « 1er », « 2ème », ... Ce sont les valeurs disponibles dans le paramétrage des arrondissements ). Identique au critère de recherche du même nom dans les recherches avancées des écrans de listing de dossiers. Si aucune sélection « Choisir », ce critère n'applique aucun filtre sur le listing.
+- « État » : liste à choix sur l'état de l'UA (valeurs : « en projet », « validé »). Si aucune sélection « Choisir », ce critère n'applique aucun filtre sur le listing.
+- « Accessible auditif » : liste à choix sur l'information sur l'accessibilité au handicap auditif de l'UA (valeurs : « Oui », « Non »). Si aucune sélection « Choisir », ce critère n'applique aucun filtre sur le listing.
+- « Accessible mental » : liste à choix sur l'information sur l'accessibilité au handicap mental de l'UA (valeurs : « Oui », « Non »). Si aucune sélection « Choisir », ce critère n'applique aucun filtre sur le listing.
+- « Accessible physique » : liste à choix sur l'information sur l'accessibilité au handicap physique de l'UA (valeurs : « Oui », « Non »). Si aucune sélection « Choisir », ce critère n'applique aucun filtre sur le listing.
+- « Accessible visuel » : liste à choix sur l'information sur l'accessibilité au handicap visuel de l'UA (valeurs : « Oui », « Non »). Si aucune sélection « Choisir », ce critère n'applique aucun filtre sur le listing.
+
+La recherche avancée affiche les champs de recherche les uns à la suite des autres sans possibilité de regroupement.
+
+
+La fiche d'une UA
+-----------------
+
+.. image:: etablissement-ua-view.png
+
