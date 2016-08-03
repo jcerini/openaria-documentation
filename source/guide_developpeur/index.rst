@@ -5,7 +5,15 @@ Guide du développeur
 ####################
 
 
+Stratégie
+#########
+
+openARIA respecte la `stratégie de développement SD01 <http://openmairie.readthedocs.io/projects/omframework/fr/latest/rules/development_strategies.html#sd01>`_.
+
+
+Sommaire
+########
+
 .. toctree::
     :numbered:
-    :maxdepth: 3
-
+    :maxdepth: 2
