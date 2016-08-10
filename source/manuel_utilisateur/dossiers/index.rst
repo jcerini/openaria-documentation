@@ -60,12 +60,42 @@ La case à cocher "À qualifier" définit si un dossier doit être qualifié ou 
 La fiche du dossier de coordination (DC)
 ----------------------------------------
 
+Onglet Contacts
+###############
+
 Onglet DC Parents
 #################
 
 
-Onglet Documents entrants
+.. _dossiers_dc_onglet_documents_entrants:
+
+Onglet Documents Entrants
 #########################
+
+Listing standard (ou interne)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+L'onglet "Document Entrants" sur la fiche d'un dossier de coordination affiche tous ses documents entrants liés (ainsi que ceux éventuellement liés aux dossiers d'instruction). Les informations présentées sont :
+
+- le nom du document,
+- le type du document (acte, courrier de l'explotant, ...),
+- la date de création du document,
+- la date de réception du document,
+- la date d'émission du document,
+- la date butoir du document,
+- le statut du document (en cours, qualifié, ...).
+
+.. image:: dc-onglet-documents-entrants-listing.png
+
+
+.. _dossiers_dc_onglet_documents_entrants_swrod:
+
+Listing guichet unique
+,,,,,,,,,,,,,,,,,,,,,,
+
+Dans le cas où le module :ref:`'swrod' (Documents du guichet unique en lecture seule)<module_swrod>` est activé, l'onglet peut posséder un affichage différent si le DC contient une référence vers un dossier ADS. Dans ce cas, l'onglet 'Interne' présente les mêmes informations et actions que l'onglet 'Documents Entrants' standard et l'onglet 'Guichet Unique' présente une vue en lecture seule des documents concernant le dossier ADS du DC.
+
+.. image:: dc-onglet-documents-entrants-swrod-onglet-gu-view.png
 
 
 Onglet Documents générés
@@ -230,8 +260,34 @@ couple de champs « proposition d'avis » et « proposition de complément d'avi
 de l'analyse du dossier d'instruction sur lequel on se trouve.
 
 
-Onglet Documents entrants
+.. _dossiers_di_onglet_documents_entrants:
+
+Onglet Documents Entrants
 #########################
+
+Listing standard (ou interne)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+L'onglet "Document Entrants" sur la fiche d'un dossier d'instruction affiche tous ses documents entrants liés. Les informations présentées sont :
+
+- le nom du document,
+- l'établissement,
+- le dossier de coordination,
+- le dossier d'instruction,
+- la date butoir du document,
+- le statut du document (en cours, qualifié, ...).
+
+.. image:: di-onglet-documents-entrants-listing.png
+
+
+Listing guichet unique
+,,,,,,,,,,,,,,,,,,,,,,
+
+.. _dossiers_di_onglet_documents_entrants_swrod:
+
+Dans le cas où le module :ref:`'swrod' (Documents du guichet unique en lecture seule)<module_swrod>` est activé, l'onglet peut posséder un affichage différent si le DC contient une référence vers un dossier ADS. Dans ce cas, l'onglet 'Interne' présente les mêmes informations et actions que l'onglet 'Documents Entrants' standard et l'onglet 'Guichet Unique' présente une vue en lecture seule des documents concernant le dossier ADS du DC.
+
+.. image:: di-onglet-documents-entrants-swrod-onglet-gu-view.png
 
 
 Onglet Documents générés

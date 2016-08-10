@@ -45,46 +45,20 @@ La bannette affiche tous les documents entrants qui ne sont pas encore liés à 
 Depuis l'onglet "Documents Entrants" d'un établissement
 #######################################################
 
-L'onglet "Document Entrants" sur la fiche d'un établissement affiche tous ses courriers entrants liés. Les informations présentées sont :
+:ref:`Onglet "Documents Entrants" sur l'établissement<etablissements_etablissement_onglet_documents_entrants>`
 
-- le nom du document,
-- le type du document (acte, courrier de l'explotant, ...),
-- la date de création du document,
-- la date de réception du document,
-- la date d'émission du document,
-- la date butoir du document,
-- le statut du document (en cours, qualifié, ...).
-
-.. image:: piece_etablissement-listing.png
 
 Depuis l'onglet "Documents Entrants" d'un dossier de coordination
 #################################################################
 
-L'onglet "Document Entrants" sur la fiche d'un dossier de coordination affiche tous ses courriers entrants liés. Les informations présentées sont :
+:ref:`Onglet "Documents Entrants" sur le dossier de coordination<dossiers_dc_onglet_documents_entrants>`
 
-- le nom du document,
-- le type du document (acte, courrier de l'explotant, ...),
-- la date de création du document,
-- la date de réception du document,
-- la date d'émission du document,
-- la date butoir du document,
-- le statut du document (en cours, qualifié, ...).
-
-.. image:: piece_dc-listing.png
 
 Depuis l'onglet "Documents Entrants" d'un dossier d'instruction
 ###############################################################
 
-L'onglet "Document Entrants" sur la fiche d'un dossier d'instruction affiche tous ses courriers entrants liés. Les informations présentées sont :
+:ref:`Onglet "Documents Entrants" sur le dossier d'instruction<dossiers_di_onglet_documents_entrants>`
 
-- le nom du document,
-- l'établissement,
-- le dossier de coordination,
-- le dossier d'instruction,
-- la date butoir du document,
-- le statut du document (en cours, qualifié, ...).
-
-.. image:: piece_di-listing.png
 
 Depuis le menu "Suivi"
 ######################

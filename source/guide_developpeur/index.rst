@@ -17,3 +17,7 @@ Sommaire
 .. toctree::
     :numbered:
     :maxdepth: 2
+
+    module_swrod.rst
+
+

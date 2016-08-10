@@ -184,6 +184,24 @@ Le tableau comporte les colonnes suivantes :
 .. image:: etablissement-onglet-ua-listing-ua-archives.png
 
 
+.. _etablissements_etablissement_onglet_documents_entrants:
+
+Onglet Documents Entrants depuis le contexte de l'établissement
+---------------------------------------------------------------
+
+L'onglet "Document Entrants" sur la fiche d'un établissement affiche tous ses documents entrants liés (ainsi que ceux éventuellement liés aux dossiers d'instruction et aux dossiers d'instruction rattachés à l'établissement). Les informations présentées sont :
+
+- le nom du document,
+- le type du document (acte, courrier de l'explotant, ...),
+- la date de création du document,
+- la date de réception du document,
+- la date d'émission du document,
+- la date butoir du document,
+- le statut du document (en cours, qualifié, ...).
+
+.. image:: etablissement-onglet-documents-entrants-listing.png
+
+
 Les unités d'accessibilité (UA)
 ===============================
 
