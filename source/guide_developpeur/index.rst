@@ -20,5 +20,5 @@ Sommaire
 
     module_swrod.rst
     module_geolocalisation.rst
-
+    tests_ci.rst
 
