@@ -19,5 +19,5 @@ Sommaire
     :maxdepth: 2
 
     module_swrod.rst
-
+    tests_ci.rst
 
