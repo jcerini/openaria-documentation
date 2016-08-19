@@ -19,5 +19,6 @@ Sommaire
     :maxdepth: 2
 
     module_swrod.rst
+    module_geolocalisation.rst
 
 

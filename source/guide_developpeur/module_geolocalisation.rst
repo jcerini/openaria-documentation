@@ -1,0 +1,302 @@
+.. _module_geolocalisation:
+
+######################
+Module géolocalisation
+######################
+
+Le module de géolocalisation permet d'avoir des intéractions entre openARIA et un Système d'Information Géographique extérieur à l'application.
+
+Ce module ajoute les fonctionnalités suivantes dans l'interface utilisateur :
+
+- La possibilité de géolocaliser un établissement ou dossier de coordination sur le SIG
+- Plusieurs liens de redirection vers l'élément sur le SIG, avec la carte centrée sur l'élément lorsqu'il est géolocalisé. Voir les listings
+- Onglet "Contraintes" sur le dossier de coordination
+- Onglet "Contraintes" sur l'établissement
+
+
+Le module SIG est composé d'un abstracteur et d'un ensemble de connecteurs (aussi appelés plugins). Ces derniers respectent l'API de l'abstracteur.
+
+
+Configuration d'un connecteur
+#############################
+
+La configuration du connecteur est définie dans `dyn/sig.inc.php`.
+
+
+Exemple :
+
+.. code:: php
+
+    $conf["sig-default"] = array (
+        "1" => array( // Identifiant de la collectivité
+            'connector' => 'example',
+            'path' => '../plugins/sig/geoaria_example/',
+        ),
+    );
+
+
+Liste des paramètres obligatoires :
+
+- **connector** définit le nom du connecteur
+- **path** définit le chemin relatif vers le connecteur
+
+Dans openARIA, le paramètre du menu Administration **option_sig** doit être positionné à la valeur "sig_externe".
+
+Dans cet exemple, le script geoaria_example.class.php sera inclus et la classe geoaria_example sera instanciée. Il n'existe aucun connecteur de base dans openARIA puisque dépendant de l'environnement.
+
+Il est possible d'avoir un paramétrage SIG par configuration de base de données. Pour cela, il faut ajouter dans le fichier de configuration `dyn/database.inc.php`, après les autres paramètres, un tableau nommé 'extras' :
+
+.. code:: php
+
+    "extras" => array (
+        'sig' => 'sig-default', // Paramétrage de la configuration SIG à utiliser
+    )
+
+
+
+
+Description de l'abstracteur et spécifications du connecteur
+############################################################
+
+Le script obj/geoaria.class.php contient les classes de base qui définissent le fonctionnement du module.
+
+Liste des classes définies dans le script :
+
+* geoaria
+* geoaria_base
+
+
+*******
+geoaria
+*******
+
+La classe 'geoaria' est une classe d'abstraction, spécifique à openARIA, permettant de gérer les interfaces avec des SIG externes et ainsi proposer aux utilisateurs de géolocaliser un élément sur le SIG, d'accéder directement au SIG avec la carte centrée sur l'élément, ou encore de récupérer en un clic les contraintes d'un élément. Cette classe est instanciée et utilisée par toutes les classes métier qui ont un besoin de géolocalisation, comme les dossiers, les établissements ou les contraintes. L'objectif de l'abstracteur est d'instancier les classes spécifiques aux SIG aussi appelées connecteurs correspondant au paramétrage de la collectivité.
+
+
+************
+geoaria_base
+************
+
+Classe parente de tous les connecteurs geoaria.
+
+    .. important:: Les classes des connecteurs geoaria doivent étendre de geoaria_base.
+
+
+
+*****************
+geoaria_exception
+*****************
+
+Classe gérant les erreurs (une exception est levée pour chacune).
+
+
+*********************
+geoaria_bdd_exception
+*********************
+
+Classe d'exceptions utilisée lors d'une erreur de base de données.
+
+*******************************
+geoaria_configuration_exception
+*******************************
+
+Classe d'exceptions utilisée lors d'une erreur dans le paramétrage du connecteur.
+
+
+***************************
+geoaria_parameter_exception
+***************************
+
+Classe d'exceptions utilisée lors de la vérification des paramètres
+passés au méthode de l'abstracteur.
+
+
+*******************************
+geoaria_connector_4XX_exception
+*******************************
+
+Classe de gestion des exceptions retournée lors d'un code http 4XX.
+
+    .. important:: Cette exception correspond à un problème inhérent à openADS.
+
+
+*******************************
+geoaria_connector_5XX_exception
+*******************************
+
+Classe de gestion des exceptions retournée lors d'un code http 5XX.
+
+    .. important:: Cette exception correspond à un problème inhérent au SIG.
+
+
+***************************
+geoaria_connector_exception
+***************************
+
+Classe de gestion des exceptions génériques remontées par le connecteur.
+
+
+**************************************************
+geoaria_connector_method_not_implemented_exception
+**************************************************
+
+Classe de gestion des exceptions sur les méthodes du connecteur qui ne sont pas
+implémentées.
+
+
+Méthodes à implémenter
+######################
+
+
+* `geocoder_objet()`_
+* `lister_etablissements_proches()`_
+* `lister_proprietaires_parcelles()`_
+* `synchro_contraintes()`_
+* `recup_contraintes()`_
+* `redirection_web_emprise()`_
+* `redirection_web()`_
+
+*********
+Attributs
+*********
+
+
+geocoder_objet()
+****************
+
+
+::
+
+    geocoder_objet(  $obj, array $params)
+
+
+openARIA fournit le type d'objet, ainsi que toutes les informations utiles qui ont été renseignées qui peuvent permettre de géolocaliser l'établissement ou le dossier de coordination.
+
+
+Parameters
+``````````
+(string) $obj : Le type d'objet à géolocaliser, "etablissement" ou "dossier_coordination".
+
+(array) $params :
+
+
+.. code:: php
+
+    array (
+        'parcelles' => array (
+            array(
+                'quartier' => string,
+                'section' => string,
+                'parcelle' => string
+            ),
+            array(
+                'quartier' => string,
+                'section' => string,
+                'parcelle' => string,
+            ),
+        )
+        'adresse' => string,
+        'voie' => string,
+        'dossier_ads' => string,
+    ).
+
+
+Returns
+```````
+(string) La précision de la géolocalisation en mètres.
+
+
+En cas d'erreur :
+
+.. code:: php
+
+    //
+    return false;
+
+
+synchro_contraintes()
+*********************
+
+
+::
+
+    synchro_contraintes(  $insee) 
+
+
+openARIA fournit au SIG externe le code INSEE d'une commune. Le SIG renvoie l'ensemble des
+contraintes applicables à cette commune. Ces contraintes sont ensuite enregistrées dans la
+base de données d'openARIA, afin d'être réutilisées lors de la récupération des contraintes
+applicables à un dossier de coordination ou un établissement.
+
+
+Parameters
+``````````
+
+(string) $insee : Code INSEE de la commune.
+
+
+Returns
+```````
+(array) Tableau de contraintes
+
+.. code:: php
+
+    //
+    return array(
+        array(
+            array(
+             "contrainte" => "22",
+               "groupe_contrainte" => "Servitudes",
+               "sous_groupe_contrainte" => "",
+               "libelle" => "Exemple de servitude",
+           ),
+            array(
+                "contrainte" => "27",
+                "groupe_contrainte" => "ZONES DU PLU",
+                "sous_groupe_contrainte" => "protection",
+                "libelle" => "Une contrainte du PLU",
+           ),
+        ),
+    );
+
+
+S'il n'y a aucune parcelle :
+
+.. code:: php
+
+    //
+    return array();
+
+
+redirection_web()
+*****************
+
+::
+
+    redirection_web(  $obj = null, array $ids = null) 
+
+openARIA fournit le type d'objet et le ou les identifiant(s) de l'élement que l'utilisateur
+souhaite consulter sur le SIG. Le connecteur renvoie un URL, qui permettra à l'utilisateur
+d'accéder au SIG avec la vue centrée sur l'élément choisi.
+
+
+
+redirection_web_emprise()
+*************************
+
+::
+
+    redirection_web_emprise(  $obj, array $id) 
+
+openARIA fournit le type d'objet et l'identifiant(s) de l'élement que l'utilisateur
+souhaite dessiner manuellement sur le SIG. Le connecteur renvoie un URL, qui permettra à
+l'utilisateur d'accéder au SIG en mode création d'établissement ou dossier de coordination.
+
+recup_contraintes()
+*******************
+
+lister_etablissements_proches()
+*******************************
+
+lister_proprietaires_parcelles()
+********************************
