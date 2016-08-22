@@ -53,18 +53,18 @@ Les ressources sont des librairies de mots-clés RobotFramework.
 
 Voici la documentation des librairies spécifiques à openARIA :
 
-Librairie de l'application openARIA `App <../_static/app.html/>`_.
+Librairie de l'application openARIA `App <https://scm.adullact.net/anonscm/svn/openaria/trunk/tests/doc/app.html>`_.
 
 .. raw:: html
 
-   <iframe src="../_static/app.html" width="100%" height="500px"></iframe>
+   <iframe src="https://scm.adullact.net/anonscm/svn/openaria/trunk/tests/doc/app.html" width="100%" height="500px"></iframe>
 
 
-Librairie du framework openMairie `Core <../_static/core.html/>`_.
+Librairie du framework openMairie `Core <https://scm.adullact.net/anonscm/svn/openaria/trunk/tests/doc/core.html>`_.
 
 .. raw:: html
 
-   <iframe src="../_static/core.html" width="100%" height="500px"></iframe>
+   <iframe src="https://scm.adullact.net/anonscm/svn/openaria/trunk/tests/doc/core.html" width="100%" height="500px"></iframe>
 
 
 Voici les documentations des librairies génériques utilisées par openARIA :
