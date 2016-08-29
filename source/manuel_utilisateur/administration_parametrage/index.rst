@@ -78,14 +78,59 @@ Types
 Typologie d'un contact.
 
 Codes :
-- EXPL : 
-- INST : 
+
+  - EXPL
+  - INST
 
 
 Civilités
 ---------
 
 Liste des civilités d'un contact.
+
+
+Contraintes
+===========
+
+Listing
+-------
+
+Liste des contraintes paramétrées et destinées à être appliquées aux établissements et dossiers de coordination.
+Elles peuvent provenir d'un référentiel SIG (via une synchronisation) ou être ajoutées manuellement.
+
+Les informations spécifiques et facultatives d'une contrainte paramétrée sont :
+
+  - l'ordre d'affichage (permet de classer les contraintes appliquées à un établissement ou un dossier de coordination à l'intérieur des groupes et sous-groupes) ;
+  - le texte surchargé (permet d'étendre le texte standard de la contrainte à respecter).
+
+Synchronisation
+---------------
+
+L'option SIG doit être activée pour faire apparaître cette rubrique.
+Effectuer une synchronisation revient à mettre à jour les contraintes paramétrées selon le référentiel SIG :
+
+  - s'il manque des contraintes dans openARIA elles sont ajoutées ;
+  - si des contraintes d'openARIA ne sont plus dans le référentiel elles sont archivées ;
+  - si des contraintes d'openARIA sont dans le référentiel elles sont mises à jour.
+
+.. image:: contrainte_synchronisation.png
+
+Seules contraintes paramétrées provenant d'un référentiel sont impactées par la synchronisation : celles ajoutées manuellement ne sont pas concernées.
+La synchronisation ne se fait que dans le sens SIG → openARIA : les contraintes présentes sur le référentiel ne sont pas modifiées.
+
+Les informations d'une contrainte récupérée du SIG sont :
+
+  - identifiant dans le référentiel ;
+  - nature (POS/PLU/CC/RNU) ;
+  - groupe ;
+  - sous-groupe ;
+  - libellé ;
+  - texte.
+
+.. note::
+
+  Lorsque l'on récupère des contraintes pour un établissement ou un dossier de coordination, openARIA est susceptible de demander une synchronisation des contraintes
+  dans le cas où les contraintes récupérées depuis le référentiel SIG sont absentes du paramétrage.
 
 
 Métiers

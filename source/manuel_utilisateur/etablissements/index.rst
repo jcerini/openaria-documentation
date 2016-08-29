@@ -113,8 +113,51 @@ Le fonctionnement est le suivant :
 
 .. image:: etablissement-form-patrimoine.png
 
-Onglet UA depuis le contexte de l'établissement
------------------------------------------------
+
+.. _etablissement_onglet_contraintes:
+
+Onglet Contraintes
+------------------
+
+Liste
+#####
+
+Les contraintes affichées dans le tableau sont classées par groupe et sous-groupe, et éventuellement par le numéro d’ordre d’affichage si elles en possèdent un.
+Chacune dispose de boutons permettant de la consulter, modifier et supprimer.
+En sus du tableau deux liens permettent d'ajouter et récupérer des contraintes.
+
+.. image:: etablissement-tab-contrainte.png
+
+Formulaire
+##########
+
+Seul le texte complété est affiché et modifiable. Si la contrainte a été récupérée depuis le référentiel alors une action permet de la démarquer.
+
+.. image:: etablissement-consulter-contrainte.png
+
+Ajout
+#####
+
+On peut ajouter des contraintes du paramétrage d'openARIA. Seules les actives sont proposées (c'est à dire les archivées sont masquées).
+Ajouter une contrainte synchronisée avec le référentiel SIG aura le même comportement qu'ajouter une contrainte créée manuellement :
+elle ne sera pas marquée comme récupérée.
+
+.. image:: etablissement-ajouter-contrainte.png
+
+Récupération
+############
+
+L'option SIG doit être activée pour bénéficier de cette fonctionnalité. Selon les références cadastrales de l'établissement,
+openARIA interroge le référentiel SIG pour récupérer les contraintes applicables à ces parcelles.
+Si le logiciel ne dispose pas des dites contraintes, il proposera de les synchroniser.
+Sinon, il ajoutera automatiquement ces contraintes à l'établissement (ou les mettra à jour si elles étaient déjà appliquées).
+Le texte complété d'une contrainte récupérée est celui du référentiel SIG éventuellement concaténé au texte surchargé si ce dernier est défini dans le paramétrage.
+Ce texte sera toujours écrasé lors d'une récupération : vous devez démarquer la contrainte si vous ne souhaitez pas que cela soit le cas.
+
+.. image:: etablissement-recuperer-contrainte.png
+
+Onglet UA
+---------
 
 Cet onglet présente un écran permettant d'accéder à trois listings :
 
@@ -186,8 +229,8 @@ Le tableau comporte les colonnes suivantes :
 
 .. _etablissements_etablissement_onglet_documents_entrants:
 
-Onglet Documents Entrants depuis le contexte de l'établissement
----------------------------------------------------------------
+Onglet Documents Entrants
+-------------------------
 
 L'onglet "Document Entrants" sur la fiche d'un établissement affiche tous ses documents entrants liés (ainsi que ceux éventuellement liés aux dossiers d'instruction et aux dossiers d'instruction rattachés à l'établissement). Les informations présentées sont :
 

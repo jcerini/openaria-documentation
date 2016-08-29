@@ -60,6 +60,11 @@ La case à cocher "À qualifier" définit si un dossier doit être qualifié ou 
 La fiche du dossier de coordination (DC)
 ----------------------------------------
 
+Onglet Contraintes
+##################
+
+La fonctionnalité est identique à l':ref:`application des contraintes aux établissements<etablissement_onglet_contraintes>`.
+
 Onglet Contacts
 ###############
 
