@@ -84,6 +84,11 @@ Cette géolocalisation se fait sur la base de l'adresse, des parcelles et du num
 
 Une fois ce dessin manuel effectué sur le SIG, il faut une nouvelle fois lancer l'action de géolocalisation du portail d'actions contextuelles pour valider le dessin manuel. En cas de succès, un message de validation apparaît.
 
+Onglet Contraintes
+##################
+
+La fonctionnalité est identique à l':ref:`application des contraintes aux établissements<etablissement_onglet_contraintes>`.
+
 Onglet Contacts
 ###############
 

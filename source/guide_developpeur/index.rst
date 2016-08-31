@@ -18,7 +18,8 @@ Sommaire
     :numbered:
     :maxdepth: 2
 
+    tests_ci.rst
     module_swrod.rst
     module_geolocalisation.rst
-    tests_ci.rst
+
 
