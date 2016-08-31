@@ -28,6 +28,10 @@ Depuis le menu "Tous les établissements"
 
 Liste tous les établissements ERP, les référentiels et les autres.
 
+Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre de chaque ligne du tableau permettent d'être redirigé sur le SIG avec la vue centrée sur l'établissement correspondant à cette ligne.
+
+L'icône en forme de Terre au-dessus du tableau permet d'être redirigé vers le SIG et de consulter la sélection actuelle d'établissements. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des établissements sur le SIG.
+
 .. image:: etablissement_tous-listing.png
 
 Ajouter un établissement
@@ -45,6 +49,11 @@ La fiche d'un établissement
 ---------------------------
 
 .. image:: etablissement-fiche.png
+
+Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre permettent d'être redirigé sur le SIG avec la vue centrée sur l'élément en question :
+
+- si l'établissement a été géolocalisé, l'icône dans le champ "Géolocalisé" permet d'être redirigé sur l'établissement sur le SIG
+- si des références cadastrales ont été renseignées, l'icône dans le champ références cadastrales permet de visualiser ces parcelles sur le SIG.
 
 Les ERP référentiels
 ####################
@@ -75,6 +84,21 @@ L'exploitant est le responsable unique de l'établissement, de ce fait il peut �
 Il possible d'ajouter d'autres contacts, de type autre qu'exploitant. Ceux-ci seront visible au moyen de l'onglet des contacts de l'établissement.
 
 .. image:: etablissement_contact-listing.png
+
+Géolocaliser un établissement
+-----------------------------
+
+Si un SIG a été paramétré et que l'établissement n'a pas déjà été géolocalisé, une action dans le portail d'actions contextuelles permet de le géolocaliser sur le SIG.
+
+.. image:: etablissement-action-geocoder-link.png
+
+Cette géolocalisation se fait sur la base de l'adresse, des parcelles et du numéro de dossier ADS qui ont été renseignés. Si ces éléments ne permettent pas de géolocaliser automatiquement l'établissement, un message sera affiché, qui contiendra un lien permettant à l'utilisateur de dessiner manuellement l'élément sur le SIG.
+
+.. image:: etablissement-action-geocoder-fail.png
+
+Une fois ce dessin manuel effectué sur le SIG, il faut une nouvelle fois lancer l'action de géolocalisation du portail d'actions contextuelles pour valider le dessin manuel. En cas de succès, un message de validation apparaît.
+
+.. image:: etablissement-action-geocoder-success.png
 
 Archiver un établissement
 -------------------------
@@ -227,6 +251,7 @@ Le tableau comporte les colonnes suivantes :
 - « accessible » : les quatre informations sur l'accessibilité de l'UA sont concaténées dans la même cellule du tableau (auditif : « Oui » / « Non » / « » (vide), mental : « Oui » / « Non » / « » (vide), physique : « Oui » / « Non » / « » (vide), visuel : « Oui » / « Non » / « » (vide))
 - « état » : c'est l'état de l'UA. Les deux valeurs possibles sont : « en projet » et « validé »
 
+Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre de chaque ligne du tableau permettent d'être redirigé sur le SIG avec la vue centrée sur l'établissement lié à cette UA.
 
 La recherche avancée des UA
 ---------------------------
@@ -251,6 +276,8 @@ La recherche avancée affiche les champs de recherche les uns à la suite des au
 
 La fiche d'une UA
 -----------------
+
+Lorsqu'un Système d'Information Géographique est paramétré et que l'établissement lié à cette UA a été géolocalisé, l'icône en forme de Terre permet d'être redirigé sur le SIG avec la vue centrée sur l'établissement lié.
 
 .. image:: etablissement-ua-view.png
 

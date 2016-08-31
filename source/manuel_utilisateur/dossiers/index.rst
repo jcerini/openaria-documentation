@@ -38,6 +38,11 @@ Tous les dossiers
 
 Ce listing présente tous les dossiers de coordination.
 
+Lorsqu'un Système d'Information Géographique est paramétré, l'icône en forme de Terre au-dessus du tableau permet d'être redirigé vers le SIG et de consulter la sélection actuelle de dossiers de coordination. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des dossiers de coordination sur le SIG.
+
+Les icônes en forme de Terre de chaque ligne du tableau permettent d'être redirigé sur le SIG avec la vue centrée sur le dossier de coordination correspondant à cette ligne.
+
+.. image:: dossier_coordination-listing.png
 
 Ajouter un nouveau DC
 ---------------------
@@ -59,6 +64,25 @@ La case à cocher "À qualifier" définit si un dossier doit être qualifié ou 
 
 La fiche du dossier de coordination (DC)
 ----------------------------------------
+
+.. image:: dossier_coordination-fiche.png
+
+Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre permettent d'être redirigé sur le SIG avec la vue centrée sur l'élément en question :
+
+- si le dossier a été géolocalisé, l'icône dans le champ "Géolocalisé" permet d'être redirigé sur l'établissement sur le SIG.
+- si l'établissement lié au dossier a été géolocalisé, on peut le visualiser sur le SIG en cliquant sur l'icône à côté du nom de l'établissement.
+- si des références cadastrales ont été renseignées, l'icône dans le champ références cadastrales permet de visualiser ces parcelles sur le SIG.
+
+Géolocaliser un dossier de coordination
+#######################################
+
+Si un SIG a été paramétré et que le dossier de coordination n'a pas déjà été géolocalisé, un bouton dans le portail d'actions contextuelles permet de le géolocaliser sur le SIG.
+
+.. image:: dossier_coordination-action-geocoder-link.png
+
+Cette géolocalisation se fait sur la base de l'adresse, des parcelles et du numéro de dossier ADS qui ont été renseignés. Si ces éléments ne permettent pas de géolocaliser automatiquement le dossier de coordination, un message sera affiché, qui contiendra un lien permettant à l'utilisateur de dessiner manuellement l'élément sur le SIG.
+
+Une fois ce dessin manuel effectué sur le SIG, il faut une nouvelle fois lancer l'action de géolocalisation du portail d'actions contextuelles pour valider le dessin manuel. En cas de succès, un message de validation apparaît.
 
 Onglet Contacts
 ###############
@@ -162,10 +186,16 @@ Tous les dossiers
 
 (:menuselection:`Dossiers --> DI (Instruction) --> Tous les dossiers`)
 
+Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre de chaque ligne du tableau permettent d'être redirigé sur le SIG avec la vue centrée sur le dossier de coordination lié à ce dossier d'instruction.
+
+.. image:: dossier_instruction-listing.png
 
 La fiche du dossier d'instruction (DI)
 --------------------------------------
 
+Lorsqu'un Système d'Information Géographique est paramétré et que le dossier de coordination lié à ce dossier d'instruction a été géolocalisé, l'icône en forme de Terre permet d'être redirigé sur le SIG avec la vue centrée sur le dossier de coordination lié.
+
+.. image:: dossier_instruction-fiche.png
 
 Actions
 #######
