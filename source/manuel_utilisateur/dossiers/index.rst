@@ -69,7 +69,7 @@ La fiche du dossier de coordination (DC)
 
 Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre permettent d'être redirigé sur le SIG avec la vue centrée sur l'élément en question :
 
-- si le dossier a été géolocalisé, l'icône dans le champ "Géolocalisé" permet d'être redirigé sur l'établissement sur le SIG.
+- si le dossier a été géolocalisé, l'icône dans le champ "Géolocalisé" permet de visualiser l'établissement sur le SIG.
 - si l'établissement lié au dossier a été géolocalisé, on peut le visualiser sur le SIG en cliquant sur l'icône à côté du nom de l'établissement.
 - si des références cadastrales ont été renseignées, l'icône dans le champ références cadastrales permet de visualiser ces parcelles sur le SIG.
 
