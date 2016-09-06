@@ -73,6 +73,8 @@ Lorsqu'un Système d'Information Géographique est paramétré, les icônes en f
 - si l'établissement lié au dossier a été géolocalisé, on peut le visualiser sur le SIG en cliquant sur l'icône à côté du nom de l'établissement.
 - si des références cadastrales ont été renseignées, l'icône dans le champ références cadastrales permet de visualiser ces parcelles sur le SIG.
 
+.. _dossiers_dc_geolocaliser:
+
 Géolocaliser un dossier de coordination
 #######################################
 

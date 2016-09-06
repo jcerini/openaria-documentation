@@ -85,6 +85,8 @@ Il possible d'ajouter d'autres contacts, de type autre qu'exploitant. Ceux-ci se
 
 .. image:: etablissement_contact-listing.png
 
+.. _etablissement_geolocaliser:
+
 Géolocaliser un établissement
 -----------------------------
 
