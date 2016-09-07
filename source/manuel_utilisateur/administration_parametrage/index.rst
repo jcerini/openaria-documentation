@@ -364,11 +364,17 @@ Collectivités
 
 Paramétrage des collectivités.
 
+.. _administration_parametre:
 
 Paramètres
 ----------
 
 Divers paramètres de l'application : champs de fusion généraux disponibles pour les éditions pdf, activation/désactivation de modules complémentaires, paramétrages fonctionnels, ...
+
+Utilisation des options :
+
+* **option_sig** : la valeur par défaut est *aucun*. Les valeurs possibles sont
+  *sig_externe*, *sig_interne* ou *aucun*.
 
 
 Gestion des utilisateurs
