@@ -500,6 +500,7 @@ Returns
 lister_proprietaires_parcelles()
 ********************************
 
+
 ::
 
     lister_proprietaires_parcelles(array $parcelles)
@@ -530,3 +531,41 @@ Returns
         )
 
 Si la récupération a échoué, on retourne false
+
+Redirection vers openARIA
+#########################
+
+OpenARIA permet la redirection depuis une application externe vers la fiche ou une sélection d'objet.
+Pour cela il est nécessaire de passer par le script d'entrée à l'application *app/entry.php*.
+
+*****************************
+Accéder à la fiche d'un objet
+*****************************
+
+L'url doit être composée des pramètres suivant :
+
+* **obj** objet de l'élément que l'on souhaite visualiser (*etablissement* ou *dc*) ;
+* **action** type de redirection (*view* pour accéder à une fiche) ;
+* **by** champ de l'objet sur lequel chercher les valeurs (*code* pour les établissements et *libelle* pour les dossiers de coordination) ;
+* **id** valeur à chercher ;
+
+Exemples d'url à composer :
+
+* <lien_openaria>/app/entry.php?obj=etablissement&action=view&by=code&id=T3468
+* <lien_openaria>/app/entry.php?obj=dc&action=view&by=libelle&id=VPS-VISIT-005018
+
+**********************************
+Accéder au listing d'une sélection
+**********************************
+
+L'url doit être composée des pramètres suivant :
+
+* **obj** objet de l'élément que l'on souhaite visualiser (*etablissement* ou *dc*) ;
+* **action** type de redirection (*list* pour accéder à une sélection d'objet) ;
+* **by** champ de l'objet sur lequel chercher les valeurs (*code* pour les établissements et *libelle* pour les dossiers de coordination) ;
+* **ids** valeurs à chercher séparées par des *,* ;
+
+Exemples d'url à composer :
+
+* <lien_openaria>/app/entry.php?obj=etablissement&action=list&by=code&ids=T3468,T3789,T4985
+* <lien_openaria>/app/entry.php?obj=dc&action=list&by=libelle&id=VPS-VISIT-005018,AT-PLAN-009022,VPS-VISIT-005019
