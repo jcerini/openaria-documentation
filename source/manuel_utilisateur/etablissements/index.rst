@@ -43,6 +43,8 @@ Il est possible d'ajouter un établissement depuis les deux listings, soit depui
 
 Les établissements peuvent également être ajoutés depuis un fichier CSV. Un fichier CSV modèle est disponible sur le formulaire d'importation.
 
+Même lorsqu’un Système d’Information Géographique est paramétré, depuis cette méthode, les établissements ne sont pas géolocalisés automatiquement. Les établissements restent géolocalisable depuis l'interface de géolocalisation de tous les établissements et des dossiers de coordination (voir :ref:`administration_geolocalisation` Géocoder tous).
+
 .. image:: etablissement-form-import.png
 
 La fiche d'un établissement
