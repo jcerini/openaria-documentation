@@ -40,7 +40,7 @@ Ce listing présente tous les dossiers de coordination.
 
 Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre de chaque ligne du tableau permettent d'être redirigé sur le SIG avec la vue centrée sur le dossier de coordination correspondant à cette ligne.
 
-l'icône en forme de Terre au-dessus du tableau permet d'être redirigé vers le SIG et de consulter la sélection actuelle de dossiers de coordination. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des dossiers de coordination sur le SIG.
+L'icône en forme de Terre au-dessus du tableau permet d'être redirigé vers le SIG et de consulter la sélection actuelle de dossiers de coordination. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des dossiers de coordination sur le SIG.
 
 .. image:: dossier_coordination-listing.png
 
