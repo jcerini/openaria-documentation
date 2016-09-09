@@ -16,6 +16,8 @@ Chacun des deux listings permet une recherche avancée complète sur plusieurs c
 
 .. image:: etablissement-listing-search.png
 
+Lorsqu'un Système d'Information Géographique est paramétré, chaque ligne des listings d'établissements contient un icône en forme de Terre. Celui-ci permet d'être redirigé sur le SIG avec la vue centrée sur l'établissement correspondant à cette ligne.
+
 Depuis le menu "Référentiel ERP"
 ################################
 
@@ -28,9 +30,7 @@ Depuis le menu "Tous les établissements"
 
 Liste tous les établissements ERP, les référentiels et les autres.
 
-Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre de chaque ligne du tableau permettent d'être redirigé sur le SIG avec la vue centrée sur l'établissement correspondant à cette ligne.
-
-L'icône en forme de Terre au-dessus du tableau permet d'être redirigé vers le SIG et de consulter la sélection actuelle d'établissements. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des établissements sur le SIG.
+L'icône en forme de Terre au-dessus du listing permet d'être redirigé vers le SIG et de consulter la sélection actuelle d'établissements. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des établissements sur le SIG.
 
 .. image:: etablissement_tous-listing.png
 
@@ -41,7 +41,27 @@ Il est possible d'ajouter un établissement depuis les deux listings, soit depui
 
 .. image:: etablissement-form-ajouter.png
 
+Lorsqu'un Système d'Information Géographique est paramétré, openARIA va tenter de géolocaliser automatiquement l'établissement lors de sa création. Cette géolocalisation se fait sur la base de l'adresse, des parcelles et du numéro de dossier ADS qui ont été renseignés. 
+
+Si l'établissement a été géolocalisé automatiquement sur le SIG grâce aux informations renseignées, le message suivant apparaît, en indiquant la précision de la géolocalisation.
+
+.. image:: etablissement-ajouter-geolocaliser-success.png
+
+Si l'établissement n'a pas pû être géolocalisé automatiquement, un message est affiché, qui contient un lien permettant à l'utilisateur de dessiner manuellement l'établissement sur le SIG.
+
+.. image:: etablissement-ajouter-geolocaliser-fail.png
+
+Une fois ce dessin manuel effectué sur le SIG, il faut faut lancer l'action de géolocalisation depuis la fiche de l'établissement créé pour valider le dessin manuel. En cas de succès, un message de validation apparaît, en indiquant la précision de la géolocalisation.
+
+.. image:: etablissement-geolocaliser-success.png
+
+Si l'établissement existe déjà sur le SIG, un message indique à l'utilisateur que celui-ci a déjà été géolocalisé.
+
+.. image:: etablissement-ajouter-geolocaliser-deja-geolocalise.png
+
 Les établissements peuvent également être ajoutés depuis un fichier CSV. Un fichier CSV modèle est disponible sur le formulaire d'importation.
+
+Même lorsqu’un Système d’Information Géographique est paramétré, depuis cette méthode, les établissements ne sont pas géolocalisés automatiquement. Les établissements restent géolocalisable depuis l'interface de géolocalisation de tous les établissements et des dossiers de coordination (voir :ref:`administration_geolocalisation` Géocoder tous). 
 
 .. image:: etablissement-form-import.png
 
@@ -50,7 +70,7 @@ La fiche d'un établissement
 
 .. image:: etablissement-fiche.png
 
-Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre permettent d'être redirigé sur le SIG avec la vue centrée sur l'élément en question :
+Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre présents dans la fiche permettent d'être redirigé sur le SIG avec la vue centrée sur l'élément choisi :
 
 - si l'établissement a été géolocalisé, l'icône dans le champ "Géolocalisé" permet de visualiser l'établissement sur le SIG
 - si des références cadastrales ont été renseignées, l'icône dans le champ références cadastrales permet de visualiser ces parcelles sur le SIG.
@@ -92,15 +112,23 @@ Géolocaliser un établissement
 
 Si un SIG a été paramétré et que l'établissement n'a pas déjà été géolocalisé, une action dans le portail d'actions contextuelles permet de le géolocaliser sur le SIG.
 
-.. image:: etablissement-action-geocoder-link.png
+.. image:: etablissement-action-geolocaliser-link.png
 
-Cette géolocalisation se fait sur la base de l'adresse, des parcelles et du numéro de dossier ADS qui ont été renseignés. Si ces éléments ne permettent pas de géolocaliser automatiquement l'établissement, un message sera affiché, qui contiendra un lien permettant à l'utilisateur de dessiner manuellement l'élément sur le SIG.
+Si l'établissement a été géolocalisé automatiquement sur le SIG grâce aux informations renseignées, le message suivant apparaîtra, en indiquant la précision de la géolocalisation.
 
-.. image:: etablissement-action-geocoder-fail.png
+.. image:: etablissement-geolocaliser-success.png
+
+Si ces informations ne permettent pas de géolocaliser automatiquement l'établissement, un message sera affiché, qui contiendra un lien permettant à l'utilisateur de dessiner manuellement l'établissement sur le SIG.
+
+.. image:: etablissement-geolocaliser-fail.png
 
 Une fois ce dessin manuel effectué sur le SIG, il faut une nouvelle fois lancer l'action de géolocalisation du portail d'actions contextuelles pour valider le dessin manuel. En cas de succès, un message de validation apparaît.
 
-.. image:: etablissement-action-geocoder-success.png
+.. image:: etablissement-geolocaliser-success.png
+
+Si l'établissement existe déjà sur le SIG, un message indique à l'utilisateur que celui-ci a déjà été géolocalisé.
+
+.. image:: etablissement-geolocaliser-deja-geolocalise.png
 
 Archiver un établissement
 -------------------------

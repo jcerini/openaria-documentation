@@ -20,8 +20,10 @@ La rubrique "Dossiers" est divisée en catégories :
 DC (Dossiers de Coordination)
 =============================
 
-Les listing de DC
------------------
+Les listings de DC
+------------------
+
+Lorsqu'un Système d'Information Géographique est paramétré, chaque ligne des listings de dossiers de coordination contient un icône en forme de Terre. Celui-ci permet d'être redirigé sur le SIG avec la vue centrée sur le dossier de coordination correspondant à cette ligne.
 
 Dossiers à qualifier
 ####################
@@ -30,7 +32,6 @@ Dossiers à qualifier
 
 Ce listing présente les dossiers de coordination à qualifier.
 
-
 Tous les dossiers
 #################
 
@@ -38,9 +39,7 @@ Tous les dossiers
 
 Ce listing présente tous les dossiers de coordination.
 
-Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre de chaque ligne du tableau permettent d'être redirigé sur le SIG avec la vue centrée sur le dossier de coordination correspondant à cette ligne.
-
-l'icône en forme de Terre au-dessus du tableau permet d'être redirigé vers le SIG et de consulter la sélection actuelle de dossiers de coordination. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des dossiers de coordination sur le SIG.
+L'icône en forme de Terre au-dessus du listing permet d'être redirigé vers le SIG et de consulter la sélection actuelle de dossiers de coordination. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des dossiers de coordination sur le SIG.
 
 .. image:: dossier_coordination-listing.png
 
@@ -61,16 +60,38 @@ Les types de dossier de coordination ont un paramétrage qui permet de remplir a
 
 La case à cocher "À qualifier" définit si un dossier doit être qualifié ou non.
 
+Lorsqu'un Système d'Information Géographique est paramétré, openARIA va tenter de géolocaliser automatiquement le dossier de coordination lors de sa création. Cette géolocalisation se fait sur la base de l'adresse, des parcelles et du numéro de dossier ADS qui ont été renseignés. 
+
+Si le dossier a été géolocalisé automatiquement sur le SIG grâce aux informations renseignées, le message suivant apparaîtra, en indiquant la précision de la géolocalisation.
+
+.. image:: dossier_coordination-ajouter-geolocaliser-success.png
+
+Si le dossier n'a pas pû être géolocalisé automatiquement, le message de validation contient un lien, qui permet à l'utilisateur de dessiner manuellement le dossier de coordination sur le SIG. 
+
+.. image:: dossier_coordination-ajouter-geolocaliser-fail.png
+
+Une fois ce dessin manuel effectué sur le SIG, il faut faut lancer l'action de géolocalisation depuis la fiche du dossier créé pour valider le dessin manuel. En cas de succès, un message de validation apparaîtra, en indiquant la précision de la géolocalisation.
+
+.. image:: dossier_coordination-geolocaliser-success.png
+
+Si le dossier existe déjà sur le SIG, un message indique à l'utilisateur que ce dossier a déjà été géolocalisé.
+
+.. image:: dossier_coordination-ajouter-geolocaliser-deja-geolocalise.png
+
+Certains types de dossiers de coordination peuvent ne pas être géolocalisables. Dans ce cas, le message de validation lors de la création du dossier précise que le dossier n'est pas géolocalisable.
+
+.. image:: dossier_coordination-ajouter-geolocaliser-type-non-geolocalisable.png
+
 
 La fiche du dossier de coordination (DC)
 ----------------------------------------
 
 .. image:: dossier_coordination-fiche.png
 
-Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre permettent d'être redirigé sur le SIG avec la vue centrée sur l'élément en question :
+Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre présents dans la fiche permettent d'être redirigé sur le SIG avec la vue centrée sur l'élément choisi :
 
-- si le dossier a été géolocalisé, l'icône dans le champ "Géolocalisé" permet de visualiser l'établissement sur le SIG.
-- si l'établissement lié au dossier a été géolocalisé, on peut le visualiser sur le SIG en cliquant sur l'icône à côté du nom de l'établissement.
+- si le dossier de coordination a été géolocalisé, l'icône dans le champ "Géolocalisé" permet de visualiser le dossier sur le SIG.
+- si un établissement est lié au dossier, on peut le visualiser sur le SIG en cliquant sur l'icône à côté du nom de l'établissement.
 - si des références cadastrales ont été renseignées, l'icône dans le champ références cadastrales permet de visualiser ces parcelles sur le SIG.
 
 .. _dossiers_dc_geolocaliser:
@@ -78,13 +99,25 @@ Lorsqu'un Système d'Information Géographique est paramétré, les icônes en f
 Géolocaliser un dossier de coordination
 #######################################
 
-Si un SIG a été paramétré et que le dossier de coordination n'a pas déjà été géolocalisé, un bouton dans le portail d'actions contextuelles permet de le géolocaliser sur le SIG.
+Si un SIG a été paramétré et que le type du dossier en question est géolocalisable, et si le dossier de coordination n'a pas déjà été géolocalisé, alors une action dans le portail d'actions contextuelles permet de le géolocaliser sur le SIG.
 
-.. image:: dossier_coordination-action-geocoder-link.png
+.. image:: dossier_coordination-action-geolocaliser-link.png
 
-Cette géolocalisation se fait sur la base de l'adresse, des parcelles et du numéro de dossier ADS qui ont été renseignés. Si ces éléments ne permettent pas de géolocaliser automatiquement le dossier de coordination, un message sera affiché, qui contiendra un lien permettant à l'utilisateur de dessiner manuellement l'élément sur le SIG.
+Si l'établissement a été géolocalisé automatiquement sur le SIG grâce aux informations renseignées, le message suivant apparaît, en indiquant la précision de la géolocalisation.
 
-Une fois ce dessin manuel effectué sur le SIG, il faut une nouvelle fois lancer l'action de géolocalisation du portail d'actions contextuelles pour valider le dessin manuel. En cas de succès, un message de validation apparaît.
+.. image:: dossier_coordination-geolocaliser-success.png
+
+Si le dossier de coordination n'a pas pû être géolocalisé automatiquement, un message est affiché, qui contient un lien permettant à l'utilisateur de dessiner manuellement le dossier sur le SIG.
+
+.. image:: dossier_coordination-geolocaliser-fail.png
+
+Une fois ce dessin manuel effectué sur le SIG, il faut lancer l'action de géolocalisation depuis la fiche du dossier de coordination créé pour valider le dessin manuel. En cas de succès, un message de validation apparaît, en indiquant la précision de la géolocalisation.
+
+.. image:: dossier_coordination-geolocaliser-success.png
+
+Si le dossier de coordination existe déjà sur le SIG, un message indique à l'utilisateur que celui-ci a déjà été géolocalisé.
+
+.. image:: dossier_coordination-geolocaliser-deja-geolocalise.png
 
 Onglet Contraintes
 ##################
@@ -144,6 +177,8 @@ DI (Dossiers d'Instruction)
 Les listing de DI
 -----------------
 
+Lorsqu'un Système d'Information Géographique est paramétré, chaque ligne des listings de dossiers d'instruction contient un icône en forme de Terre. Celui-ci permet d'être redirigé sur le SIG avec la vue centrée sur le dossier d'instruction correspondant à cette ligne.
+
 Dossiers à qualifier
 ####################
 
@@ -192,8 +227,6 @@ Tous les dossiers
 #################
 
 (:menuselection:`Dossiers --> DI (Instruction) --> Tous les dossiers`)
-
-Lorsqu'un Système d'Information Géographique est paramétré, les icônes en forme de Terre de chaque ligne du tableau permettent d'être redirigé sur le SIG avec la vue centrée sur le dossier de coordination lié à ce dossier d'instruction.
 
 .. image:: dossier_instruction-listing.png
 

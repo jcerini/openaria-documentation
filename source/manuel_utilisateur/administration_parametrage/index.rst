@@ -294,6 +294,8 @@ Types de DC
 
 Typologie et paramétrage des dossiers de coordination (AT, PC, Visite périodque, ...).
 
+.. _administration_geolocalisation:
+
 Géolocalisation
 ---------------
 
