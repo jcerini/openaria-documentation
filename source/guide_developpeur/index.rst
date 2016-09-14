@@ -19,6 +19,7 @@ Sommaire
     :maxdepth: 2
 
     tests_ci.rst
+    module_filestorage.rst
     module_swrod.rst
     module_geolocalisation.rst
 
