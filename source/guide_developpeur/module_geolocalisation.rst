@@ -99,9 +99,9 @@ Classe parente de tous les connecteurs geoaria.
 
 
 
-****************
+*****************
 geoaria_exception
-****************
+*****************
 
 Classe gérant les erreurs (une exception est levée pour chacune).
 
@@ -119,47 +119,47 @@ geoaria_argument_exception
 Classe d'exceptions utilisée lors de la vérification des arguments passés aux
 méthodes de l'abstracteur.
 
-********************
+*********************
 geoaria_bdd_exception
-********************
+*********************
 
 Classe d'exceptions utilisée lors d'une erreur de base de données.
 
-******************************
+*******************************
 geoaria_configuration_exception
-******************************
+*******************************
 
 Classe d'exceptions utilisée lors d'une erreur dans le paramétrage du connecteur.
 
 
-******************************
+*******************************
 geoaria_connector_4XX_exception
-******************************
+*******************************
 
 Classe de gestion des exceptions retournée lors d'un code http 4XX.
 
     .. important:: Cette exception correspond à un problème inhérent à openARIA.
 
 
-******************************
+*******************************
 geoaria_connector_5XX_exception
-******************************
+*******************************
 
 Classe de gestion des exceptions retournée lors d'un code http 5XX.
 
     .. important:: Cette exception correspond à un problème inhérent au SIG.
 
 
-**************************
+***************************
 geoaria_connector_exception
-**************************
+***************************
 
 Classe de gestion des exceptions génériques remontées par le connecteur.
 
 
-*************************************************
+**************************************************
 geoaria_connector_method_not_implemented_exception
-*************************************************
+**************************************************
 
 Classe de gestion des exceptions sur les methodes du connecteur qui ne sont pas
 implémentées.
