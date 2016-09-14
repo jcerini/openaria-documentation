@@ -60,8 +60,8 @@ Il est possible d'avoir un paramétrage SIG par configuration de base de donnée
 
 
 
-Description de l'abstracteur et spécifications du connecteur
-############################################################
+Description du script geoaria.class.php
+#######################################
 
 Le script obj/geoaria.class.php contient les classes de base qui définissent le fonctionnement du module.
 
