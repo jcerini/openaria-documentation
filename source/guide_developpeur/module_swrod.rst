@@ -99,7 +99,7 @@ get_list()
     get_list(  $dossier) 
 
 
-openARIA fournit la valeur positionnée dans le champ DA ADS ou DI ADS du dossier de coordination afin d'ovtenir la liste des documents correspondant dans le stockage externe.
+openARIA fournit la valeur positionnée dans le champ DA ADS ou DI ADS du dossier de coordination afin d'obtenir la liste des documents correspondant dans le stockage externe.
 
 
 Parameters
@@ -111,7 +111,6 @@ Returns
 ```````
 (array) Tableau de résultats (un sous-tableau par document) qui contient les clés suivants :
 
-- document_numerise
 - date_creation
 - categorie
 - nom_fichier
@@ -124,7 +123,6 @@ Returns
     //
     return array(
         array(
-            "document_numerise" => "1",
             "date_creation" => "2016-12-01",
             "categorie" => "Arrêté",
             "nom_fichier" => "20161201ARR-01.pdf",
@@ -133,7 +131,6 @@ Returns
             "dossier" => "AT0130551200001P0",
         ),
         array(
-            "document_numerise" => "1",
             "date_creation" => "2016-12-01",
             "categorie" => "Arrêté",
             "nom_fichier" => "20161201ARR-02.pdf",
@@ -142,7 +139,6 @@ Returns
             "dossier" => "AT0130551200001P0",
         ),
         array(
-            "document_numerise" => "1",
             "date_creation" => "2013-12-01",
             "categorie" => "Arrêté",
             "nom_fichier" => "20131201ARR.pdf",
