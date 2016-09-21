@@ -23,6 +23,8 @@ Depuis le menu "Référentiel ERP"
 
 Liste tous les établissements qui constituent le référentiel officiel des ERP.
 
+Lorsqu'un Système d'Information Géographique est paramétré, un icône en forme de Terre au-dessus du listing permet d'être redirigé vers le SIG et de consulter la sélection actuelle d'établissements. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des établissements sur le SIG.
+
 .. image:: etablissement_referentiel_erp-listing.png
 
 Depuis le menu "Tous les établissements"
@@ -30,7 +32,7 @@ Depuis le menu "Tous les établissements"
 
 Liste tous les établissements ERP, les référentiels et les autres.
 
-L'icône en forme de Terre au-dessus du listing permet d'être redirigé vers le SIG et de consulter la sélection actuelle d'établissements. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des établissements sur le SIG.
+Lorsqu'un Système d'Information Géographique est paramétré, un icône en forme de Terre au-dessus du listing permet d'être redirigé vers le SIG et de consulter la sélection actuelle d'établissements. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des établissements sur le SIG.
 
 .. image:: etablissement_tous-listing.png
 
