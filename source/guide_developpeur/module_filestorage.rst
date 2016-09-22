@@ -12,78 +12,85 @@ http://openmairie.readthedocs.io/projects/omframework/fr/latest/reference/filest
 
 Le stockage du document est composé du fichier en lui-même mais aussi d'un ensemble d'informations permettant éventuellement d'utiliser le fichier en consultation depuis une autre application qu'openARIA (par exemple dans une GED). On appelle ces informations les métadonnées.
 
-Nous allons décrire dans cette rubrique l'intégration sur les fichiers de l'application.
-
 
 Les fichiers stockés
 ####################
 
 
 - Logo [om_logo.fichier]
-  > Titre : Logo <LIBELLE>
-  > Description : logo
-  > Origine : téléversé
-  > Stockage à l'ajout du fichier
-  > Mise à jour à chaque mise à jour du champ fichier
+
+  - Titre : Logo <LIBELLE>
+  - Description : logo
+  - Origine : téléversé
+  - Stockage à l'ajout du fichier
+  - Mise à jour à chaque mise à jour du champ fichier
 
 - Document généré finalisé [courrier.om_fichier_finalise_courrier]
-  > Titre : Établissement <CODE> - Dossier <CODE DC ou CODE DI> - <MODELE>
-  > Description : document généré finalisé
-  > Origine : généré
-  > Stockage à la finalisation de l'édition
-  > Mise à jour à chaque refinalisation de l'édition
-  > Mise à jour XXX
+
+  - Titre : Établissement <CODE> - Dossier <CODE DC ou CODE DI> - <MODELE>
+  - Description : document généré finalisé
+  - Origine : généré
+  - Stockage à la finalisation de l'édition
+  - Mise à jour à chaque refinalisation de l'édition
+  - Mise à jour des métadonnées à chaque modification de l'enregistrement (triggermodifierapres)
 
 - Document généré numérisé signé [courrier.om_fichier_signe_courrier]
-  > Titre :  Établissement <CODE> - Dossier <CODE DC ou CODE DI> - <MODELE> (signé)
-  > Description : document généré numérisé signé
-  > Origine : téléversé
-  > Stockage à l'ajout du fichier
-  > Mise à jour à chaque mise à jour du champ fichier
-  > Mise à jour XXX
+
+  - Titre :  Établissement <CODE> - Dossier <CODE DC ou CODE DI> - <MODELE> (signé)
+  - Description : document généré numérisé signé
+  - Origine : téléversé
+  - Stockage à l'ajout du fichier
+  - Mise à jour à chaque mise à jour du champ fichier
+  - Mise à jour des métadonnées à chaque modification de l'enregistrement (triggermodifierapres)
 
 - Document entrant numérisé [piece.uid]
-  > Titre :  Établissement <CODE> - Dossier <CODE DC ou CODE DI> - <TYPE>
-  > Description : document entrant numérisé
-  > Origine : téléversé
-  > Stockage à l'ajout du fichier
-  > Mise à jour à chaque mise à jour du champ fichier
-  > Mise à jour XXX
+
+  - Titre :  Établissement <CODE> - Dossier <CODE DC ou CODE DI> - <TYPE>
+  - Description : document entrant numérisé
+  - Origine : téléversé
+  - Stockage à l'ajout du fichier
+  - Mise à jour à chaque mise à jour du champ fichier
+  - Mise à jour des métadonnées à chaque modification de l'enregistrement (triggermodifierapres)
 
 - Procès verbal numérisé ajouté [proces_verbal.om_fichier_signe]
-  > Titre :  Établissement <CODE> - Dossier <CODE DC ou CODE DI> - procès verbal
-  > Description : procès verbal numérisé ajouté
-  > Origine : téléversé
-  > Stockage à l'ajout du fichier
-  > Mise à jour à chaque mise à jour du champ fichier
+
+  - Titre :  Établissement <CODE> - Dossier <CODE DC ou CODE DI> - procès verbal
+  - Description : procès verbal numérisé ajouté
+  - Origine : téléversé
+  - Stockage à l'ajout du fichier
+  - Mise à jour à chaque mise à jour du champ fichier
 
 - Ordre du jour finalisé [reunion.om_fichier_reunion_odj]
-  > Titre : (<CODE>) <TYPE> du <DATE> - ordre du jour
-  > Description : ordre du jour de réunion finalisé
-  > Origine : généré
-  > Stockage à la finalisation de l'édition
-  > Mise à jour à chaque refinalisation de l'édition
+
+  - Titre : (<CODE>) <TYPE> du <DATE> - ordre du jour
+  - Description : ordre du jour de réunion finalisé
+  - Origine : généré
+  - Stockage à la finalisation de l'édition
+  - Mise à jour à chaque refinalisation de l'édition
 
 - Compte rendu global finalisé [reunion.om_fichier_reunion_cr_global]
-  > Titre : (<CODE>) <TYPE> du <DATE> - compte rendu global
-  > Description : compte rendu global de réunion finalisé
-  > Origine : généré
-  > Stockage à la finalisation de l'édition
-  > Mise à jour à chaque refinalisation de l'édition
+
+  - Titre : (<CODE>) <TYPE> du <DATE> - compte rendu global
+  - Description : compte rendu global de réunion finalisé
+  - Origine : généré
+  - Stockage à la finalisation de l'édition
+  - Mise à jour à chaque refinalisation de l'édition
 
 - Compte rendu global numérisé signé [reunion.om_fichier_reunion_cr_global_signe]
-  > Titre : (<CODE>) <TYPE> du <DATE> - compte rendu global (signé)
-  > Description : compte rendu global de réunion numérisé signé
-  > Origine : téléversé
-  > Stockage à l'ajout du fichier
-  > Mise à jour à chaque mise à jour du champ fichier
+
+  - Titre : (<CODE>) <TYPE> du <DATE> - compte rendu global (signé)
+  - Description : compte rendu global de réunion numérisé signé
+  - Origine : téléversé
+  - Stockage à l'ajout du fichier
+  - Mise à jour à chaque mise à jour du champ fichier
 
 - Ensemble des comptes rendus individuels numérisés signés [reunion.om_fichier_reunion_cr_par_dossier_signe]
-  > Titre : (<CODE>) <TYPE> du <DATE> - compte rendu par dossier (signé)
-  > Description : ensemble des comptes rendus de réunion individuels numérisés signés
-  > Origine : téléversé
-  > Stockage à l'ajout du fichier
-  > Mise à jour à chaque mise à jour du champ fichier
+
+  - Titre : (<CODE>) <TYPE> du <DATE> - compte rendu par dossier (signé)
+  - Description : ensemble des comptes rendus de réunion individuels numérisés signés
+  - Origine : téléversé
+  - Stockage à l'ajout du fichier
+  - Mise à jour à chaque mise à jour du champ fichier
 
 
 Les métadonnées
