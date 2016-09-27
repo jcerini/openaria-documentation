@@ -212,6 +212,22 @@ Ce texte sera toujours écrasé lors d'une récupération : vous devez démarque
 
 .. image:: etablissement-recuperer-contrainte.png
 
+Éditions
+########
+
+Lors de la rédaction des lettres-types vous pouvez afficher les contraintes de l'établissement en appelant la variable de substitution *&contraintes_etab*.
+Cette dernière est remplacée par une liste à puces de toutes les contraintes, classées par groupe et sous-groupe.
+
+* Pour un affichage à plat, sans puce ni groupe ni sous-groupe, appelez *&contraintes_etab(affichage_sans_arborescence=t)*.
+* Pour filtrer par groupe(s) appelez *&contraintes_etab(liste_groupe=g1)*. Si plusieurs séparez par une virgule sans espace.
+* Pour filtrer par sous-groupe(s) appelez *&contraintes_etab(liste_ssgroupe=sg1,sg2)*. Si plusieurs séparez par une virgule sans espace.
+
+.. note::
+
+  * Les trois paramètres sont optionnels et cumulables : séparez les par un point-virgule sans espace. Ex. : *&contraintes_etab(liste_groupe=g1;affichage_sans_arborescence=t)*.
+  * La même fonctionnalité est disponible pour les dossiers de coordination : la variable est *&contraintes_dc*.
+
+
 Onglet UA
 ---------
 
