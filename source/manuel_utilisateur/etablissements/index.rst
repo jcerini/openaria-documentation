@@ -226,6 +226,7 @@ Cette dernière est remplacée par une liste à puces de toutes les contraintes,
 
   * Les trois paramètres sont optionnels et cumulables : séparez les par un point-virgule sans espace. Ex. : *&contraintes_etab(liste_groupe=g1;affichage_sans_arborescence=t)*.
   * La même fonctionnalité est disponible pour les dossiers de coordination : la variable est *&contraintes_dc*.
+  * S'il n'y a pas de contrainte et ce quelle que soit la raison (aucun établissement rattaché au dossier de coordination, aucune contrainte appliquée) la variable de substitution est tout de même supprimée lors de l'édition.
 
 
 Onglet UA
