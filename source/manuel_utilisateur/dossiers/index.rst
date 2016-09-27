@@ -170,6 +170,13 @@ Onglet AP
 #########
 
 
+L'autorité de police c'est l'autorité du maire, elle n'est pas rattachée directement à un service ou à une Commission. Cependant, le Maire (ou un délégué) se base sur l'avis de la Commission pour prendre une décision d'autorité de Police et pour ce faire il profite des réunions de Commission pour discuter des dossiers en autorité de police.
+
+L'autorité de Police, c'est le pouvoir du Maire qui, en fonction de l'avis d'une commission, demande la mise en règle d'un établissement. Il peut y avoir zéro, une ou plusieurs décisions d'autorité de Police qui sont prises lors d'un passage en commission. Une décision d'autorité de Police est composée principalement de trois informations : une décision, un délai, un motif. Ces décisions d'autorité de police sont liées à un courrier ou à plusieurs courriers permettant de notifier ces décisions. L'autorité de Police se trouve sur le dossier de coordination.
+
+
+
+
 
 DI (Dossiers d'Instruction)
 ===========================
@@ -301,33 +308,97 @@ l'état de l'analyse) :
 Onglet PV
 #########
 
-En plus de lister et de permettre d'accéder aux procès-verbaux rattachés au
-dossier d'instruction, cet onglet permet d'en ajouter de trois manières :
+Cet onglet permet de gérer les procès verbaux du dossier d'instruction.
 
-+ en générant un PV, pour ce faire l'analyse du DI doit être validée
+Listing
+,,,,,,,
 
-Le numéro est défini automatiquement selon l'année de la date de rédaction.
-L'état de l'analyse devient "actée". On peut par la suite ajouter au PV généré
-sa version signée.
+.. image:: di-onglet-pv-listing.png
 
-+ en regénérant le dernier PV
+Les différentes actions possibles sont : de lister les procès verbaux existants,
+d'accéder aux différents procès verbaux existants, de générer un nouveau procès
+verbal, de regénérer le dernier procès verbal, d'ajouter un nouveau procès
+verbal tiers.
+
+
+Générer un nouveau PV
+,,,,,,,,,,,,,,,,,,,,,
+
+.. image:: di-onglet-pv-listing-action-generer.png
+
+L'analyse du DI doit être validée pour que l'action soit disponible. Le numéro
+est défini automatiquement selon l'année de la date de rédaction et récupère un
+numéro en fonction du service. Exemple : 2014/00012). L'état de l'analyse
+devient "actée". On peut par la suite ajouter au PV généré sa version signée.
+
+.. image:: di-onglet-pv-form-action-generer.png
+
+
+Fiche d'un PV généré
+,,,,,,,,,,,,,,,,,,,,
+
+On ne peut pas modifier ce PV. Il est possible de le ré-générer si c'est le
+dernier procès-verbal (en conservant le même numéro de PV). Cette modification
+nécessite au préalable l'action « ré-ouvrir » sur l'analyse, la modification
+des éléments à corriger, puis l'action « terminer » sur l'analyse, et enfin
+l'action « valider » sur l'analyse.
+
+L'unique action disponible sur cet élément est l'ajout du PV signé numérisé. 
+
+.. image:: di-onglet-pv-form-action-consulte-pv-genere.png
+
+
+Regénérer le dernier PV
+,,,,,,,,,,,,,,,,,,,,,,,
+
+.. image:: di-onglet-pv-listing-action-regenerer.png
 
 Si l'analyse est rouverte puis revalidée, et qu'au moins un PV a déjà été généré,
 alors il devient possible de regénérer le dernier. Pour le reste le comportement
 est semblable à un PV généré.
 
-+ en ajoutant directement un PV tiers.
+.. image:: di-onglet-pv-form-action-regenerer.png
 
-Aucun numéro n'est défini. On peut modifier ce procès-verbal par la suite.
 
-Dans tous les cas s'il s'agit d'un dossier d'instruction du service Sécurité
-Incendie et que l'on ajoute un PV signé, tiers ou relatif au PV (re)généré, cela
-met à jour les données techniques de l'établissement selon celles définies dans
-l'analyse. De plus et ce quelque soit le service, toute action sur un PV
-(création, modification) met à jour le couple de champs « proposition d'avis »
-et « proposition de complément d'avis » de la demande de passage liée grâce au
-couple de champs « proposition d'avis » et « proposition de complément d'avis »
-de l'analyse du dossier d'instruction sur lequel on se trouve.
+Ajouter un PV
+,,,,,,,,,,,,,,
+
+.. image:: di-onglet-pv-listing-action-ajouter.png
+
+Permet d'ajouter directement un PV tiers (supposé signé). Aucun numéro de PV
+n'est défini. 
+
+.. image:: di-onglet-pv-form-action-ajouter.png
+
+
+Fiche d'un PV ajouté
+,,,,,,,,,,,,,,,,,,,,
+
+On peut modifier ce procès-verbal.
+
+.. image:: di-onglet-pv-form-action-consulte-pv-ajoute.png
+
+
+Mise à jour des informations de l'établissement
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Dans tous les cas s'il s'agit d'un dossier d'instruction du service Sécurité Incendie et que l'on ajoute un PV signé, tiers ou relatif au PV (re)généré, cela met à jour les données techniques de l'établissement selon celles définies dans l'analyse.
+
+
+Mise à jour des propositions d'avis de l'analyse
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+De plus et ce quelque soit le service, toute action sur un PV (création, modification) met à jour le couple de champs « proposition d'avis » et « proposition de complément d'avis » de la demande de passage liée grâce au couple de champs « proposition d'avis » et « proposition de complément d'avis » de l'analyse du dossier d'instruction sur lequel on se trouve.
+
+Pour le bon fonctionnement de la proposition d'avis dans les réunions de commission
+aussi bien pour les dossiers de visites que de plans, le mécanisme suivant est
+nécessaire : la création ou modification de ce procès-verbal déclenche la mise à jour du
+couple de champs « proposition d'avis » et « proposition de complément d'avis » de la
+demande de passage liée grâce au couple de champs « proposition d'avis » et
+« proposition de complément d'avis » de l'analyse du dossier d'instruction sur lequel on
+se trouve. Si lors de l'impression de l'ordre du jour de la réunion de commission, il s'avère
+que le champ « proposition d'avis » n'est pas rempli dans la demande de passage, alors
+c'est la valeur de ce même champ dans l'analyse qui sera affiché dans l'ordre du jour.
 
 
 .. _dossiers_di_onglet_documents_entrants:
