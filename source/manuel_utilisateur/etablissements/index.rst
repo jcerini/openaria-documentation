@@ -132,6 +132,45 @@ Si l'établissement existe déjà sur le SIG, un message indique à l'utilisateu
 
 .. image:: etablissement-geolocaliser-deja-geolocalise.png
 
+.. _etablissement_recup_proprietaire:
+
+Récupérer les propriétaires de parcelles
+----------------------------------------
+
+Si un SIG a été paramétré et que les références cadastrales sont renseignées, une action sur le champ des références cadastrales permet de récupérer la liste des propriétaires par parcelles.
+
+.. image:: etablissement-action-recup-proprietaire-link.png
+
+L'action ouvre un overlay nommé "Liste des propriétaires".
+
+Si les parcelles renseignées ont un ou plusieurs propriétaires, une liste est présentée à l'utilisateur.
+
+.. image:: etablissement-recup-proprietaire-liste.png
+
+Il se peut que le SIG ne récupère aucun propriétaires.
+
+.. image:: etablissement-recup-proprietaire-vide.png
+
+En cas d'erreur de la part du SIG, une erreur est affichée à l'utilisateur.
+
+.. image:: etablissement-recup-proprietaire-erreur-sig.png
+
+Dans le cas du retour d'aucun ou de plusieurs propriétaires, il est possible d'ajouter un contact sur l'établissement directement depuis cette interface en cliquant sur le bouton d'ajout d'un contact.
+
+.. image:: etablissement-recup-proprietaire-action-ajout-contact-link.png
+
+Le formulaire d'ajout d'un contact apparaît à coté de la liste des propriétaires pour faciliter les copier-coller.
+
+.. image:: etablissement-recup-proprietaire-form-ajout-contact.png
+
+Les boutons de retour permettent de fermer le formulaire d'ajout d'un contact tout en gardant la liste des propriétaires.
+
+.. image:: etablissement-recup-proprietaire-action-retour-contact-link.png
+
+Le bouton de fermeture situé en dessous de la liste des propriétaires permet de fermer la fenêtre entière même si le formulaire d'ajout d'un contact est toujours ouvert.
+
+.. image:: etablissement-recup-proprietaire-action-fermer-overlay.png
+
 Archiver un établissement
 -------------------------
 

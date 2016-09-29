@@ -119,6 +119,45 @@ Si le dossier de coordination existe déjà sur le SIG, un message indique à l'
 
 .. image:: dossier_coordination-geolocaliser-deja-geolocalise.png
 
+.. _dossier_coordination_recup_proprietaire:
+
+Récupérer les propriétaires de parcelles
+########################################
+
+Si un SIG a été paramétré et que les références cadastrales sont renseignées, une action sur le champ des références cadastrales permet de récupérer la liste des propriétaires par parcelles.
+
+.. image:: dossier_coordination-action-recup-proprietaire-link.png
+
+L'action ouvre un overlay nommé "Liste des propriétaires".
+
+Si les parcelles renseignées ont un ou plusieurs propriétaires, une liste est présentée à l'utilisateur.
+
+.. image:: dossier_coordination-recup-proprietaire-liste.png
+
+Il se peut que le SIG ne récupère aucun propriétaires.
+
+.. image:: dossier_coordination-recup-proprietaire-vide.png
+
+En cas d'erreur de la part du SIG, une erreur est affichée à l'utilisateur.
+
+.. image:: dossier_coordination-recup-proprietaire-erreur-sig.png
+
+Dans le cas du retour d'aucun ou de plusieurs propriétaires, il est possible d'ajouter un contact sur le dossier de coordination directement depuis cette interface en cliquant sur le bouton d'ajout d'un contact.
+
+.. image:: dossier_coordination-recup-proprietaire-action-ajout-contact-link.png
+
+Le formulaire d'ajout d'un contact apparaît à coté de la liste des propriétaires pour faciliter les copier-coller.
+
+.. image:: dossier_coordination-recup-proprietaire-form-ajout-contact.png
+
+Les boutons de retour permettent de fermer le formulaire d'ajout d'un contact tout en gardant la liste des propriétaires.
+
+.. image:: dossier_coordination-recup-proprietaire-action-retour-contact-link.png
+
+Le bouton de fermeture situé en dessous de la liste des propriétaires permet de fermer la fenêtre entière même si le formulaire d'ajout d'un contact est toujours ouvert.
+
+.. image:: dossier_coordination-recup-proprietaire-action-fermer-overlay.png
+
 Onglet Contraintes
 ##################
 
