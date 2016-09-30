@@ -447,6 +447,13 @@ L'écran de planification des visites est composé de deux blocs principaux : la
 
 .. image:: programmations-action-programmer-view.png
 
+Lorsqu’un Système d’Information Géographique est paramétré, un filtre de géolocalisation avec la saisie
+d'un code d'établissement et d'une distance de cet établissement permet d'ajouter un
+filtre aux filtres existants pour afficher uniquement les dossiers de visites qui se trouvent
+dans le périmètre de l'établissement saisi.
+Ce filtre s'active via le bouton "Proche" et permet la saisie du code d'établissement ainsi que le rayn de recherche.
+
+.. image:: programmations-action-programmer-view-etab_proche.png
 
 Bloc de propositions
 ####################
