@@ -448,8 +448,14 @@ L'écran de planification des visites est composé de deux blocs principaux : la
 .. image:: programmations-action-programmer-view.png
 
 Lorsqu’un Système d’Information Géographique est paramétré, il est possible de filtrer les dossiers de visite par distance par rapport à un établissement.
-Ce filtre s'active via le bouton **Proche** et permet la saisie du code d'établissement ainsi que du rayon de recherche.
-En cliquant sur le bouton **Tous**, le filtre sur les établissements proches est désactivé.
+
+Par défaut le bouton **Tous** est sélectionné : le filtre sur les établissements proches est désactivé.
+
+Pour activer le filtre :
+
+- cliquer sur le bouton **Proche** pour activer les champs de recherche ;
+- saisir le code d'établissement et sélectionner le rayon ;
+- cliquer sur le bouton **Valider**.
 
 .. image:: programmations-action-programmer-view-etab_proche.png
 
