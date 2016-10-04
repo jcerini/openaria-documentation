@@ -227,9 +227,17 @@ Pour une navigation plus aisée, des champs permettent de filtrer la liste des �
 - le champ **Limite** permet de limiter le nombre d'établissements résultats à 10, 20, 30, 40 ou 50 lignes ;
 - le champ **Nature** permet d'afficher seulement les établissements de la nature sélectionnée.
 
-.. image:: dossier_coordination-etab-proche-form.png
+.. image:: dossier_coordination-overlay-etablissements-proches-success.png
 
 En cliquant sur l'un des établissements résultats, celui-ci sera sélectionné pour la liaison avec le dossier de coordination.
+
+Si les références cadastrales du dossier de coordination ne sont pas renseignées, un message d'erreur informe l'utilisateur que celles-ci sont obligatoires pour utiliser cette fonctionnalité.
+
+.. image:: dossier_coordination-overlay-etablissements-proches-no-parcelles.png
+
+S'il n'y a aucun établissement proche, alors les champs filtrants sont désactivés et un message indique à l'utilisateur qu'aucun résultat n'est disponible.
+
+.. image:: dossier_coordination-overlay-etablissements-proches-tableau-vide.png
 
 DI (Dossiers d'Instruction)
 ===========================
