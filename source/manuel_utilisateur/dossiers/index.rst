@@ -220,7 +220,7 @@ La qualification d'un dossier de coordination peut se faire depuis deux écrans,
 
 Lorsqu'un Système d'Information Géographique est paramétré et que les références cadastrales sont renseignées, il est possible de récupérer la liste des établissements proches géographiquement depuis le champ de liaison avec un établissement.
 
-.. image:: dossier_coordination-etab-proche-action-link.png
+.. image:: dossier_coordination-overlay-etablissements-proches-action-link.png
 
 Pour une navigation plus aisée, des champs permettent de filtrer la liste des établissements proches :
 
