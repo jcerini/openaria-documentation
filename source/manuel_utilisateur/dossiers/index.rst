@@ -213,9 +213,23 @@ L'autorité de police c'est l'autorité du maire, elle n'est pas rattachée dire
 
 L'autorité de Police, c'est le pouvoir du Maire qui, en fonction de l'avis d'une commission, demande la mise en règle d'un établissement. Il peut y avoir zéro, une ou plusieurs décisions d'autorité de Police qui sont prises lors d'un passage en commission. Une décision d'autorité de Police est composée principalement de trois informations : une décision, un délai, un motif. Ces décisions d'autorité de police sont liées à un courrier ou à plusieurs courriers permettant de notifier ces décisions. L'autorité de Police se trouve sur le dossier de coordination.
 
+Qualification d'un dossier de coordination
+------------------------------------------
 
+La qualification d'un dossier de coordination peut se faire depuis deux écrans, depuis le formulaire d'ajout d'un dossier de coordination ou depuis son formulaire de modification.
 
+Lorsqu'un Système d'Information Géographique est paramétré et que les références cadastrales sont renseignées, il est possible de récupérer la liste des établissements proches géographiquement depuis le champ de liaison avec un établissement.
 
+.. image:: dossier_coordination-etab-proche-action-link.png
+
+Pour une navigation plus aisée, des champs permettent de filtrer la liste des établissements proches :
+
+- le champ **Limite** permet de limiter le nombre d'établissements résultats à 10, 20, 30, 40 ou 50 lignes ;
+- le champ **Nature** permet d'afficher seulement les établissements de la nature sélectionnée.
+
+.. image:: dossier_coordination-etab-proche-form.png
+
+En cliquant sur l'un des établissements résultats, celui-ci sera sélectionné pour la liaison avec le dossier de coordination.
 
 DI (Dossiers d'Instruction)
 ===========================
