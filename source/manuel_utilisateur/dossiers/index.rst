@@ -222,18 +222,16 @@ Lorsqu'un Système d'Information Géographique est paramétré et que les réfé
 
 .. image:: dossier_coordination-overlay-etablissements-proches-action-link.png
 
-Pour une navigation plus aisée, des champs permettent de filtrer la liste des établissements proches :
+Pour une sélection plus aisée des champs permettent de filtrer la liste des établissements proches :
 
-- le champ **Limite** permet de limiter le nombre d'établissements résultats à 10, 20, 30, 40 ou 50 lignes ;
+- le champ **Limite** permet de limiter le total de résultats à 10, 20, 30, 40 ou 50 établissements ;
 - le champ **Nature** permet d'afficher seulement les établissements de la nature sélectionnée.
 
 .. image:: dossier_coordination-overlay-etablissements-proches-success.png
 
-En cliquant sur l'un des établissements résultats, celui-ci sera sélectionné pour la liaison avec le dossier de coordination.
+En cliquant sur l'un des établissements celui-ci sera sélectionné pour la liaison avec le dossier de coordination.
 
 Si les références cadastrales du dossier de coordination ne sont pas renseignées, un message d'erreur informe l'utilisateur que celles-ci sont obligatoires pour utiliser cette fonctionnalité.
-
-.. image:: dossier_coordination-overlay-etablissements-proches-no-parcelles.png
 
 S'il n'y a aucun établissement proche, alors les champs filtrants sont désactivés et un message indique à l'utilisateur qu'aucun résultat n'est disponible.
 
