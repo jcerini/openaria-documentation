@@ -451,11 +451,18 @@ Lorsqu’un Système d’Information Géographique est paramétré, il est possi
 
 Par défaut le bouton **Tous** est sélectionné : le filtre sur les établissements proches est désactivé.
 
-Pour activer le filtre :
+Pour activer le filtre il faut géolocaliser les dossiers autour d'un établissement :
 
-- cliquer sur le bouton **Proche** pour activer les champs de recherche ;
-- saisir le code d'établissement et sélectionner le rayon ;
+- cliquer sur le bouton **Proche** afin d'afficher les champs de recherche ;
+- saisir le **code** d'établissement autour duquel le périmètre s'appliquera ;
+- sélectionner le **rayon** (il s'agit, en mètres, de la distance maximum d'éloignement acceptée) ;
 - cliquer sur le bouton **Valider**.
+
+.. note::
+
+  * Si aucun établissement n'est trouvé dans le rayon, ou si ceux trouvés ne correspondent à aucun dossier de visite, alors le tableau de propositions n'affichera aucun résultat.
+
+  * Géolocaliser les dossiers de visite par établissements proches sous-entend que les dossiers n'ayant pas d'établissement rattaché ne seront pas listés.
 
 .. image:: programmations-action-programmer-view-etab_proche.png
 
