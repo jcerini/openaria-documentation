@@ -92,6 +92,10 @@ Les fichiers stockés
   - Stockage à l'ajout du fichier
   - Mise à jour à chaque mise à jour du champ fichier
 
+- Documents numérisése [piece.uid]
+
+    - Titre : Nom du fichier
+    - Stockage à l'ajout du fichier
 
 Les métadonnées
 ###############
