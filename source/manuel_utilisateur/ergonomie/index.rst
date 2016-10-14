@@ -85,6 +85,13 @@ Widget "Dossiers de coordination à qualifier"
 
 Ce widget affiche les 5 plus anciens dossiers à qualifier, avec un lien permettant d'afficher tous les dossiers à qualifier.
 
+Widget "Dossiers de coordination à clôturer"
+############################################
+
+.. image:: widget_dossier_coordination_a_cloturer.png
+
+Ce widget affiche les 5 plus anciens dossiers dont les dossiers d'instruction sont clôturés, avec un lien permettant d'afficher tous les dossiers à clôturer.
+
 
 Widget "Établissements NPAI"
 ############################
