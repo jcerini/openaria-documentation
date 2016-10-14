@@ -4,7 +4,7 @@
 Web Services
 ############
 
-Les web services d'openADS sont RESTful. Les retours sont au format JSON, encodés en UTF-8.
+Les web services d'openARIA sont RESTful. Les retours sont au format JSON, encodés en UTF-8.
 
 .. _web_services_ressource_maintenance:
 
@@ -16,13 +16,13 @@ Ressource "maintenance"
 Importation des documents numérisés
 ==========================================================
 
-.. http:post:: /openads/services/rest_entry.php/maintenance
+.. http:post:: /openaria/services/rest_entry.php/maintenance
 
    **Exemple de requête** :
 
    .. sourcecode:: http
       
-      POST /openads/services/rest_entry.php/maintenance HTTP/1.1
+      POST /openaria/services/rest_entry.php/maintenance HTTP/1.1
       Host: localhost
 
       {
@@ -40,13 +40,13 @@ Importation des documents numérisés
 Purge des documents numérisés
 ==========================================================
 
-.. http:post:: /openads/services/rest_entry.php/maintenance
+.. http:post:: /openaria/services/rest_entry.php/maintenance
 
    **Exemple de requête** :
 
    .. sourcecode:: http
       
-      POST /openads/services/rest_entry.php/maintenance HTTP/1.1
+      POST /openaria/services/rest_entry.php/maintenance HTTP/1.1
       Host: localhost
 
       {
