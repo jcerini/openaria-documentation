@@ -378,6 +378,10 @@ Utilisation des options :
 * **option_sig** : la valeur par défaut est *aucun*. Les valeurs possibles sont
   *sig_externe*, *sig_interne* ou *aucun*.
 
+* **option_referentiel_patrimoine** : :ref:module_interface_avec_le_referentiel_patrimoine
+
+* **swrod** : :ref:module_swrod
+
 
 Gestion des utilisateurs
 ========================

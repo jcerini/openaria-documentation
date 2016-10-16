@@ -192,10 +192,13 @@ Un champ de complétion automatique, avec un affichage des voies au fur et à me
 
 Les voies sont utilisées lors de la saisie des adresses, afin d'éviter toute erreur de saisie. Le changement de libellé de voie sera répercuté automatiquement sur les établissements. Les voies qui viennent du référentiel et n'existent plus seront désactivées et ne seront plus disponibles pour les nouvelles saisies.
 
-Lien avec le référentiel patrimone
-----------------------------------
 
-La référence patrimoine ne sera affichée que si le statut juridique de l'établissement est "ville" et que l'option "option_referentiel_patrimoine" est activée.
+.. _etablissement_interface_avec_le_referentiel_patrimoine:
+
+Lien avec le référentiel patrimoine
+-----------------------------------
+
+La référence patrimoine ne sera affichée que si le statut juridique de l'établissement est "ville" et que :ref:`l'option est activée<module_interface_avec_le_referentiel_patrimoine>`.
 Les références patrimoines sont obtenu à partir des références de parcelles.
 
 Le fonctionnement est le suivant :

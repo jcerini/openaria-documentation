@@ -19,7 +19,8 @@ Sommaire
     :maxdepth: 2
 
     tests_ci.rst
-    document_numerise.rst
+    interface_avec_le_referentiel_patrimoine.rst
+    numerisation_automatique.rst
     module_filestorage.rst
     module_swrod.rst
     module_geolocalisation.rst

@@ -42,6 +42,12 @@ Dans cet exemple, le script swrodaria_example.class.php sera inclus et la classe
 Cette configuration n'est pas multi base de données. La configuration de ce module sera donc commune aux différentes configurations de base de données présentes dans le script `dyn/database.inc.php`.
 
 
+Activation de l'option
+######################
+
+Pour que l'option soit activée, il est nécessaire de se rendre dans le menu 'Administration & Paramétrage > Paramètres' et d'ajouter/de modifier le paramètre **swrod** pour lui affecter la valeur 'true'.
+
+
 Description de l'abstracteur et spécifications du connecteur
 ############################################################
 

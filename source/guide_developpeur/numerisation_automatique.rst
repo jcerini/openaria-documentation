@@ -1,8 +1,8 @@
-.. _document_numerise:
+.. _numerisation_automatique:
 
-###########################################
-Documents numérisés ou reprise de l'arriéré
-###########################################
+########################
+Numérisation automatique
+########################
 
 L'emplacement des documents à numériser doit être spécifié dans le fichier *dyn/config.inc.php* via le paramètre *digitalization_folder* :
 
