@@ -422,6 +422,21 @@ Import
 
 Ce module permet l'intégration de données dans l'application depuis des fichiers CSV.
 
+Import des établissements
+#########################
+
+Les établissements peuvent être ajoutés depuis un fichier CSV. Un fichier CSV modèle est disponible sur le formulaire d'import.
+
+.. image:: administration-form-import-etablissement.png
+
+.. note::
+
+Il est nécessaire de mettre à jour manuellement la séquence de l'établissement lors de l'utilisation de cet import CSV.
+
+.. note::
+
+Même lorsqu’un Système d’Information Géographique est paramétré les établissements ne sont pas géolocalisés automatiquement lors de l'import CSV. Les établissements restent géolocalisable depuis l'interface de géolocalisation de tous les établissements et des dossiers de coordination (voir :ref:`administration_geolocalisation` Géocoder tous). 
+
 
 Générateur
 ----------
