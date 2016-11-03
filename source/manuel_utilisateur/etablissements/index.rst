@@ -43,6 +43,10 @@ Il est possible d'ajouter un établissement depuis les deux listings, soit depui
 
 .. image:: etablissement-form-ajouter.png
 
+
+Géolocalisation automatique
+###########################
+
 Lorsqu'un Système d'Information Géographique est paramétré, openARIA va tenter de géolocaliser automatiquement l'établissement lors de sa création. Cette géolocalisation se fait sur la base de l'adresse, des parcelles et du numéro de dossier ADS qui ont été renseignés. 
 
 Si l'établissement a été géolocalisé automatiquement sur le SIG grâce aux informations renseignées, le message suivant apparaît, en indiquant la précision de la géolocalisation.
@@ -61,11 +65,6 @@ Si l'établissement existe déjà sur le SIG, un message indique à l'utilisateu
 
 .. image:: etablissement-ajouter-geolocaliser-deja-geolocalise.png
 
-Les établissements peuvent également être ajoutés depuis un fichier CSV. Un fichier CSV modèle est disponible sur le formulaire d'importation.
-
-Même lorsqu’un Système d’Information Géographique est paramétré, depuis cette méthode, les établissements ne sont pas géolocalisés automatiquement. Les établissements restent géolocalisable depuis l'interface de géolocalisation de tous les établissements et des dossiers de coordination (voir :ref:`administration_geolocalisation` Géocoder tous). 
-
-.. image:: etablissement-form-import.png
 
 La fiche d'un établissement
 ---------------------------
