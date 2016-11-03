@@ -296,22 +296,6 @@ Typologie et paramétrage des dossiers de coordination (AT, PC, Visite périodqu
 
 .. _administration_geolocalisation:
 
-Géolocalisation
----------------
-
-Si un SIG externe est paramétré, il est possible de géolocaliser l'ensemble des établissements
-et des dossiers de coordination, en un seul clic.
-
-.. image:: administration_geocoder-tous.png
-
-Un message de validation fait apparaître le nombre d'éléments qui ont pu être géolocalisés
-automatiquement par le SIG, ainsi que le nombre d'éléments qui n'ont pas pu être géolocalisés.
-Pour les éléments qui ne sont pas géolocalisables automatiquement (dont les informations
-sont inconnues du SIG), il est possible de dessiner manuellement l'élément sur le SIG.
-Pour cela, il faut se rendre directement sur :ref:`l'établissement<etablissement_geolocaliser>` ou le :ref:`dossier de coordination<dossiers_dc_geolocaliser>`.
-
-.. image:: administration_geocoder-tous-success.png
-
 
 Éditions
 ========
@@ -415,6 +399,23 @@ Composition des tableaux de bord par profil.
 
 Options avancées
 ================
+
+Géolocalisation
+---------------
+
+Si un SIG externe est paramétré, il est possible de géolocaliser l'ensemble des établissements
+et des dossiers de coordination, en un seul clic.
+
+.. image:: administration_geocoder-tous.png
+
+Un message de validation fait apparaître le nombre d'éléments qui ont pu être géolocalisés
+automatiquement par le SIG, ainsi que le nombre d'éléments qui n'ont pas pu être géolocalisés.
+Pour les éléments qui ne sont pas géolocalisables automatiquement (dont les informations
+sont inconnues du SIG), il est possible de dessiner manuellement l'élément sur le SIG.
+Pour cela, il faut se rendre directement sur :ref:`l'établissement<etablissement_geolocaliser>` ou le :ref:`dossier de coordination<dossiers_dc_geolocaliser>`.
+
+.. image:: administration_geocoder-tous-success.png
+
 
 Import
 ------
