@@ -108,3 +108,52 @@ Synchronisation des contraintes
         "module": "contraintes"
       }
 
+
+
+
+.. _web_services_ressource_messages:
+
+Ressource "messages"
+####################
+
+Cette ressource permet d'interfacer un message.
+
+.. _web_services_ressource_messages_post:
+
+.. http:post:: /openaria/services/rest_entry.php/messages
+
+   **Cas d'utilisation** :
+
+   - :ref:`echange_ads_erp_101`
+   - :ref:`echange_ads_erp_102`
+   - :ref:`echange_ads_erp_103`
+   - :ref:`echange_ads_erp_104`
+   - :ref:`echange_ads_erp_105`
+   - :ref:`echange_ads_erp_106`
+   - :ref:`echange_ads_erp_107`
+   - :ref:`echange_ads_erp_108`
+   - :ref:`echange_ads_erp_109`
+   - :ref:`echange_ads_erp_110`
+   - :ref:`echange_ads_erp_111`
+   - :ref:`echange_ads_erp_112`
+   - :ref:`echange_ads_erp_113`
+
+   **Exemple de requête** :
+
+   .. sourcecode:: http
+      
+      POST /openaria/services/rest_entry.php/messages HTTP/1.1
+      Host: localhost
+
+        {
+            "type": "Mise à jour de complétude ERP ACC",
+            "date": "16/06/2014 14:12",
+            "emetteur": "John Doe",
+            "dossier_instruction": "PD12R0001",
+            "contenu": {
+                "Complétude ERP ACC": "non",
+                "Motivation Complétude ERP ACC": "Lorem ipsum dolor sit amet..."
+            }
+        }
+
+

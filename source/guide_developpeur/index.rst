@@ -20,6 +20,7 @@ Sommaire
 
     tests_ci.rst
     interface_avec_le_referentiel_patrimoine.rst
+    interface_avec_le_referentiel_ads.rst
     numerisation_automatique.rst
     module_filestorage.rst
     module_swrod.rst
