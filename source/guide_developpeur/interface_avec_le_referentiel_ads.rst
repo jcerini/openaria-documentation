@@ -906,8 +906,9 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS de ga
         "contenu" : {
             "consultation" : 2,
             "date_envoi" : "31/12/2015",
-            "service_code" : "SC",
-            "service_libelle" : "Service Conformité"
+            "service_abrege" : "SC",
+            "service_libelle" : "Service Conformité",
+            "date_limite": "31/01/2016"
         }
     }
 
