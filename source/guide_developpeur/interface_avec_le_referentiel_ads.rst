@@ -817,8 +817,9 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS d'ém
         "contenu" : {
             "consultation" : 2,
             "date_envoi" : "31/12/2015",
-            "service_code" : "ACC",
-            "service_libelle" : "Service Accessibilité"
+            "service_abrege" : "ACC",
+            "service_libelle" : "Service Accessibilité",
+            "date_limite" : "31/01/2016",
         }
     }
 
