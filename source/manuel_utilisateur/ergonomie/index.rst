@@ -141,6 +141,25 @@ Widget "Mes infos"
 Ce widget a été créé spécifiquement pour des besoins de test de l'application. Il permet d'afficher les informations de l'utilisateur actuellement connecté. En effet, pour faciliter les tests avec différents utilisateurs, différents profils et différents services, il est plus facile d'avoir un widget qui rassemble ces informations sur le tableau de bord.
 
 
+Widget "Mes messages"
+#####################
+
+.. image:: widget_mes_messages_non_lus.png
+
+Ce widget indique le nombre de messages non lus pour l'utilisateur connecté. 
+
+Si l'utilisateur est CADRE sont considérés comme non lus :
+
+- tous les messages dont le marqueur CADRE de son service est à non lu, 
+- tous les messages dont le marqueur TECHNICIEN de son service est à non lu sur les messages rattachés à un dossier sur lequel il est référencé comme technicien.
+
+Si l'utilisateur est TECHNICIEN sont considérés comme non lus :
+
+- tous les messages dont le marqueur TECHNICIEN de son service est à non lu sur les messages rattachés à un dossier sur lequel il est référencé comme technicien.
+
+Une liste présente les cinq derniers messages arrivés. Un lien permet d'accéder à une liste complète des messages non lus de l'utilisateur. Un clic sur le message permet d'accéder à la fiche de visualisation du message dans le contexte du dossier d'instruction si l'utilisateur est TECHNICIEN et dans le contexte du dossier de coordination sur l'utilisateur est CADRE.
+
+
 Widget "Mes visites à réaliser"
 ###############################
 
