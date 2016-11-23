@@ -310,6 +310,30 @@ Ajouter un contact institutionnel
 
 Les cases à cocher "Réception de la programmation" et "Réception des éditions liées aux commissions" permettent de recevoir, respectivement, les convocations de membres des programmations de visite et les convocations et comptes rendus de réunion du service du contact. Si le contact institutionnel n'a pas de service alors il reçoit les documents de tous les services.
 
+La sélection de la qualité du contact permet de saisir des informations différentes sur le contact.
+
+Qualité 'particulier'
+,,,,,,,,,,,,,,,,,,,,,
+
+.. image:: contact_institutionnel-form-bloc-informations-particulier.png
+
+Le nom est obligatoire.
+
+Le contact est présenté de la manière suivante dans l'application si toutes les informations sont remplies : "<civilité> <nom> <prénom>" (Par exemple : M. DUPONT Jacques).
+
+
+Qualité 'personne morale'
+,,,,,,,,,,,,,,,,,,,,,,,,,
+
+.. image:: contact_institutionnel-form-bloc-informations-personne_morale.png
+
+La dénomination OU la raison sociale est obligatoire (il faut saisir au moins une des deux informations, l'une ou l'autre ou les deux).
+
+La civilité, le nom, le prénom et le titre sont utilisés pour qualifier le représentant de la personne morale. 
+
+Le contact est présenté de la manière suivante dans l'application si toutes les informations sont remplies : "<raison sociale> <dénomination> représenté(e) par <civilité> <nom> <prénom>" (Par exemple : RAISON SOCIALE représenté(e) par M. DUPONT Jacques).
+
+
 La fiche d'un contact institutionnel
 ####################################
 
