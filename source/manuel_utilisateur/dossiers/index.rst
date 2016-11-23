@@ -166,8 +166,12 @@ La fonctionnalité est identique à l':ref:`application des contraintes aux éta
 Onglet Contacts
 ###############
 
-Onglet DC Parents
-#################
+Onglet DC Fils
+##############
+
+Cet onglet permet d'afficher tous les dossiers de coordination sur lesquels le dossier de coordination sur lequel on se trouve a été sélectionné comme dossier de coordination parent.
+
+.. image:: dc-onglet-dc-fils-listing.png
 
 
 .. _dossiers_dc_onglet_documents_entrants:
