@@ -307,6 +307,15 @@ L'autorité de police c'est l'autorité du maire, elle n'est pas rattachée dire
 
 L'autorité de Police, c'est le pouvoir du Maire qui, en fonction de l'avis d'une commission, demande la mise en règle d'un établissement. Il peut y avoir zéro, une ou plusieurs décisions d'autorité de Police qui sont prises lors d'un passage en commission. Une décision d'autorité de Police est composée principalement de trois informations : une décision, un délai, un motif. Ces décisions d'autorité de police sont liées à un courrier ou à plusieurs courriers permettant de notifier ces décisions. L'autorité de Police se trouve sur le dossier de coordination.
 
+
+.. _dossiers_dc_onglet_messages:
+
+Onglet Messages
+###############
+
+Voir le paragraphe :ref:`dossiers_listing_messages_onglet_dc_di`.
+
+
 Qualification d'un dossier de coordination
 ------------------------------------------
 
@@ -596,4 +605,214 @@ Onglet Visites
 ##############
 
 
+.. _dossiers_di_onglet_messages:
+
+Onglet Messages
+###############
+
+Voir le paragraphe :ref:`dossiers_listing_messages_onglet_dc_di`.
+
+
+Messages
+========
+
+La notion de messages conrrespond à une notification entrante dans openARIA, sortante d'openARIA ou interne d'openARIA qui permet de tracer des informations, de notifier certains utilisateurs sur des événements qui ont eu lieu sur un dossier de coordination en particulier.
+
+.. _dossiers_listing_messages:
+
+Les listings de messages
+------------------------
+
+.. _dossiers_listing_messages_mes_non_lus:
+
+Mes non lus
+###########
+
+(:menuselection:`Dossiers --> Messages --> Mes non lus`)
+
+Listing accessible depuis le widget :ref:`widget_mes_messages`.
+
+Cet écran est destiné aux profils CADRE et TECHNICIEN.
+
+Le listing est filtré sur les messages considérés comme non lus de l'utilisateur.
+
+.. image:: messages-listing-mes-non-lus.png
+
+Si l'utilisateur est CADRE sont considérés comme non lus :
+
+- tous les messages dont le marqueur CADRE de son service est à non lu, 
+- tous les messages dont le marqueur TECHNICIEN de son service est à non lu sur les messages rattachés à un dossier sur lequel il est référencé comme technicien.
+
+Si l'utilisateur est TECHNICIEN sont considérés comme non lus :
+
+- tous les messages dont le marqueur TECHNICIEN de son service est à non lu sur les messages rattachés à un dossier sur lequel il est référencé comme technicien.
+
+Les colonnes du listing sont fixes :
+
+- date
+- type
+- catégorie
+- émetteur
+- dc
+- établissement
+
+Aucun message en gras sur ce listing puisque tous les messages de ce listing sont non lus.
+
+Par défaut le listing est trié par date décroissante.
+
+L'ajout, la modification et la suppression de message sont impossibles via l'interface.
+
+Un lien sur le message permet d'accéder à la fiche de visualisation du message dans le contexte du dossier d'instruction si l'utilisateur est TECHNICIEN et dans le contexte du dossier de coordination si l'utilisateur est CADRE.
+
+.. _dossiers_listing_messages_onglet_dc_di:
+
+Onglet Messages
+###############
+
+Cet écran est destiné aux profils CADRE et TECHNICIEN.
+
+Ce listing est identique sur l'onglet message du DC et sur l'onglet message du DI. Il présente tous les messages liés au DC (ou au DC lié au DI) sur lequel on se trouve.
+
+.. image:: di-onglet-messages-listing.png
+
+Les colonnes fixes du listing sont :
+
+- date
+- type
+- catégorie
+- émetteur
+
+Si l'utilisateur possède un service, deux colonnes supplémentaires apparaissent :
+
+- cadre <service> : marqueur de lecture du message pour un utilisateur cadre <service>
+- tech <service> : marqueur de lecture du message pour un utilisateur tech <service>
+
+Si un des messages répond aux critères 'non lu' pour l'utilisateur connecté (voir :ref:`dossiers_listing_messages_mes_non_lus`) alors la ligne s'affiche en gras.
+
+Par défaut le listing est trié par date décroissante.
+
+L'ajout, la modification et la suppression de message sont impossibles via l'interface.
+
+Un lien sur le message permet d'accéder à la fiche de visualisation du message dans le contexte du dossier d'instruction si l'utilisateur est TECHNICIEN et dans le contexte du dossier de coordination si l'utilisateur est CADRE.
+
+
+.. _dossiers_listing_messages_tous:
+
+Tous les messages
+#################
+
+(:menuselection:`Dossiers --> Messages --> Tous les messages`)
+
+Cet écran est destiné au profil CADRE.
+
+Le listing présentetous les messages existants dans openARIA.
+
+.. image:: messages-listing-tous-les-messages.png
+
+Une recherche avancée permet de filtrer le listing sur les critères suivant :
+
+ - type
+ - émetteur
+ - catégorie
+
+Les colonnes du listing ont fixes :
+
+- date
+- type
+- catégorie
+- émetteur
+- dc
+- établissement
+- cadre si : marqueur de lecture du message pour un utilisateur cadre si
+- tech si : marqueur de lecture du message pour un utilisateur tech si
+- cadre acc : marqueur de lecture du message pour un utilisateur cadre acc
+- tech acc : marqueur de lecture du message pour un utilisateur tech acc
+
+Par défaut le listing est trié par date décroissante.
+
+L'ajout, la modification et la suppression de message sont impossibles via l'interface.
+
+Un lien permet d'accéder à la fiche de visualisation du message dans son contexte propre.
+
+
+.. _dossiers_message_fiche_de_visualisation:
+
+La fiche de visualisation du message
+------------------------------------
+
+.. image:: di-onglet-messages-fiche-visualisation.png
+
+
+Les informations du message :
+
+- catégorie : entrant (message reçu depuis un autre applicatif), sortant (message envoyé à une autre applicatif) ou interne (notification interne à openARIA)
+- dossier de coordination : le dossier lié au message
+- le type de message : un identifiant texte permettant de savoir de quel message il s'agit (exemple : ADS_ERP__AT__DEPOT_DE_PIECE_PAR_LE_PETITIONNAIRE, c'est un message des services ADS vers les services ERP concernant une AT notifiant le dépôt de pièce par le pétitionnaire au guichet unique)
+- l'émetteur
+- la date d'émission : la date à laquelle le message a été envoyé
+- le contenu du message : texte libre
+- les modes et marqueurs de lecture (voir le paragraphe suivant)
+
+
+Modes de lecture et marqueurs de lecture
+########################################
+
+Les marqueurs de lecture sont disponibles sur un message par service en fonction du mode de lecture déterminé. Un message possède donc un mode de lecture par service qui détermine les marqueurs de lecture disponibles sur ce message.
+
+- mode 0 : Aucun marqueur
+- mode 1 : Uniquement le marqueur de lecture 'cadre'
+- mode 2 : Uniquement le marqueur de lecture 'tech'
+- mode 3 : Les deux marqueurs
+
+
+Action 'Marquer comme lu'
+#########################
+
+.. image:: di-onglet-messages-fiche-visualisation-action-marquer-comme-lu-link.png
+
+Marquer comme lu (cadre <service>)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Cette action est disponible uniquement si :
+
+- le marqueur indiqué entre parenthèses est à non lu
+- ET le mode de lecture indique que ce marqueur est activé (mode 1 ou 3)
+- ET l'utilisateur a la permission (profil CADRE)
+
+
+Marquer comme lu (tech <service>)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Cette action est disponible uniquement si :
+
+- le marqueur indiqué entre parenthèses est à non lu
+- ET le mode de lecture indique que ce marqueur est activé (mode 1 ou 3)
+- ET l'utilisateur a la permission (profil CADRE)
+
+
+Action 'Marquer comme non lu'
+#############################
+
+.. image:: di-onglet-messages-fiche-visualisation-action-marquer-comme-non-lu-link.png
+
+Marquer comme non lu (cadre <service>)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Cette action est disponible uniquement si :
+
+- le marqueur indiqué entre parenthèses est à lu
+- ET le mode de lecture indique que ce marqueur est activé (mode 2 ou 3)
+- ET l'utilisateur est référencé comme technicien du dossier
+- ET l'utilisateur a la permission (profil CADRE et TECHNICIEN)
+
+
+Marquer comme non lu (tech <service>)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Cette action est disponible uniquement si :
+
+- le marqueur indiqué entre parenthèses est à lu
+- ET le mode de lecture indique que ce marqueur est activé (mode 2 ou 3)
+- ET l'utilisateur est référencé comme technicien du dossier
+- ET l'utilisateur a la permission (profil CADRE et TECHNICIEN)
 
