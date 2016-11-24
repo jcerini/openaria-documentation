@@ -616,7 +616,7 @@ Voir le paragraphe :ref:`dossiers_listing_messages_onglet_dc_di`.
 Messages
 ========
 
-La notion de messages conrrespond à une notification entrante dans openARIA, sortante d'openARIA ou interne d'openARIA qui permet de tracer des informations, de notifier certains utilisateurs sur des événements qui ont eu lieu sur un dossier de coordination en particulier.
+La notion de messages correspond à une notification entrante dans openARIA, sortante d'openARIA ou interne d'openARIA qui permet de tracer des informations, de notifier certains utilisateurs sur des événements qui ont eu lieu sur un dossier de coordination en particulier.
 
 .. _dossiers_listing_messages:
 
