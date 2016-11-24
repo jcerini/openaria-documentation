@@ -43,6 +43,8 @@ Dans ce listing (comme dans le listing du widget :ref:`widget_dossier_coordinati
 - vert : un dc dont la date de demande est de moins de 15 jours et sur lequel le marqueur dépôt de pièce est activé
 - rouge : un dc dont la date de demande est de plus de 15 jours
 
+Le marqueur dépôt de pièce est activé en cas de réception d'un message du référentiel ADS sur le dossier de coordination en question (:ref:`echange_ads_erp_113`).
+
 L'administrateur peut modifier la limite de 15 jours via l'option **dc_a_qualifier_redlimit** dans :ref:`administration_parametre`.
 
 
