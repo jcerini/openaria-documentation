@@ -25,12 +25,26 @@ Les listings de DC
 
 Lorsqu'un Système d'Information Géographique est paramétré, chaque ligne des listings de dossiers de coordination contient un icône en forme de Terre. Celui-ci permet d'être redirigé sur le SIG avec la vue centrée sur le dossier de coordination correspondant à cette ligne.
 
+
+.. _dossiers_dc_a_qualifier:
+
 Dossiers à qualifier
 ####################
 
 (:menuselection:`Dossiers --> DC (Coordination) --> Dossiers à qualifier`)
 
-Ce listing présente les dossiers de coordination à qualifier.
+Ce listing présente les dossiers de coordination à qualifier par ordre alphabétique du libellé du dc.
+
+.. image:: dossier_coordination_a_qualifier-listing.png
+
+Dans ce listing (comme dans le listing du widget :ref:`widget_dossier_coordination_a_qualifier`), trois couleurs permettent de distinguer les éléments suivants :
+
+- blanc ou gris : un dc dont la date de demande est de moins de 15 jours et sur lequel le marqueur dépôt de pièce n'est pas activé
+- vert : un dc dont la date de demande est de moins de 15 jours et sur lequel le marqueur dépôt de pièce est activé
+- rouge : un dc dont la date de demande est de plus de 15 jours
+
+L'administrateur peut modifier la limite de 15 jours via l'option **dc_a_qualifier_redlimit** dans :ref:`administration_parametre`.
+
 
 Tous les dossiers
 #################
@@ -93,6 +107,7 @@ Lorsqu'un Système d'Information Géographique est paramétré, les icônes en f
 - si le dossier de coordination a été géolocalisé, l'icône dans le champ "Géolocalisé" permet de visualiser le dossier sur le SIG.
 - si un établissement est lié au dossier, on peut le visualiser sur le SIG en cliquant sur l'icône à côté du nom de l'établissement.
 - si des références cadastrales ont été renseignées, l'icône dans le champ références cadastrales permet de visualiser ces parcelles sur le SIG.
+
 
 .. _dossiers_dc_geolocaliser:
 

@@ -108,6 +108,23 @@ Synchronisation des contraintes
         "module": "contraintes"
       }
 
+================================
+Gestion des messages asynchrones
+================================
+
+.. http:post:: /openaria/services/rest_entry.php/maintenance
+
+   **Exemple de requête** :
+
+   .. sourcecode:: http
+      
+      POST /openaria/services/rest_entry.php/maintenance HTTP/1.1
+      Host: localhost
+
+      {
+        "module": "messagesasync"
+      }
+
 
 
 

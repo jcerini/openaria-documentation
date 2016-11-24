@@ -54,6 +54,11 @@ Périodicité de Visite
 Paramétrage de la périodicité des visites obligatoires à réaliser sur les établissements de nature 'ERP référentiel'.
 
 
+La périodicité des visites s'applique sur les établissements dont la nature est 'ERP Référentiel' (**etablissement_nature_periodique** : paramètre correpondant au code de la nature 'ERPR') et dans l'état 'Ouvert' (**etablissement_etat_periodique** : paramètre correpondant au code de l'état 'OUVE').
+
+Un dossier de coordination de type 'Visite Périodique de Sécurité' (**dossier_coordination_type_periodique** : paramètre correpondant au code du type de dossier de coordination 'VPS') est le dossier de coordination rattaché à un établissement pour la gestion de la périodicité des visites.
+
+
 Adresses
 ========
 
@@ -365,6 +370,10 @@ Utilisation des options :
 * **option_referentiel_patrimoine** : :ref:`module_interface_avec_le_referentiel_patrimoine`
 
 * **swrod** : :ref:`module_swrod`
+
+* **option_referentiel_ads** : :ref:`module_interface_avec_le_referentiel_ads`
+
+* **dc_a_qualifier_redlimit** : c'est le nombre de jours depuis la date de la demande à partir duquel les enregistrements dans le listing des DC à qualifier et dans le widget des DC à qualifier apparaissent en rouge. Si le paramètre n'est pas positionné alors la valeur par défaut est de 15 jours. :ref:`dossiers_dc_a_qualifier`
 
 
 Gestion des utilisateurs

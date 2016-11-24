@@ -78,12 +78,15 @@ Widget "Documents entrants suivis"
 Ce widget permet de lister tous les documents entrants pour lesquels le suivi est activé. Les documents entrants sont triés par date butoir.
 
 
+.. _widget_dossier_coordination_a_qualifier:
+
 Widget "Dossiers de coordination à qualifier"
 #############################################
 
 .. image:: widget_dossier_coordination_a_qualifier.png
 
-Ce widget affiche les 5 plus anciens dossiers à qualifier, avec un lien permettant d'afficher tous les dossiers à qualifier.
+Ce widget affiche les 5 plus anciens dossiers à qualifier, avec un lien permettant d'afficher tous les dossiers à qualifier. (Voir le paragraphe :ref:`dossiers_dc_a_qualifier` pour plus d'informations)
+
 
 Widget "Dossiers de coordination à clôturer"
 ############################################
