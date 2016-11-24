@@ -146,7 +146,7 @@ L'information est visible sur la fiche de visualisation du DC :
 
 .. image:: dossier_coordination-connecte-referentiel-ads-flag.png
 
-L'information est visible également sur la fiche de visualisation du DI dans le bloc d'informations urabnisme :
+L'information est visible également sur la fiche de visualisation du DI dans le bloc d'informations urbanisme :
 
 .. image:: dossier_instruction-avec-dc-connecte-referentiel-ads-flag.png
 
@@ -158,7 +158,7 @@ L'information est visible uniquement si le dossier est connecté au référentie
 Les champs "dossier d'autorisation ADS" et "dossier d'instruction ADS"
 ######################################################################
 
-Dans le contexte du module :ref:`module_interface_avec_le_referentiel_ads`, le dossier de coordination porte les champs "dossier d'autorisation ADS" et "dossier d'instruction ADS". Ces deux champs ont des comportements différents en fonction du contexte.
+Dans le contexte de l'interface avec le référentiel ADS, le dossier de coordination porte les champs "dossier d'autorisation ADS" et "dossier d'instruction ADS". Ces deux champs ont des comportements différents en fonction du contexte.
 
 Cas d'un DC non connecté au référentiel ADS
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
