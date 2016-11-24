@@ -151,6 +151,39 @@ L'information est visible également sur la fiche de visualisation du DI dans le
 L'information est visible uniquement si le dossier est connecté au référentiel ADS sinon l'information n'est pas affichée du tout.
 
 
+.. _dossiers_dc_champs_da_di_ads:
+
+Les champs "dossier d'autorisation ADS" et "dossier d'instruction ADS"
+######################################################################
+
+Dans le contexte du module :ref:`module_interface_avec_le_referentiel_ads`, le dossier de coordination porte les champs "dossier d'autorisation ADS" et "dossier d'instruction ADS". Ces deux champs ont des comportements différents en fonction du contexte.
+
+Cas d'un DC non connecté au référentiel ADS
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Ces deux champs sont modifiables par l'utilisateur qui a le droit de modifier le DC. Lors de la validation du formulaire, si l'option 'référentiel ADS' est activée alors on vérifie si les valeurs saisies existent dans le référentiel ADS. Si elles n'existent pas on indique à l'utilisateur que les dossiers n'existent pas. La valeur saisie doit être la référence ADS sans espace.
+
+
+Cas d'un DC connecté au référentiel ADS
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Ces deux champs sont remplis par le référentiel ADS et non modifiables.
+
+
+Lien vers openADS sur le champ "dossier d'autorisation ADS"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Si l'option 'référentiel ADS' est activée et qu'une valeur est présente dans le champ "dossier d'autorisation ADS" alors un lien apparaît à côté de la valeur et permet lors du clic sur ce lien d'ouvrir une nouvelle fenêtre vers la fiche du dossier d'autorisation directement dans openADS.
+
+Le lien est disponible sur la fiche de visualisation du DC :
+
+.. image:: dossier_coordination-da-ads-link.png
+
+Le lien est disponible également sur la fiche de visualisation du DI :
+
+.. image:: dossier_instruction-da-ads-link.png
+
+
 .. _dossiers_dc_geolocaliser:
 
 Géolocaliser un dossier de coordination
