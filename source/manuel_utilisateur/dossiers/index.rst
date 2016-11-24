@@ -109,6 +109,30 @@ Lorsqu'un Système d'Information Géographique est paramétré, les icônes en f
 - si des références cadastrales ont été renseignées, l'icône dans le champ références cadastrales permet de visualiser ces parcelles sur le SIG.
 
 
+.. _dossiers_dc_enjeu_erp:
+
+Activer/Désactiver l'enjeu ERP
+##############################
+
+Cette action permet d'activer/ de désactiver le caractère 'à enjeu ERP' d'un dossier de coordination c'est-à-dire qu'une attention particulière doit y être apportée.
+
+.. image:: dossier_coordination-action-marquer_a_enjeu-link.png
+
+.. image:: dossier_coordination-action-demarquer_a_enjeu-link.png
+
+Si l'option est activée et que les critères du déclencheur sont remplis, un message de notification transmet l'information au référentiel ADS (:ref:`echange_erp_ads_207`).
+
+L'information est visible sur la fiche de visualisation du DC :
+
+.. image:: dossier_coordination-a-enjeu-flag.png
+
+L'information est visible également sur la fiche de visualisation du DI dans le bloc d'informations du dossier de coordination :
+
+.. image:: dossier_instruction-avec-dc-a-enjeu-flag.png
+
+L'information est visible uniquement si le dossier est marqué comme à enjeu ERP sinon l'information n'est pas affichée du tout.
+
+
 .. _dossiers_dc_geolocaliser:
 
 Géolocaliser un dossier de coordination
