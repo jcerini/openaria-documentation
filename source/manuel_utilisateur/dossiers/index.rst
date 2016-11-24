@@ -140,7 +140,7 @@ L'information est visible uniquement si le dossier est marqué comme à enjeu ER
 Connexion avec le référentiel ADS
 #################################
 
-Dans le contexte du module :ref:`module_interface_avec_le_referentiel_ads`, il est nécessaire d'identifier les dossiers qui sont connectés avec ce référentiel afin d'éviter de transmettre des messages de réponse à des dossiers non initialisés en ce sens. Lorsque  un dossier de coordination est créé dans openARIA suite à la réception d'une notification du référentiel ADS, il est noté comme connecté avec le référentiel ADS. Aucune action ne permet à l'utilisateur de modifier ce marqueur.
+Dans le contexte de l'interface avec le référentiel ADS, il est nécessaire d'identifier les dossiers qui sont connectés avec ce référentiel afin d'éviter de transmettre des messages de réponse à des dossiers non initialisés en ce sens. Lorsqu'un dossier de coordination est créé dans openARIA suite à la réception d'une notification du référentiel ADS, il est noté comme connecté avec le référentiel ADS. Aucune action ne permet à l'utilisateur de modifier ce marqueur.
 
 L'information est visible sur la fiche de visualisation du DC :
 
