@@ -133,6 +133,24 @@ L'information est visible également sur la fiche de visualisation du DI dans le
 L'information est visible uniquement si le dossier est marqué comme à enjeu ERP sinon l'information n'est pas affichée du tout.
 
 
+.. _dossiers_dc_connexion_referentiel_ads:
+
+Connexion avec le référentiel ADS
+#################################
+
+Dans le contexte du module :ref:`module_interface_avec_le_referentiel_ads`, il est nécessaire d'identifier les dossiers qui sont connectés avec ce référentiel afin d'éviter de transmettre des messages de réponse à des dossiers non initialisés en ce sens. Lorsque  un dossier de coordination est créé dans openARIA suite à la réception d'une notification du référentiel ADS, il est noté comme connecté avec le référentiel ADS. Aucune action ne permet à l'utilisateur de modifier ce marqueur.
+
+L'information est visible sur la fiche de visualisation du DC :
+
+.. image:: dossier_coordination-connecte-referentiel-ads-flag.png
+
+L'information est visible également sur la fiche de visualisation du DI dans le bloc d'informations urabnisme :
+
+.. image:: dossier_instruction-avec-dc-connecte-referentiel-ads-flag.png
+
+L'information est visible uniquement si le dossier est connecté au référentiel ADS sinon l'information n'est pas affichée du tout.
+
+
 .. _dossiers_dc_geolocaliser:
 
 Géolocaliser un dossier de coordination
