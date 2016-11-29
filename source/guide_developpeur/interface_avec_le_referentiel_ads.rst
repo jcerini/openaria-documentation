@@ -22,6 +22,12 @@ dyn/services.inc.php ::
   $ADS_URL_VISUALISATION_DA = 'http://openads/app/web_entry.php?obj=dossier_autorisation&value=<ID_DA>';
 
 
+*Configuration des paramètres des déclencheurs* :
+
+- **ads__liste_services__si** : correspond à la liste des codes représentant le service ERP Sécurité Incendie tel qu'ils sont définis dans la colonne 'abrégé' du paramétrage des services d'openADS par exemple "Service Pr;ERPSI"
+- **ads__liste_services__acc** : correspond à la liste des codes représentant le service ERP Accessibilité tel qu'ils sont définis dans la colonne 'abrégé' du paramétrage des services d'openADS par exemple "Division d;ERPACC"
+
+
 Activation de l'option
 ######################
 
