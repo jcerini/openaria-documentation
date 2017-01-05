@@ -473,10 +473,18 @@ Un pétitionnaire est venu déposé une demande d'autorisation de travaux au gui
 
 *Traitement* :
 
+• Création de message : Un message de catégorie "entrant" est ajouté dans openARIA afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction et du dossier de coordination. → Marqueur(s) de lecture du message : mode 0.
+
+*Traitement asynchrone* :
+
+.. note::
+
+    Un traitement asynchrone est nécessaire ici. En effet, nous sommes dans le contexte du guichet unique. L'échange est transmis par le référentiel ADS au référentiel ERP lors de la validation de la demande au guichet unique. Le dossier n'existe pas encore à ce moment là. Le formulaire de valaidation de la demande attend une confirmation de bonne réception de l'échange par le référentiel ERP afin de valider sa transaction et de créer effectivement le dossier rattaché à la demande. Il est donc impossible pour le référentiel ERP d'interroger le référentiel ADS sur un dossier pour obtenir ses informations alors qu'il n'a pas été encore effectivement créé dans celui-ci à ce moment là. L'objet du traitement asynchrone est donc de limiter le traitement synchrone à la création du message et d'avoir une méthode de traitement qui parcourt les messages non traités pour réaliser sur ces derniers les opérations nécessaires. Voir : :ref:`Web Service Maintenance de déclenchement des traitements de messages asynchrones<web_services_ressource_maintenance>`
+
+
 • Création de DC (AT-PLAN) : Un dossier de coordination de type AT-PLAN est créé.
 • Récupération des informations sur le DI ADS : Via l'échange [212] récupération de la localisation des travaux (adresse, références cadastrales) et récupération du ou des demandeurs.
 • Marquage du dossier DC (AT-PLAN) : Le marqueur « connecté avec le référentiel ADS » sur le dossier créé est positionnée à « OUI » afin de pouvoir identifier ce dossier à l'avenir.
-• Création de message : Un message de catégorie "entrant" est ajouté dans openARIA afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction et du dossier de coordination. → Marqueur(s) de lecture du message : mode 0.
 
 
 *Contenu de l'échange* :
