@@ -194,3 +194,25 @@ Widget "Programmations urgentes"
 Ce widget liste les programmations arrivant dans moins de 3 semaines pour lesquelles les envois de convocations ne sont pas terminés. Le widget n'apparaît pas si aucune programmation n'est dans ce cas.
 
 
+Widget "Documents générés à éditer"
+###################################
+
+.. image:: widget_documents_generes_a_editer.png
+
+Ce widget permet au cadre et à la secretaire de savoir combien il a de documents générés à éditer, c'est-à-dire finalisés et dont les dates de suivi (date d'envoi et de retour pour signature et AR) ne sont pas renseignées. Un lien permet d'accéder à la liste complète (voir :ref:`courrier_a_editer`). Le widget n'apparaît pas si aucun document généré n'est dans ce cas.
+
+
+Widget "Documents générés en attente de signature"
+##################################################
+
+.. image:: widget_documents_generes_attente_signature.png
+
+Ce widget permet au cadre et à la secretaire de savoir combien il a de documents générés en attente de signature, c'est-à-dire finalisés, dont la date d'envoi en signature est saisie et dont les dates d'envoi AR et de retour signature et AR ne sont pas renseignées. Un lien permet d'accéder à la liste complète (voir :ref:`courrier_attente_signature`). Le widget n'apparaît pas si aucun document généré n'est dans ce cas.
+
+
+Widget "Documents générés en attente de retour AR"
+##################################################
+
+.. image:: widget_documents_generes_attente_retour_ar.png
+
+Ce widget permet au cadre et à la secretaire de savoir combien il a de documents générés en attente de retour AR, c'est-à-dire finalisés, dont la date de retour signature ou la date d'envoi AR sont saisies et dont la date de retour AR n'est pas renseignée. Un lien permet d'accéder à la liste complète (voir :ref:`courrier_attente_retour_ar`). Le widget n'apparaît pas si aucun document généré n'est dans ce cas.

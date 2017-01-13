@@ -188,6 +188,33 @@ Le menu "Gestion" permet d'afficher tous les documents générés.
 
 .. image:: courrier-listing.png
 
+.. _courrier_a_editer:
+
+Depuis le menu "À Éditer"
+#########################
+
+Le menu "À Éditer" permet d'afficher les documents générés finalisés dont les dates de suivi (date d'envoi et de retour pour signature et AR) ne sont pas renseignées.
+
+.. image:: courrier_a_editer-listing.png
+
+.. _courrier_attente_signature:
+
+Depuis le menu "Attente Signature"
+##################################
+
+Le menu "Attente Signature" permet d'afficher les documents générés finalisés dont la date d'envoi en signature est saisie et dont les dates d'envoi AR et de retour signature et AR ne sont pas renseignées.
+
+.. image:: courrier_attente_signature-listing.png
+
+.. _courrier_attente_retour_ar:
+
+Depuis le menu "Attente Retour AR"
+##################################
+
+Le menu "Attente Retour AR" permet d'afficher les documents générés finalisés dont la date de retour signature ou la date d'envoi AR sont saisies et dont la date de retour AR n'est pas renseignée.
+
+.. image:: courrier_attente_retour_ar-listing.png
+
 Depuis l'onglet "Documents Générés" d'un dossier d'instruction
 ##############################################################
 
