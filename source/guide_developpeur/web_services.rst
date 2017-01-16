@@ -154,9 +154,8 @@ Cette ressource permet d'interfacer un message.
    - :ref:`echange_ads_erp_111`
    - :ref:`echange_ads_erp_112`
    - :ref:`echange_ads_erp_113`
-   - :ref:`echange_ads_erp_114`
 
-   **Exemple² de requête** :
+   **Exemple de requête** :
 
    .. sourcecode:: http
       
