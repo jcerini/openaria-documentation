@@ -750,13 +750,13 @@ L'objectif principal de cet échange est de permettre aux services ERP d'être i
 .. _echange_ads_erp_114:
 
 ========================================================================
-[114](Échange ADS → ERP) Dossier AT Notification de dossier à enjeux ADS
+[114](Échange ADS → ERP) Dossier PC Notification de dossier à enjeux ADS
 ========================================================================
 
 L'objectif principal de cet échange est de permettre aux services ADS de partager le caractère 'à enjeu' du dossier pour en informer le service ERP.
 
 
-*Identifiant* : ADS_ERP__AT__ENJEU_ADS
+*Identifiant* : ADS_ERP__PC__ENJEU_ADS
 
 
 *Cas d'utilisation* :
@@ -767,7 +767,7 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
 
 • L'option ERP est activée
 • Le formulaire de modification de dossier dossier d'instruction avec a enjeu ERP qui change de statut(dossier::triggermodifierapres())
-• Le dossier est de type AT (paramètre 'erp__dossier_nature__at')
+• Le dossier est de type PC (paramètre 'erp__dossier_nature__PC')
 • Le dossier est marqué comme « connecté au référentiel ERP »
 
 
@@ -797,10 +797,10 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
     Host: localhost
 
     {
-        "type": "ADS_ERP__AT__ENJEU_ADS",
+        "type": "ADS_ERP__PC__ENJEU_ADS",
         "date": "10/01/2017 12:52",
         "emetteur": "John Doe",
-        "dossier_instruction": "AT0130551600001P0",
+        "dossier_instruction": "PC0130551600001P0",
         "contenu": {
              "Dossier à enjeu ADS": "oui"
         }
