@@ -125,6 +125,23 @@ Gestion des messages asynchrones
         "module": "messagesasync"
       }
 
+=====================================
+Gestion des consultations officielles
+=====================================
+
+.. http:post:: /openaria/services/rest_entry.php/maintenance
+
+   **Exemple de requête** :
+
+   .. sourcecode:: http
+      
+      POST /openaria/services/rest_entry.php/maintenance HTTP/1.1
+      Host: localhost
+
+      {
+        "module": "consultations"
+      }
+
 
 
 
