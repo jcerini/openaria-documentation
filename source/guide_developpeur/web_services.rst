@@ -139,7 +139,7 @@ Gestion des consultations officielles
       Host: localhost
 
       {
-        "module": "consultations"
+        "module": "ar_consultation"
       }
 
 

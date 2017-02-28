@@ -767,12 +767,12 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
 
 *Cas d'utilisation* :
 
-• Un instructeur peut qualifier le dossier comme Dossier à enjeux. Dans ce cas, un message « Dossier à enjeux ADS » est envoyé vers l'application ERP afin de mettre à jour le Dossier d'Instruction. La mise à jour est effectuée automatiquement et un message est présentés au service ERP qui est chargé de mettre à jour le dossier. 
+• Un instructeur du referentiel ADS peut qualifier le dossier comme Dossier à enjeux. Dans ce cas, un message « Dossier à enjeux ADS » est envoyé vers l'application openARIA afin de mettre à jour le Dossier. La mise à jour est effectuée automatiquement et un message est attaché au dossier. 
 
 *Déclencheur* :
 
 • L'option ERP est activée
-• Le formulaire de modification de dossier dossier d'instruction avec a enjeu ERP qui change de statut(dossier::triggermodifierapres())
+• Le parametre enjeu ERP du formulaire de modification de dossier d'instruction qui change de statut(dossier::triggermodifierapres())
 • Le dossier est de type PC (paramètre 'erp__dossier_nature__PC')
 • Le dossier est marqué comme « connecté au référentiel ERP »
 
@@ -1417,7 +1417,7 @@ Dans le contexte du guichet unique, l'objectif principal de cet échange est de 
 [213](Échange ERP → ADS) Dossier PC Accusé de reception de consultation officielle
 ==================================================================================
 
-L'objectif principal de cet échange est de notifier les instructeurs d'un dossier d'instruction du référentiel ADS que le dossier concerné va recevoir une consultation officielle pour avis ou pour conformité et leur permettre donc d'avoir une lettre type qui accuse la réception.
+L'objectif principal de cet échange est de accusé la receptiond'une demande de consultation d'un dossier.
 
 *Identifiant* : ERP_ADS__PC__AR_CONSULTATION_OFFICIELLE
 
